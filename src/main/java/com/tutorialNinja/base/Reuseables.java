@@ -11,7 +11,7 @@ public class Reuseables {
 	public Properties loadProperty() {
 		try {
 			FileInputStream fs = new FileInputStream(System.getProperty("user.dir")
-					+ "\\src\\test\\resources\\config.properties");
+					+ "\\src\\main\\resources\\config.properties");
 			prop = new Properties();
 			prop.load(fs);
 		} catch (FileNotFoundException e) {
