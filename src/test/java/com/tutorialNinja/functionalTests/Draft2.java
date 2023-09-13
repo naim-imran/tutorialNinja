@@ -1,14 +1,12 @@
 package com.tutorialNinja.functionalTests;
 
-import java.util.HashMap;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.tutorialNinja.pageObjectFactory.HomePage;
 import com.tutorialNinja.pageObjectFactory.SearchResultPage;
 
-public class Draft extends com.tutorialNinja.base.InitialComponents {
+public class Draft2 extends com.tutorialNinja.base.InitialComponents {
 	String productName = "mac";
 
 	@Test
@@ -33,7 +31,11 @@ public class Draft extends com.tutorialNinja.base.InitialComponents {
 	
 	@Test
 	public void velidateLogoText02() {
-		HashMap<String, String> testData = getFakerTestData();
-		System.out.println(testData);
+		HomePage homePage = launchApplication();
+		Assert.assertEquals("Qafox.com", homePage.getLogoText());
+		homePage.setText(productName);
+		SearchResultPage searchResultPage = homePage.clickSearchButton();
+		// System.out.println(searchResultPage.getSearchedItemText());
+		Assert.assertEquals("Search - " + productName, searchResultPage.getSearchedItemText());
 	}
 }

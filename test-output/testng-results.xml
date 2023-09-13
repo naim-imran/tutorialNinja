@@ -1,25 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-07T00:59:52 EDT" name="Default suite" finished-at="2023-09-07T00:59:58 EDT" duration-ms="5597">
+  <suite started-at="2023-09-13T02:46:51 EDT" name="Default suite" finished-at="2023-09-13T02:47:17 EDT" duration-ms="25409">
     <groups>
     </groups>
-    <test started-at="2023-09-07T00:59:52 EDT" name="Default test" finished-at="2023-09-07T00:59:58 EDT" duration-ms="5597">
-      <class name="com.tutorialNinja.functionalTests.Draft">
-        <test-method is-config="true" signature="cleanTestsBed()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@217ed35e]" started-at="2023-09-07T00:59:52 EDT" name="cleanTestsBed" finished-at="2023-09-07T00:59:52 EDT" duration-ms="20" status="PASS">
+    <test started-at="2023-09-13T02:46:51 EDT" name="Default test" finished-at="2023-09-13T02:47:17 EDT" duration-ms="25409">
+      <class name="com.tutorialNinja.functionalTests.R1dot1_TS_001_RegisterFunctionality">
+        <test-method is-config="true" signature="cleanTestsBed()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS_001_RegisterFunctionality@139982de]" started-at="2023-09-13T02:46:51 EDT" name="cleanTestsBed" finished-at="2023-09-13T02:46:51 EDT" duration-ms="25" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanTestsBed -->
-        <test-method signature="test()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@217ed35e]" started-at="2023-09-07T00:59:53 EDT" name="test" finished-at="2023-09-07T00:59:58 EDT" duration-ms="5352" status="PASS">
+        <test-method signature="R1dot1_TS_001_TC_RF_001()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS_001_RegisterFunctionality@139982de]" started-at="2023-09-13T02:46:52 EDT" name="R1dot1_TS_001_TC_RF_001" description="R1.1_TS_001_TC_RF_001 As a user I should be able to Register an Account by providing only the Mandatory fields" finished-at="2023-09-13T02:47:04 EDT" duration-ms="12182" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@217ed35e]" started-at="2023-09-07T00:59:58 EDT" name="quitDriver" finished-at="2023-09-07T00:59:58 EDT" duration-ms="163" status="PASS">
+        </test-method> <!-- R1dot1_TS_001_TC_RF_001 -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS_001_RegisterFunctionality@139982de]" started-at="2023-09-13T02:47:04 EDT" name="quitDriver" finished-at="2023-09-13T02:47:04 EDT" duration-ms="333" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-      </class> <!-- com.tutorialNinja.functionalTests.Draft -->
+        <test-method signature="R1dot1_TS_001_TC_RF_003()[pri:1, instance:com.tutorialNinja.functionalTests.R1dot1_TS_001_RegisterFunctionality@139982de]" started-at="2023-09-13T02:47:04 EDT" name="R1dot1_TS_001_TC_RF_003" description="R1.1_TS_001_TC_RF_002 As a registered user I should get &#039;Thank you for registering&#039; email is sent to the registered email address as a confirmation for registering the account" finished-at="2023-09-13T02:47:17 EDT" duration-ms="12550" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- R1dot1_TS_001_TC_RF_003 -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS_001_RegisterFunctionality@139982de]" started-at="2023-09-13T02:47:17 EDT" name="quitDriver" finished-at="2023-09-13T02:47:17 EDT" duration-ms="250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- com.tutorialNinja.functionalTests.R1dot1_TS_001_RegisterFunctionality -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

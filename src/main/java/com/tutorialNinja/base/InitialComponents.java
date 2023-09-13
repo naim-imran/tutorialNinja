@@ -25,8 +25,9 @@ public class InitialComponents extends Reuseables{
 	
 	private WebDriver driver;
 	private ThreadLocal<WebDriver> threadLocaldriver = new ThreadLocal<WebDriver>();
+	
 
-	public HomePage launchBrowser( ) {
+	public HomePage launchApplication( ) {
 		
 		  String browserName = System.getProperty("browser") != null ?
 		  System.getProperty("browser") : loadProperty().getProperty("browser");
@@ -45,11 +46,13 @@ public class InitialComponents extends Reuseables{
 			driver = threadLocaldriver.get();
 
 		}
-
+		
+		System.out.println("Thread ID= " + Thread.currentThread().getId());
+		
 		long implicitWaitTime = Long.parseLong(loadProperty().getProperty("implicitWaitTime"));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(implicitWaitTime));
 		driver.manage().window().maximize();
-		driver.get("https://www.ebay.com/");
+		driver.get("https://tutorialsninja.com/demo//");
 		return new HomePage(driver);
 	}
 	@BeforeSuite
@@ -97,13 +100,12 @@ public class InitialComponents extends Reuseables{
 	System.out.println("TestBed cleaned up");
 	}
 	
-	@AfterMethod
-	public void quitDriver() {
-
-		WebDriver driver = threadLocaldriver.get();
-		if (driver != null) {
-			driver.quit();
-			threadLocaldriver.remove();
-		}
-	}
+	
+	
+	  @AfterMethod public void quitDriver() {
+	  
+	  WebDriver driver = threadLocaldriver.get(); if (driver != null) {
+	  driver.quit(); threadLocaldriver.remove(); } }
+	 
+	 
 }
