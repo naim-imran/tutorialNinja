@@ -6,7 +6,8 @@
       <class name="com.tutorialNinja.functionalTests.R1dot1_TS_001_RegisterFunctionality">
         <methods>
           <include name="cleanTestsBed"/>
-          <include name="R1dot1_TS_001_TC_RF_003"/>
+          <include name="R1dot1_TS_001_TC_RF_004"/>
+          <include name="quitDriver"/>
         </methods>
       </class> <!-- com.tutorialNinja.functionalTests.R1dot1_TS_001_RegisterFunctionality -->
     </classes>

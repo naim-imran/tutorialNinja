@@ -4,7 +4,7 @@
   <test  name="Test">
     <classes>
       <class name="com.tutorialNinja.functionalTests.Draft"/>
-      <class name="com.tutorialNinja.functionalTests.Draft2"/>
+      <class name="com.tutorialNinja.functionalTests.R1dot1_TS_001_RegisterFunctionality"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

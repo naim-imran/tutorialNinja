@@ -14,9 +14,9 @@ public class RegistrationPage {
 	}
 	
 	
-	@FindBy(xpath = "//input[@id='input-firstname']")
+	@FindBy(xpath= "//input[@id='input-firstname']")
 	private WebElement firstNameEditBox;
-	@FindBy(xpath = "//input[@id='input-lastname']")
+	@FindBy(xpath= "//input[@id='input-lastname']")
 	private WebElement lastNameEditBox;
 	@FindBy(xpath= "//input[@id='input-email']")
 	private WebElement emailEditBox;
@@ -32,6 +32,22 @@ public class RegistrationPage {
 	private WebElement continueButton;
 	@FindBy(xpath= "//label[text()='Yes']/input")
 	private WebElement subscribeNewletterYesButton;
+	@FindBy(xpath= "//div[@class='alert alert-danger alert-dismissible']")
+	private WebElement privacyPolicyErrorMsg;
+	@FindBy(xpath= "//input[@name='firstname']/following-sibling::div[@class='text-danger']")
+	private WebElement firstnameErrorMessage;
+	@FindBy(xpath= "//input[@name='lastname']/following-sibling::div[@class='text-danger']")
+	private WebElement lastnameErrorMessage;
+	@FindBy(xpath= "//input[@name='email']/following-sibling::div[@class='text-danger']")
+	private WebElement emailErrorMessage;
+	@FindBy(xpath= "//input[@name='telephone']/following-sibling::div[@class='text-danger']")
+	private WebElement phoneErrorMessage;
+	@FindBy(xpath= "//input[@name='password']/following-sibling::div[@class='text-danger']")
+	private WebElement passwordErrorMessage;
+	@FindBy(xpath= "//input[@name='confirm']/following-sibling::div[@class='text-danger']")
+	private WebElement confirmPasswordErrorMessage;
+	
+	
 	
 	
 	
@@ -64,7 +80,29 @@ public class RegistrationPage {
 		return new AccountCreationSuccessPage(driver);
 	}
 	public void clickSubscribeNewletterYesButton() {
-		subscribeNewletterYesButton.click();
-		
+		subscribeNewletterYesButton.click();	
 	}
+	public String getPrivacyPolicyErrorMsg() {
+		return privacyPolicyErrorMsg.getText();
+	}
+	public String getFirstnameErrorMessage() {
+		return firstnameErrorMessage.getText();
+	}
+	public String getLastnameErrorMessage() {
+		return lastnameErrorMessage.getText();
+	}
+	public String getEmailErrorMessage() {
+		return emailErrorMessage.getText();
+	}
+	public String getPhoneErrorMessage() {
+		return phoneErrorMessage.getText();
+	}
+	public String getPasswordErrorMessage() {
+		return passwordErrorMessage.getText();
+	}
+	public String getConfirmPasswordErrorMessage() {
+		return confirmPasswordErrorMessage.getText();
+	}
+	
+	
 }
