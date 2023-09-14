@@ -1,5 +1,5 @@
 package com.tutorialNinja.functionalTests;
 
-public class TS002_LoginFunctionality {
+public class R1dot1_TS002_LoginFunctionality {
 
 }
