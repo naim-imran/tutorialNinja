@@ -1,7 +1,5 @@
 package com.tutorialNinja.functionalTests;
 
-import java.util.HashMap;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -33,7 +31,7 @@ public class Draft extends com.tutorialNinja.base.InitialComponents {
 	
 	@Test
 	public void velidateLogoText02() {
-		HashMap<String, String> testData = getFakerTestData();
-		System.out.println(testData);
+		HomePage homePage = launchApplication();
+		homePage.getFooterLink();
 	}
 }

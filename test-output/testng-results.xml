@@ -1,103 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-15T01:25:40 EDT" name="Suite" finished-at="2023-09-15T01:26:29 EDT" duration-ms="48420">
+  <suite started-at="2023-09-15T03:01:17 EDT" name="Default suite" finished-at="2023-09-15T03:01:25 EDT" duration-ms="8744">
     <groups>
-      <group name="SmokeTest">
-        <method signature="R1dot1_TS001_RegisterFunctionality.r1dot1_TS001_TC001()[pri:1, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@198b6731]" name="r1dot1_TS001_TC001" class="com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality"/>
-        <method signature="R1dot1_TS001_RegisterFunctionality.r1dot1_TS001_TC003()[pri:3, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@198b6731]" name="r1dot1_TS001_TC003" class="com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality"/>
-        <method signature="R1dot1_TS001_RegisterFunctionality.r1dot1_TS001_TC004()[pri:4, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@198b6731]" name="r1dot1_TS001_TC004" class="com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality"/>
-      </group> <!-- SmokeTest -->
-      <group name="NegetiveTest">
-        <method signature="R1dot1_TS001_RegisterFunctionality.r1dot1_TS001_TC028()[pri:28, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@198b6731]" name="r1dot1_TS001_TC028" class="com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality"/>
-      </group> <!-- NegetiveTest -->
     </groups>
-    <test started-at="2023-09-15T01:25:40 EDT" name="Test" finished-at="2023-09-15T01:26:29 EDT" duration-ms="48420">
-      <class name="com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality">
-        <test-method signature="r1dot1_TS003_TC001()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality@3c9754d8]" started-at="2023-09-15T01:25:40 EDT" name="r1dot1_TS003_TC001" description="R1.1_TS003_TC001 Verify Logging out by selecting Logout option from &#039;My Account&#039; drop menu" finished-at="2023-09-15T01:25:52 EDT" duration-ms="11861" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- r1dot1_TS003_TC001 -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality@3c9754d8]" started-at="2023-09-15T01:25:52 EDT" name="quitDriver" finished-at="2023-09-15T01:25:53 EDT" duration-ms="522" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-      </class> <!-- com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality -->
+    <test started-at="2023-09-15T03:01:17 EDT" name="Default test" finished-at="2023-09-15T03:01:25 EDT" duration-ms="8744">
       <class name="com.tutorialNinja.functionalTests.Draft">
-        <test-method is-config="true" signature="cleanTestsBed()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@7eac9008]" started-at="2023-09-15T01:25:40 EDT" name="cleanTestsBed" finished-at="2023-09-15T01:25:40 EDT" duration-ms="20" status="PASS">
+        <test-method is-config="true" signature="cleanTestsBed()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@1e800aaa]" started-at="2023-09-15T03:01:17 EDT" name="cleanTestsBed" finished-at="2023-09-15T03:01:17 EDT" duration-ms="28" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanTestsBed -->
-        <test-method signature="velidateLogoText()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@7eac9008]" started-at="2023-09-15T01:25:40 EDT" name="velidateLogoText" finished-at="2023-09-15T01:25:50 EDT" duration-ms="9838" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- velidateLogoText -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@7eac9008]" started-at="2023-09-15T01:25:50 EDT" name="quitDriver" finished-at="2023-09-15T01:25:50 EDT" duration-ms="404" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-        <test-method signature="velidateLogoText01()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@7eac9008]" started-at="2023-09-15T01:25:50 EDT" name="velidateLogoText01" finished-at="2023-09-15T01:25:57 EDT" duration-ms="6804" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- velidateLogoText01 -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@7eac9008]" started-at="2023-09-15T01:25:57 EDT" name="quitDriver" finished-at="2023-09-15T01:25:57 EDT" duration-ms="134" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-        <test-method signature="velidateLogoText02()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@7eac9008]" started-at="2023-09-15T01:25:57 EDT" name="velidateLogoText02" finished-at="2023-09-15T01:25:57 EDT" duration-ms="41" status="PASS">
+        <test-method signature="velidateLogoText02()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@1e800aaa]" started-at="2023-09-15T03:01:17 EDT" name="velidateLogoText02" finished-at="2023-09-15T03:01:25 EDT" duration-ms="8477" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- velidateLogoText02 -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@7eac9008]" started-at="2023-09-15T01:25:57 EDT" name="quitDriver" finished-at="2023-09-15T01:25:57 EDT" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@1e800aaa]" started-at="2023-09-15T03:01:25 EDT" name="quitDriver" finished-at="2023-09-15T03:01:25 EDT" duration-ms="192" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- com.tutorialNinja.functionalTests.Draft -->
-      <class name="com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality">
-        <test-method signature="r1dot1_TS002_TC001()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality@7c6908d7]" started-at="2023-09-15T01:25:40 EDT" name="r1dot1_TS002_TC001" description="R1.1_TS002_TC001 Verify logging into the Application using valid credentials" finished-at="2023-09-15T01:25:52 EDT" duration-ms="12237" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- r1dot1_TS002_TC001 -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality@7c6908d7]" started-at="2023-09-15T01:25:52 EDT" name="quitDriver" finished-at="2023-09-15T01:25:53 EDT" duration-ms="311" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-      </class> <!-- com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality -->
-      <class name="com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality">
-        <test-method signature="r1dot1_TS001_TC001()[pri:1, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@198b6731]" started-at="2023-09-15T01:25:40 EDT" name="r1dot1_TS001_TC001" description="R1.1_TS001_TC001 As a user I should be able to Register an Account by providing only the Mandatory fields" finished-at="2023-09-15T01:25:54 EDT" duration-ms="14056" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- r1dot1_TS001_TC001 -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@198b6731]" started-at="2023-09-15T01:25:54 EDT" name="quitDriver" finished-at="2023-09-15T01:25:54 EDT" duration-ms="132" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-        <test-method signature="r1dot1_TS001_TC003()[pri:3, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@198b6731]" started-at="2023-09-15T01:25:54 EDT" name="r1dot1_TS001_TC003" description="R1.1_TS001_TC003 Verify Registering an Account by providing all the fields" finished-at="2023-09-15T01:26:07 EDT" duration-ms="13026" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- r1dot1_TS001_TC003 -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@198b6731]" started-at="2023-09-15T01:26:07 EDT" name="quitDriver" finished-at="2023-09-15T01:26:08 EDT" duration-ms="227" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-        <test-method signature="r1dot1_TS001_TC004()[pri:4, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@198b6731]" started-at="2023-09-15T01:26:08 EDT" name="r1dot1_TS001_TC004" description="R1.1_TS001_TC004 Verify proper error messages are displayed for the mandatory fields, when you don&#039;t provide any fields in the &#039;Register Account&#039; page and submit" finished-at="2023-09-15T01:26:17 EDT" duration-ms="9386" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- r1dot1_TS001_TC004 -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@198b6731]" started-at="2023-09-15T01:26:17 EDT" name="quitDriver" finished-at="2023-09-15T01:26:17 EDT" duration-ms="191" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-        <test-method signature="r1dot1_TS001_TC028()[pri:28, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@198b6731]" started-at="2023-09-15T01:26:17 EDT" name="r1dot1_TS001_TC028" description="R1.1_TS001_TC028 Verify the application throws proper error message when user click continue button without selecting privacy and policy check box." finished-at="2023-09-15T01:26:28 EDT" duration-ms="11105" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- r1dot1_TS001_TC028 -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@198b6731]" started-at="2023-09-15T01:26:28 EDT" name="quitDriver" finished-at="2023-09-15T01:26:29 EDT" duration-ms="208" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-      </class> <!-- com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

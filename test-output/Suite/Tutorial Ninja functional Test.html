@@ -1,0 +1,125 @@
+<html>
+<head>
+<title>TestNG:  Tutorial Ninja functional Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Tutorial Ninja functional Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>9/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Sep 15 01:31:27 EDT 2023</td>
+</tr>
+<tr><td>Total time:</td><td>48 seconds (48507 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.tutorialNinja.functionalTests.Draft.velidateLogoText()'><b>velidateLogoText</b><br>Test class: com.tutorialNinja.functionalTests.Draft</td>
+<td></td>
+<td>11</td>
+<td>com.tutorialNinja.functionalTests.Draft@7eac9008</td></tr>
+<tr>
+<td title='com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality.r1dot1_TS002_TC001()'><b>r1dot1_TS002_TC001</b><br>Test class: com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality<br>Test method: R1.1_TS002_TC001 Verify logging into the Application using valid credentials</td>
+<td></td>
+<td>11</td>
+<td>com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality@7c6908d7</td></tr>
+<tr>
+<td title='com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality.r1dot1_TS001_TC028()'><b>r1dot1_TS001_TC028</b><br>Test class: com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality<br>Test method: R1.1_TS001_TC028 Verify the application throws proper error message when user click continue button without selecting privacy and policy check box.</td>
+<td></td>
+<td>11</td>
+<td>com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@198b6731</td></tr>
+<tr>
+<td title='com.tutorialNinja.functionalTests.Draft.velidateLogoText01()'><b>velidateLogoText01</b><br>Test class: com.tutorialNinja.functionalTests.Draft</td>
+<td></td>
+<td>8</td>
+<td>com.tutorialNinja.functionalTests.Draft@7eac9008</td></tr>
+<tr>
+<td title='com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality.r1dot1_TS001_TC003()'><b>r1dot1_TS001_TC003</b><br>Test class: com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality<br>Test method: R1.1_TS001_TC003 Verify Registering an Account by providing all the fields</td>
+<td></td>
+<td>13</td>
+<td>com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@198b6731</td></tr>
+<tr>
+<td title='com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality.r1dot1_TS003_TC001()'><b>r1dot1_TS003_TC001</b><br>Test class: com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality<br>Test method: R1.1_TS003_TC001 Verify Logging out by selecting Logout option from 'My Account' drop menu</td>
+<td></td>
+<td>12</td>
+<td>com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality@3c9754d8</td></tr>
+<tr>
+<td title='com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality.r1dot1_TS001_TC001()'><b>r1dot1_TS001_TC001</b><br>Test class: com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality<br>Test method: R1.1_TS001_TC001 As a user I should be able to Register an Account by providing only the Mandatory fields</td>
+<td></td>
+<td>13</td>
+<td>com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@198b6731</td></tr>
+<tr>
+<td title='com.tutorialNinja.functionalTests.Draft.velidateLogoText02()'><b>velidateLogoText02</b><br>Test class: com.tutorialNinja.functionalTests.Draft</td>
+<td></td>
+<td>0</td>
+<td>com.tutorialNinja.functionalTests.Draft@7eac9008</td></tr>
+<tr>
+<td title='com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality.r1dot1_TS001_TC004()'><b>r1dot1_TS001_TC004</b><br>Test class: com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality<br>Test method: R1.1_TS001_TC004 Verify proper error messages are displayed for the mandatory fields, when you don't provide any fields in the 'Register Account' page and submit</td>
+<td></td>
+<td>9</td>
+<td>com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@198b6731</td></tr>
+</table><p>
+</body>
+</html>
