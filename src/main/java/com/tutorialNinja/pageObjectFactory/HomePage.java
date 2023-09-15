@@ -24,6 +24,8 @@ public class HomePage {
 	private WebElement myAccountDropList;
 	@FindBy(xpath= "//ul[@class='dropdown-menu dropdown-menu-right']/li/a[text()='Register']")
 	private WebElement registerButton;
+	@FindBy(xpath= "//a[@href='https://tutorialsninja.com/demo/index.php?route=account/login']")
+	private WebElement loginButton;
 	
 	
 	
@@ -47,7 +49,10 @@ public class HomePage {
 	public RegistrationPage click_registerButton() {
 		registerButton.click();
 		return new RegistrationPage(driver);
-		
+	}
+	public LoginPage click_LoginButton() {
+		loginButton.click();
+		return new LoginPage(driver);
 	}
 
 }
