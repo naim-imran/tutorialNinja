@@ -1,22 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="classes" name="Test(failed)">
+  <test thread-count="5" parallel="classes" name="Tutorial Ninja functional Test(failed)">
     <classes>
-      <class name="com.tutorialNinja.functionalTests.Draft2">
+      <class name="com.tutorialNinja.functionalTests.Draft">
         <methods>
           <include name="cleanTestsBed"/>
           <include name="velidateLogoText"/>
           <include name="quitDriver"/>
         </methods>
-      </class> <!-- com.tutorialNinja.functionalTests.Draft2 -->
-      <class name="com.tutorialNinja.functionalTests.Draft">
-        <methods>
-          <include name="velidateLogoText01"/>
-          <include name="cleanTestsBed"/>
-          <include name="quitDriver"/>
-        </methods>
       </class> <!-- com.tutorialNinja.functionalTests.Draft -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Tutorial Ninja functional Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
