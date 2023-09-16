@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.tutorialNinja.functionalTests.R1dot1_TS_001_RegisterFunctionality">
+      <class name="com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality">
         <methods>
           <include name="cleanTestsBed"/>
-          <include name="R1dot1_TS_001_TC_RF_004"/>
+          <include name="r1dot1_TS002_TC001"/>
           <include name="quitDriver"/>
         </methods>
-      </class> <!-- com.tutorialNinja.functionalTests.R1dot1_TS_001_RegisterFunctionality -->
+      </class> <!-- com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

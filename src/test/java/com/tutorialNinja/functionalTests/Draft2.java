@@ -3,7 +3,7 @@ package com.tutorialNinja.functionalTests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.tutorialNinja.pageObjectFactory.HomePage;
+import com.tutorialNinja.pageObjectFactory.HeadersAndFootersObjects;
 import com.tutorialNinja.pageObjectFactory.SearchResultPage;
 
 public class Draft2 extends com.tutorialNinja.base.InitialComponents {
@@ -11,7 +11,7 @@ public class Draft2 extends com.tutorialNinja.base.InitialComponents {
 
 	@Test
 	public void velidateLogoText() {
-		HomePage homePage = launchApplication();
+		HeadersAndFootersObjects homePage = launchApplication().getHomePageHeadersAndFooters();
 		Assert.assertEquals("Qafox.com", homePage.getLogoText());
 		homePage.setText(productName);
 		SearchResultPage searchResultPage = homePage.clickSearchButton();
@@ -21,7 +21,7 @@ public class Draft2 extends com.tutorialNinja.base.InitialComponents {
 	
 	@Test
 	public void velidateLogoText01() {
-		HomePage homePage = launchApplication();
+		HeadersAndFootersObjects homePage = launchApplication().getHomePageHeadersAndFooters();
 		Assert.assertEquals("Qafox.com", homePage.getLogoText());
 		homePage.setText(productName);
 		SearchResultPage searchResultPage = homePage.clickSearchButton();
@@ -31,7 +31,7 @@ public class Draft2 extends com.tutorialNinja.base.InitialComponents {
 	
 	@Test
 	public void velidateLogoText02() {
-		HomePage homePage = launchApplication();
+		HeadersAndFootersObjects homePage = launchApplication().getHomePageHeadersAndFooters();
 		Assert.assertEquals("Qafox.com", homePage.getLogoText());
 		homePage.setText(productName);
 		SearchResultPage searchResultPage = homePage.clickSearchButton();

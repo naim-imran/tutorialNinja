@@ -4,14 +4,25 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.net.URL;
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Properties;
 
+import javax.net.ssl.HttpsURLConnection;
+
 import org.json.JSONObject;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.testng.asserts.SoftAssert;
 
 import com.github.javafaker.Faker;
+import com.tutorialNinja.pageObjectFactory.HeadersAndFootersObjects;
 
 public class Reuseables {
+	
+
 	private Properties prop;
 
 	public Properties loadProperty() {
@@ -66,4 +77,15 @@ public class Reuseables {
 		
 		return hashMap;
 	}
+	
+	public synchronized int getURLresponseCode(String url) throws IOException {
+		HttpsURLConnection httpsURLConnection= (HttpsURLConnection)new URL(url).openConnection();
+		httpsURLConnection.setRequestMethod("HEAD");
+		httpsURLConnection.connect();
+		return httpsURLConnection.getResponseCode();
+	}
+	
+	
+	
+	
 }

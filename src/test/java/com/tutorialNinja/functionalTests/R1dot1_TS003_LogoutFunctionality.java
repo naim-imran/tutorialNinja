@@ -1,10 +1,12 @@
 package com.tutorialNinja.functionalTests;
 
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.tutorialNinja.base.InitialComponents;
-import com.tutorialNinja.pageObjectFactory.HomePage;
+import com.tutorialNinja.pageObjectFactory.HeadersAndFootersObjects;
 import com.tutorialNinja.pageObjectFactory.LogOutPage;
 import com.tutorialNinja.pageObjectFactory.LoginPage;
 import com.tutorialNinja.pageObjectFactory.MyAccountPage;
@@ -12,8 +14,8 @@ import com.tutorialNinja.pageObjectFactory.MyAccountPage;
 public class R1dot1_TS003_LogoutFunctionality extends InitialComponents {
 	
 	@Test(description = "R1.1_TS003_TC001 Verify Logging out by selecting Logout option from 'My Account' drop menu")
-	public void r1dot1_TS003_TC001() {
-	HomePage homePage=	launchApplication();
+	public void r1dot1_TS003_TC001() throws IOException {
+	HeadersAndFootersObjects homePage=	launchApplication().getHomePageHeadersAndFooters();
 	homePage.click_MyAccount();
 	LoginPage loginPage= homePage.click_LoginButton();
 	Assert.assertEquals(loginPage.getPageTitle(), "Account Login");
@@ -22,10 +24,9 @@ public class R1dot1_TS003_LogoutFunctionality extends InitialComponents {
 	MyAccountPage accountPage= loginPage.click_loginButton();
 	Assert.assertEquals(accountPage.getPageTitle(), "My Account");
 	LogOutPage logOutPage= accountPage.click_logoutButtonRightColumn();
+	logOutPage.getLogoutPageHeadersAndFooters().validateAllFooterLinks();;
 	Assert.assertEquals(logOutPage.getPageTitle(), "Account Logout");
 	
 	}
-	
-	
 	
 }

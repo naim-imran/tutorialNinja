@@ -5,7 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage {
+import com.tutorialNinja.base.Reuseables;
+
+public class LoginPage extends Reuseables{
 	private WebDriver driver;
 
 	public LoginPage(WebDriver driver) {
@@ -36,4 +38,5 @@ public class LoginPage {
 	public String getPageTitle() {
 		return driver.getTitle();
 	}
+	
 }

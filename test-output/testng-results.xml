@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-15T03:01:17 EDT" name="Default suite" finished-at="2023-09-15T03:01:25 EDT" duration-ms="8744">
+  <suite started-at="2023-09-16T04:58:06 EDT" name="Default suite" finished-at="2023-09-16T04:58:32 EDT" duration-ms="25839">
     <groups>
     </groups>
-    <test started-at="2023-09-15T03:01:17 EDT" name="Default test" finished-at="2023-09-15T03:01:25 EDT" duration-ms="8744">
-      <class name="com.tutorialNinja.functionalTests.Draft">
-        <test-method is-config="true" signature="cleanTestsBed()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@1e800aaa]" started-at="2023-09-15T03:01:17 EDT" name="cleanTestsBed" finished-at="2023-09-15T03:01:17 EDT" duration-ms="28" status="PASS">
+    <test started-at="2023-09-16T04:58:06 EDT" name="Default test" finished-at="2023-09-16T04:58:32 EDT" duration-ms="25839">
+      <class name="com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality">
+        <test-method is-config="true" signature="cleanTestsBed()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality@77c2494c]" started-at="2023-09-16T04:58:06 EDT" name="cleanTestsBed" finished-at="2023-09-16T04:58:06 EDT" duration-ms="23" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanTestsBed -->
-        <test-method signature="velidateLogoText02()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@1e800aaa]" started-at="2023-09-15T03:01:17 EDT" name="velidateLogoText02" finished-at="2023-09-15T03:01:25 EDT" duration-ms="8477" status="PASS">
+        <test-method signature="r1dot1_TS003_TC001()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality@77c2494c]" started-at="2023-09-16T04:58:06 EDT" name="r1dot1_TS003_TC001" description="R1.1_TS003_TC001 Verify Logging out by selecting Logout option from &#039;My Account&#039; drop menu" finished-at="2023-09-16T04:58:32 EDT" duration-ms="25556" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- velidateLogoText02 -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@1e800aaa]" started-at="2023-09-15T03:01:25 EDT" name="quitDriver" finished-at="2023-09-15T03:01:25 EDT" duration-ms="192" status="PASS">
+        </test-method> <!-- r1dot1_TS003_TC001 -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality@77c2494c]" started-at="2023-09-16T04:58:32 EDT" name="quitDriver" finished-at="2023-09-16T04:58:32 EDT" duration-ms="203" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-      </class> <!-- com.tutorialNinja.functionalTests.Draft -->
+      </class> <!-- com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
