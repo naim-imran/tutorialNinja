@@ -7,6 +7,7 @@
 	</listeners>
 	<test name="Tutorial Ninja functional Test">
 		<classes>
+			<class name="com.tutorialNinja.functionalTests.Draft" />
 			<class name="com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality" />
 			<class name="com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality" />
 			<class name="com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality" />

@@ -51,7 +51,7 @@ public class InitialComponents extends Reuseables {
 		return new HomePage(driver);
 	}
 	@BeforeSuite
-	public String cleanTestsBed() {
+	public void cleanTestsBed() {
 		String folderPath = System.getProperty("user.dir") + "\\reportsAndScreenshoots\\";
 
 		try (Stream<Path> paths = Files.walk(Path.of(folderPath))) {
@@ -83,11 +83,11 @@ public class InitialComponents extends Reuseables {
 					System.out.println("Moved: " + sourceFilePath.getFileName());
 				}
 			}
-			System.out.println("All files moved successfully!");
+			
 		} catch (IOException e) {
 			System.out.println("An error occurred: " + e.getMessage());
 		}
-		return "All files moved successfully!.\n TestBed cleaned up";
+		System.out.println("All files moved successfully!.\n TestBed cleaned up");
 	}
 
 	@AfterMethod

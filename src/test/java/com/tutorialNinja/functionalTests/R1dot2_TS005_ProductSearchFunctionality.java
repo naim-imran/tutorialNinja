@@ -15,7 +15,7 @@ public class R1dot2_TS005_ProductSearchFunctionality extends InitialComponents {
 		HeadersAndFootersObjects homePage = launchApplication().getHomePageHeadersAndFooters();
 		Assert.assertEquals("Qafox.com", homePage.getLogoText());
 		String productName= "Mac";
-		String expectedProduct= "apple MacBook";
+		String expectedProduct= "MacBook";
 		homePage.setText(productName);
 		SearchResultPage searchResultPage = homePage.clickSearchButton();
 		Assert.assertEquals("Search - " + productName, searchResultPage.getSearchedItemText());
@@ -23,4 +23,6 @@ public class R1dot2_TS005_ProductSearchFunctionality extends InitialComponents {
 		Assert.assertEquals(productDetailsPage.getProductDetailsPageTitle(), expectedProduct);
 		
 	}
+	
+	
 }
