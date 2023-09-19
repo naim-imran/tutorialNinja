@@ -18,7 +18,7 @@ public class R1dot1_TS001_RegisterFunctionality extends InitialComponents {
 	@Test(priority = 1, groups = "SmokeTest", description = "R1.1_TS001_TC001 As a user I should be able to Register an Account by providing only the Mandatory fields")
 	public void r1dot1_TS001_TC001() {
 		HashMap<String, String> testData = getFakerTestData();
-		HeadersAndFootersObjects homePage = launchApplication().getHomePageHeadersAndFooters();
+		HeadersAndFootersObjects homePage = launchApplicationHomePage().getHomePageHeadersAndFooters();
 		homePage.click_MyAccount();
 		RegistrationPage registrationPage = homePage.click_registerButton();
 		Assert.assertEquals(registrationPage.getPagetitle(), "Register Account");
@@ -41,7 +41,7 @@ public class R1dot1_TS001_RegisterFunctionality extends InitialComponents {
 	@Test(priority = 3, groups = "SmokeTest", description = "R1.1_TS001_TC003 Verify Registering an Account by providing all the fields")
 	public void r1dot1_TS001_TC003() {
 		HashMap<String, String> testData = getFakerTestData();
-		HeadersAndFootersObjects homePage = launchApplication().getHomePageHeadersAndFooters();
+		HeadersAndFootersObjects homePage = launchApplicationHomePage().getHomePageHeadersAndFooters();
 		homePage.click_MyAccount();
 		RegistrationPage registrationPage = homePage.click_registerButton();
 		Assert.assertEquals(registrationPage.getPagetitle(), "Register Account");
@@ -65,7 +65,7 @@ public class R1dot1_TS001_RegisterFunctionality extends InitialComponents {
 	@Test(priority = 4, groups = "SmokeTest", description = "R1.1_TS001_TC004 Verify proper error messages are displayed for the mandatory fields, when you don't provide any fields in the 'Register Account' page and submit")
 	public void r1dot1_TS001_TC004() throws InterruptedException, IOException {
 		SoftAssert softAssert= new SoftAssert();
-		HeadersAndFootersObjects homePage = launchApplication().getHomePageHeadersAndFooters();
+		HeadersAndFootersObjects homePage = launchApplicationHomePage().getHomePageHeadersAndFooters();
 		homePage.click_MyAccount();
 		RegistrationPage registrationPage = homePage.click_registerButton();
 		Assert.assertEquals(registrationPage.getPagetitle(), "Register Account");
@@ -81,7 +81,7 @@ public class R1dot1_TS001_RegisterFunctionality extends InitialComponents {
 	@Test(priority = 28, groups = "NegetiveTest", description = "R1.1_TS001_TC028 Verify the application throws proper error message when user click continue button without selecting privacy and policy check box.")
 	public void r1dot1_TS001_TC028() {
 		HashMap<String, String> testData = getFakerTestData();
-		HeadersAndFootersObjects homePage = launchApplication().getHomePageHeadersAndFooters();
+		HeadersAndFootersObjects homePage = launchApplicationHomePage().getHomePageHeadersAndFooters();
 		homePage.click_MyAccount();
 		RegistrationPage registrationPage = homePage.click_registerButton();
 		Assert.assertEquals(registrationPage.getPagetitle(), "Register Account");

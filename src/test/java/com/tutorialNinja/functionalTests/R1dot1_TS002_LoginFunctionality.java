@@ -13,7 +13,7 @@ import com.tutorialNinja.pageObjectFactory.MyAccountPage;
 public class R1dot1_TS002_LoginFunctionality extends InitialComponents {
 	@Test(description = "R1.1_TS002_TC001 Verify logging into the Application using valid credentials")
 	public void r1dot1_TS002_TC001() throws IOException {
-	HeadersAndFootersObjects homePage=	launchApplication().getHomePageHeadersAndFooters();
+	HeadersAndFootersObjects homePage=	launchApplicationHomePage().getHomePageHeadersAndFooters();
 	homePage.click_MyAccount();
 	LoginPage loginPage= homePage.click_LoginButton();
 	Assert.assertEquals(loginPage.getPageTitle(), "Account Login");

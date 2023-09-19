@@ -11,7 +11,7 @@ import com.tutorialNinja.pageObjectFactory.SearchResultPage;
 public class R1dot2_TS006_ProductCompareFunctionality extends InitialComponents{
 	@Test(priority = 0, description = "R1.2_TS006_TC001 As an user I should be able to select products for comparison.")
 	public void r1dot2_TS006_TC001() {
-		HeadersAndFootersObjects homePage = launchApplication().getHomePageHeadersAndFooters();
+		HeadersAndFootersObjects homePage = launchApplicationHomePage().getHomePageHeadersAndFooters();
 		Assert.assertEquals("Qafox.com", homePage.getLogoText());
 		String productName= "Mac";
 		homePage.setText(productName);

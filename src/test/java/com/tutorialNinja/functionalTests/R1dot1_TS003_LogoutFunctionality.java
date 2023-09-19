@@ -15,7 +15,7 @@ public class R1dot1_TS003_LogoutFunctionality extends InitialComponents {
 	
 	@Test(description = "R1.1_TS003_TC001 Verify Logging out by selecting Logout option from 'My Account' drop menu")
 	public void r1dot1_TS003_TC001() throws IOException {
-	HeadersAndFootersObjects homePage=	launchApplication().getHomePageHeadersAndFooters();
+	HeadersAndFootersObjects homePage=	launchApplicationHomePage().getHomePageHeadersAndFooters();
 	homePage.click_MyAccount();
 	LoginPage loginPage= homePage.click_LoginButton();
 	Assert.assertEquals(loginPage.getPageTitle(), "Account Login");

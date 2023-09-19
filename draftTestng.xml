@@ -2,8 +2,8 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite" parallel="classes" thread-count="5">
 	<listeners>
-		<listener class-name="testListeners.TestNGListeners"></listener>
-		<listener class-name="testListeners.TestNGitransformer"></listener>
+		<listener class-name="testListenersAndReporter.TestNGListeners"></listener>
+		<listener class-name="testListenersAndReporter.TestNGitransformer"></listener>
 	</listeners>
 	<test name="Tutorial Ninja functional Test">
 		<classes>

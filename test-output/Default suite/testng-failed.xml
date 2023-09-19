@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.tutorialNinja.functionalTests.R1dot2_TS006_ProductCompareFunctionality">
+      <class name="com.tutorialNinja.functionalTests.Draft">
         <methods>
-          <include name="cleanTestsBed"/>
-          <include name="r1dot2_TS006_TC001"/>
+          <include name="draft"/>
           <include name="quitDriver"/>
         </methods>
-      </class> <!-- com.tutorialNinja.functionalTests.R1dot2_TS006_ProductCompareFunctionality -->
+      </class> <!-- com.tutorialNinja.functionalTests.Draft -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

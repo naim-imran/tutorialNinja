@@ -14,7 +14,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ThreadGuard;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeSuite;
 
 import com.tutorialNinja.pageObjectFactory.HomePage;
 
@@ -22,9 +21,11 @@ public class InitialComponents extends Reuseables {
 
 	private WebDriver driver;
 	private ThreadLocal<WebDriver> threadLocaldriver = new ThreadLocal<WebDriver>();
-
-	public HomePage launchApplication() {
-
+	
+	
+	
+	
+	public WebDriver setupThreadLocalDriver() {
 		String browserName = System.getProperty("browser") != null ? System.getProperty("browser")
 				: loadProperty().getProperty("browser");
 
@@ -39,9 +40,13 @@ public class InitialComponents extends Reuseables {
 		} else if (browserName.equalsIgnoreCase("firefox") && threadLocaldriver.get() == null) {
 			threadLocaldriver.set(ThreadGuard.protect(new FirefoxDriver()));
 			driver = threadLocaldriver.get();
-
 		}
-
+		return driver;
+	}
+	
+	
+	public HomePage launchApplicationHomePage() {
+		setupThreadLocalDriver();
 		System.out.println("Thread ID= " + Thread.currentThread().getId());
 
 		long implicitWaitTime = Long.parseLong(loadProperty().getProperty("implicitWaitTime"));
@@ -50,9 +55,9 @@ public class InitialComponents extends Reuseables {
 		driver.get("https://tutorialsninja.com/demo//");
 		return new HomePage(driver);
 	}
-	@BeforeSuite
+
 	public void cleanTestsBed() {
-		String folderPath = System.getProperty("user.dir") + "\\reportsAndScreenshoots\\";
+		String folderPath = System.getProperty("user.dir") + "\\testResultsAndScreecshoots\\";
 
 		try (Stream<Path> paths = Files.walk(Path.of(folderPath))) {
 			paths.filter(Files::isRegularFile).filter(path -> path.getFileName().toString().endsWith(".png"))
@@ -69,11 +74,13 @@ public class InitialComponents extends Reuseables {
 			e.printStackTrace();
 		}
 
-		// Specify the source folder path
-		Path sourceFolderPath = Path.of(System.getProperty("user.dir") + "\\reportsAndScreenshoots\\");
+		
 
-		// Specify the target folder path
-		Path targetFolderPath = Path.of(System.getProperty("user.dir") + "\\testResultArchive\\");
+		// Specify the source folder path 
+		Path sourceFolderPath = Path.of(System.getProperty("user.dir") + "\\testResultsAndScreecshoots\\");
+
+		// Specify the target folder path 
+		Path targetFolderPath =Path.of(System.getProperty("user.dir") + "\\testResultArcheive\\");
 
 		try (DirectoryStream<Path> stream = Files.newDirectoryStream(sourceFolderPath)) {
 			for (Path sourceFilePath : stream) {
@@ -83,11 +90,12 @@ public class InitialComponents extends Reuseables {
 					System.out.println("Moved: " + sourceFilePath.getFileName());
 				}
 			}
-			
+			System.out.println("All files moved successfully!");
 		} catch (IOException e) {
 			System.out.println("An error occurred: " + e.getMessage());
 		}
-		System.out.println("All files moved successfully!.\n TestBed cleaned up");
+
+		System.out.println("TestBed cleaned up");
 	}
 
 	@AfterMethod

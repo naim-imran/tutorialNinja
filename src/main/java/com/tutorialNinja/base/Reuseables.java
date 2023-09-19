@@ -5,6 +5,8 @@ import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.net.URL;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 import java.util.Properties;
 
@@ -77,6 +79,15 @@ public class Reuseables {
 		httpsURLConnection.setRequestMethod("HEAD");
 		httpsURLConnection.connect();
 		return httpsURLConnection.getResponseCode();
+	}
+	
+	public String getCurrentDateAndTime() {
+		LocalDateTime currentDateAndTime = LocalDateTime.now();
+		DateTimeFormatter formatter= DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+		String formatedurrentDateAndTime = formatter.format(currentDateAndTime);
+		
+		return formatedurrentDateAndTime.replace("-", "_").replace(":", "_").replace(" ", "_");
+		
 	}
 	
 	

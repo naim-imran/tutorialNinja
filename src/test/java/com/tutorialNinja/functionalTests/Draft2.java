@@ -11,7 +11,7 @@ public class Draft2 extends com.tutorialNinja.base.InitialComponents {
 
 	@Test
 	public void velidateLogoText() {
-		HeadersAndFootersObjects homePage = launchApplication().getHomePageHeadersAndFooters();
+		HeadersAndFootersObjects homePage = launchApplicationHomePage().getHomePageHeadersAndFooters();
 		Assert.assertEquals("Qafox.com", homePage.getLogoText());
 		homePage.setText(productName);
 		SearchResultPage searchResultPage = homePage.clickSearchButton();
@@ -21,7 +21,7 @@ public class Draft2 extends com.tutorialNinja.base.InitialComponents {
 	
 	@Test
 	public void velidateLogoText01() {
-		HeadersAndFootersObjects homePage = launchApplication().getHomePageHeadersAndFooters();
+		HeadersAndFootersObjects homePage = launchApplicationHomePage().getHomePageHeadersAndFooters();
 		Assert.assertEquals("Qafox.com", homePage.getLogoText());
 		homePage.setText(productName);
 		SearchResultPage searchResultPage = homePage.clickSearchButton();
@@ -31,7 +31,7 @@ public class Draft2 extends com.tutorialNinja.base.InitialComponents {
 	
 	@Test
 	public void velidateLogoText02() {
-		HeadersAndFootersObjects homePage = launchApplication().getHomePageHeadersAndFooters();
+		HeadersAndFootersObjects homePage = launchApplicationHomePage().getHomePageHeadersAndFooters();
 		Assert.assertEquals("Qafox.com", homePage.getLogoText());
 		homePage.setText(productName);
 		SearchResultPage searchResultPage = homePage.clickSearchButton();

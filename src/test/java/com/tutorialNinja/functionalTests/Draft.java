@@ -1,5 +1,6 @@
 package com.tutorialNinja.functionalTests;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -9,7 +10,7 @@ public class Draft extends InitialComponents {
 	String productName = "mac";
 
 	@Test
-	public void velidateLogoText() throws InterruptedException {
+	public void draftfail()  {
 		
 		Assert.assertEquals(false, true);
 		
@@ -17,7 +18,15 @@ public class Draft extends InitialComponents {
 	}
 	
 	
-	
-	
-	
+	@Test()
+	public void liginPagefail() {
+		WebDriver driver = setupThreadLocalDriver();
+		driver.get("https://tutorialsninja.com/demo/index.php?route=account/login");
+		Assert.assertEquals(driver.getTitle(), productName);
+	}
 }
+	
+	
+	
+	
+	
