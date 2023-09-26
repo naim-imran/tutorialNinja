@@ -7,7 +7,7 @@
 		<listener class-name="testListenersAndReporter.TestNGitransformer"></listener>
 	</listeners>
 	
-	<test name="Tutorial Ninja functional Test">
+	<test name="Tutorial Ninja functional Regression Test">
 		<classes>
 			<class name="com.tutorialNinja.functionalTests.Draft" />	
 			<class name="com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality" />

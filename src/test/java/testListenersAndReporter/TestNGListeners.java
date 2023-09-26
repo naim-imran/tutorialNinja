@@ -67,7 +67,7 @@ public class TestNGListeners extends Extendreporter implements ITestListener {
 
 	@Override
 	public void onStart(ITestContext context) {
-		extentReport = getExtentReporter();
+		extentReport = getExtentReporter(context.getName());
 		cleanTestsBed();
 
 	}

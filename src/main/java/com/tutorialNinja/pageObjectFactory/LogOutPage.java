@@ -6,7 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.tutorialNinja.base.Reuseables;
 
 public class LogOutPage extends Reuseables {
-	public WebDriver driver;
+	private WebDriver driver;
 
 	public LogOutPage(WebDriver driver) {
 		this.driver=driver;

@@ -5,7 +5,7 @@
     <listener class-name="testListenersAndReporter.TestNGListeners"/>
     <listener class-name="testListenersAndReporter.TestNGitransformer"/>
   </listeners>
-  <test thread-count="5" parallel="classes" name="Tutorial Ninja functional Test(failed)">
+  <test thread-count="5" parallel="classes" name="Tutorial Ninja functional Regression Test(failed)">
     <classes>
       <class name="com.tutorialNinja.functionalTests.Draft">
         <methods>
@@ -14,12 +14,6 @@
           <include name="quitDriver"/>
         </methods>
       </class> <!-- com.tutorialNinja.functionalTests.Draft -->
-      <class name="com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality">
-        <methods>
-          <include name="r1dot1_TS001_TC001"/>
-          <include name="quitDriver"/>
-        </methods>
-      </class> <!-- com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality -->
     </classes>
-  </test> <!-- Tutorial Ninja functional Test(failed) -->
+  </test> <!-- Tutorial Ninja functional Regression Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

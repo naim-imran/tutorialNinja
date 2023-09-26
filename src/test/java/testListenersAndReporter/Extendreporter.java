@@ -9,10 +9,10 @@ public class Extendreporter extends  InitialComponents {
 	
 	private ExtentReports extentReports;
 
-	public ExtentReports getExtentReporter() {
+	public ExtentReports getExtentReporter(String testName) {
 		ExtentSparkReporter extentSparkReporter= new ExtentSparkReporter(System.getProperty("user.dir")+"\\testResultsAndScreecshoots\\report"+ getCurrentDateAndTime()+".html");
 		extentSparkReporter.config().setDocumentTitle("Open Cart functional test");
-		extentSparkReporter.config().setReportName("pen Cart functional test " + getCurrentDateAndTime());
+		extentSparkReporter.config().setReportName(testName + " " + getCurrentDateAndTime());
 
 		extentReports = new ExtentReports();
 		extentReports.attachReporter(extentSparkReporter);

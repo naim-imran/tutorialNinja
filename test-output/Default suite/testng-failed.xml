@@ -5,6 +5,7 @@
     <classes>
       <class name="com.tutorialNinja.functionalTests.Draft">
         <methods>
+          <include name="draftfail"/>
           <include name="liginPagefail"/>
           <include name="quitDriver"/>
         </methods>

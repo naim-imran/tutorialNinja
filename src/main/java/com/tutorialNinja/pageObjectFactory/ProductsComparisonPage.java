@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
 public class ProductsComparisonPage {
-	public WebDriver driver;
+	private WebDriver driver;
 
 	public ProductsComparisonPage(WebDriver driver) {
 		this.driver=driver;

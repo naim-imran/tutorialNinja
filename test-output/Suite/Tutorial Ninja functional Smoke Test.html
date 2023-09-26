@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Tutorial Ninja functional Smoke Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/2</td>
+<td>Tests passed/Failed/Skipped:</td><td>8/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Sep 26 04:09:45 EDT 2023</td>
+<td>Started on:</td><td>Tue Sep 26 04:43:24 EDT 2023</td>
 </tr>
-<tr><td>Total time:</td><td>74 seconds (74364 ms)</td>
+<tr><td>Total time:</td><td>48 seconds (48800 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td>smoke </td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,116 +76,45 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality.r1dot1_TS003_TC001()'><b>r1dot1_TS003_TC001</b><br>Test class: com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality<br>Test method: R1.1_TS003_TC001 Verify Logging out by selecting Logout option from 'My Account' drop menu</td>
-<td><div><pre>java.lang.AssertionError: expected [Account Logout  ] but found [Account Logout]
-	at com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality.r1dot1_TS003_TC001(R1dot1_TS003_LogoutFunctionality.java:28)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace720412696", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace720412696'><pre>java.lang.AssertionError: expected [Account Logout  ] but found [Account Logout]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality.r1dot1_TS003_TC001(R1dot1_TS003_LogoutFunctionality.java:28)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-</pre></div></td>
-<td>22</td>
-<td>com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality@292b08d6</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
+<td title='com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality.r1dot1_TS001_TC003()'><b>r1dot1_TS001_TC003</b><br>Test class: com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality<br>Test method: R1.1_TS001_TC003 Verify Registering an Account by providing all the fields</td>
+<td></td>
+<td>11</td>
+<td>com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@4b2bac3f</td></tr>
+<tr>
+<td title='com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality.r1dot2_TS005_TC001()'><b>r1dot2_TS005_TC001</b><br>Test class: com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality<br>Test method: R1.2_TS005_TC001 As an user I should be able to search a product which is present in database.</td>
+<td></td>
+<td>14</td>
+<td>com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@302552ec</td></tr>
+<tr>
+<td title='com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality.r1dot1_TS001_TC028()'><b>r1dot1_TS001_TC028</b><br>Test class: com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality<br>Test method: R1.1_TS001_TC028 Verify the application throws proper error message when user click continue button without selecting privacy and policy check box.</td>
+<td></td>
+<td>10</td>
+<td>com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@4b2bac3f</td></tr>
+<tr>
+<td title='com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality.r1dot1_TS002_TC001()'><b>r1dot1_TS002_TC001</b><br>Test class: com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality<br>Test method: R1.1_TS002_TC001 Verify logging into the Application using valid credentials</td>
+<td></td>
+<td>14</td>
+<td>com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality@4e08711f</td></tr>
+<tr>
+<td title='com.tutorialNinja.functionalTests.R1dot2_TS006_ProductCompareFunctionality.r1dot2_TS006_TC001()'><b>r1dot2_TS006_TC001</b><br>Test class: com.tutorialNinja.functionalTests.R1dot2_TS006_ProductCompareFunctionality<br>Test method: R1.2_TS006_TC001 As an user I should be able to select products for comparison.</td>
+<td></td>
+<td>14</td>
+<td>com.tutorialNinja.functionalTests.R1dot2_TS006_ProductCompareFunctionality@26794848</td></tr>
 <tr>
 <td title='com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality.r1dot1_TS003_TC001()'><b>r1dot1_TS003_TC001</b><br>Test class: com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality<br>Test method: R1.1_TS003_TC001 Verify Logging out by selecting Logout option from 'My Account' drop menu</td>
-<td><div><pre>java.lang.AssertionError: expected [Account Logout  ] but found [Account Logout]
-	at com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality.r1dot1_TS003_TC001(R1dot1_TS003_LogoutFunctionality.java:28)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1745842829", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1745842829'><pre>java.lang.AssertionError: expected [Account Logout  ] but found [Account Logout]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality.r1dot1_TS003_TC001(R1dot1_TS003_LogoutFunctionality.java:28)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-</pre></div></td>
-<td>24</td>
-<td>com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality@292b08d6</td></tr>
+<td></td>
+<td>20</td>
+<td>com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality@bcec361</td></tr>
 <tr>
-<td title='com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality.r1dot1_TS003_TC001()'><b>r1dot1_TS003_TC001</b><br>Test class: com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality<br>Test method: R1.1_TS003_TC001 Verify Logging out by selecting Logout option from 'My Account' drop menu</td>
-<td><div><pre>java.lang.AssertionError: expected [Account Logout  ] but found [Account Logout]
-	at com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality.r1dot1_TS003_TC001(R1dot1_TS003_LogoutFunctionality.java:28)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2059925472", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2059925472'><pre>java.lang.AssertionError: expected [Account Logout  ] but found [Account Logout]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality.r1dot1_TS003_TC001(R1dot1_TS003_LogoutFunctionality.java:28)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-</pre></div></td>
-<td>25</td>
-<td>com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality@292b08d6</td></tr>
+<td title='com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality.r1dot1_TS001_TC001()'><b>r1dot1_TS001_TC001</b><br>Test class: com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality<br>Test method: R1.1_TS001_TC001 As a user I should be able to Register an Account by providing only the Mandatory fields</td>
+<td></td>
+<td>16</td>
+<td>com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@4b2bac3f</td></tr>
+<tr>
+<td title='com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality.r1dot1_TS001_TC004()'><b>r1dot1_TS001_TC004</b><br>Test class: com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality<br>Test method: R1.1_TS001_TC004 Verify proper error messages are displayed for the mandatory fields, when you don't provide any fields in the 'Register Account' page and submit</td>
+<td></td>
+<td>9</td>
+<td>com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@4b2bac3f</td></tr>
 </table><p>
 </body>
 </html>
