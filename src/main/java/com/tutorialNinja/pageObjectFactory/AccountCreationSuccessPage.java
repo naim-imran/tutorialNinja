@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class AccountCreationSuccessPage {
-	private WebDriver driver;
+	public WebDriver driver;
 	public AccountCreationSuccessPage(WebDriver driver) {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);

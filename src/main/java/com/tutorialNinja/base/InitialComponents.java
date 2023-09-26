@@ -15,11 +15,11 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ThreadGuard;
 import org.testng.annotations.AfterMethod;
 
-import com.tutorialNinja.pageObjectFactory.HomePage;
+import com.tutorialNinja.pageObjectFactory.HomePageObjects;
 
 public class InitialComponents extends Reuseables {
 
-	private WebDriver driver;
+	public WebDriver driver;
 	private ThreadLocal<WebDriver> threadLocaldriver = new ThreadLocal<WebDriver>();
 	
 	
@@ -33,7 +33,7 @@ public class InitialComponents extends Reuseables {
 			ChromeOptions co = new ChromeOptions();
 			co.setBrowserVersion("116");
 			co.setAcceptInsecureCerts(Boolean.parseBoolean(loadProperty().getProperty("insecureCertificate")));
-			driver = new ChromeDriver();
+			driver = new ChromeDriver(co);
 			threadLocaldriver.set(driver);
 			driver = threadLocaldriver.get();
 
@@ -45,15 +45,15 @@ public class InitialComponents extends Reuseables {
 	}
 	
 	
-	public HomePage launchApplicationHomePage() {
+	public HomePageObjects launchApplicationHomePage() {
 		setupThreadLocalDriver();
 		System.out.println("Thread ID= " + Thread.currentThread().getId());
 
 		long implicitWaitTime = Long.parseLong(loadProperty().getProperty("implicitWaitTime"));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(implicitWaitTime));
 		driver.manage().window().maximize();
-		driver.get("https://tutorialsninja.com/demo//");
-		return new HomePage(driver);
+		driver.get(loadProperty().getProperty("testServerURL"));
+		return new HomePageObjects(driver);
 	}
 
 	public void cleanTestsBed() {
@@ -97,10 +97,10 @@ public class InitialComponents extends Reuseables {
 
 		System.out.println("TestBed cleaned up");
 	}
-
-	@AfterMethod
+	
+	
+	@AfterMethod(alwaysRun = true)
 	public void quitDriver() {
-
 		WebDriver driver = threadLocaldriver.get();
 		if (driver != null) {
 			driver.quit();

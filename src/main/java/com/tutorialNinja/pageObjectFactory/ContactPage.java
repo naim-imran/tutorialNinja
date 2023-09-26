@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
 public class ContactPage {
-	private WebDriver driver;
+	public WebDriver driver;
 
 	public ContactPage(WebDriver driver) {
 		this.driver= driver;

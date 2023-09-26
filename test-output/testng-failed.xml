@@ -14,6 +14,12 @@
           <include name="quitDriver"/>
         </methods>
       </class> <!-- com.tutorialNinja.functionalTests.Draft -->
+      <class name="com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality">
+        <methods>
+          <include name="r1dot1_TS001_TC001"/>
+          <include name="quitDriver"/>
+        </methods>
+      </class> <!-- com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality -->
     </classes>
   </test> <!-- Tutorial Ninja functional Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

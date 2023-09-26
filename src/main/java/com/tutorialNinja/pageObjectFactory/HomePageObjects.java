@@ -1,22 +1,19 @@
 package com.tutorialNinja.pageObjectFactory;
 
-import java.io.IOException;
-import java.util.Iterator;
 import java.util.List;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.asserts.SoftAssert;
 
 import com.tutorialNinja.base.Reuseables;
 
-public class HeadersAndFootersObjects extends Reuseables {
+public class HomePageObjects extends Reuseables {
 	
 	private WebDriver driver;
 	
-	public HeadersAndFootersObjects(WebDriver driver) {
+	public HomePageObjects(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
@@ -99,22 +96,8 @@ public class HeadersAndFootersObjects extends Reuseables {
 		telephone.click();
 	}
 
-	public void validateAllFooterLinks() throws IOException {
-		SoftAssert softAssert = new SoftAssert();
-
-		byte count = 1;
-		for (Iterator<WebElement> iterator = footerLinks.iterator(); iterator.hasNext();) {
-			WebElement webElement = iterator.next();
-			String link = webElement.getAttribute("href");
-			int responseCode = getURLresponseCode(link);
-			if (responseCode > 200) {
-				softAssert.assertTrue(false);
-			} else {
-				System.out.println(count + ": " + link + " responseCode= " + responseCode + ", is valid");
-				softAssert.assertTrue(true);
-			}
-			count++;
-		}
+	public void validateHomePageFooterLinks() {
+		validateAllFooterLinks(driver);
 	}
 
 }

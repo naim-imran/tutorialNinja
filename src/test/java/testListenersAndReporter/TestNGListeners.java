@@ -1,5 +1,8 @@
 package testListenersAndReporter;
 
+import java.io.IOException;
+
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -10,7 +13,7 @@ import com.aventstack.extentreports.Status;
 
 public class TestNGListeners extends Extendreporter implements ITestListener {
 
-	ThreadLocal<ExtentTest> ThreadLocalReport = new ThreadLocal<ExtentTest>();
+	private ThreadLocal<ExtentTest> ThreadLocalReport = new ThreadLocal<ExtentTest>();
 	private ExtentReports extentReport;
 	private ExtentTest report;
 
@@ -23,16 +26,35 @@ public class TestNGListeners extends Extendreporter implements ITestListener {
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		ThreadLocalReport.get().log(Status.PASS, "Test passed");
+
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
+
 		ThreadLocalReport.get().log(Status.FAIL, "Test failed. " + result.getThrowable());
+		
+
+		WebDriver driver = null;
+		try {
+			driver = (WebDriver) result.getTestClass().getRealClass().getField("driver").get(result.getInstance());
+		} catch (IllegalArgumentException | IllegalAccessException | NoSuchFieldException | SecurityException e) {
+			e.printStackTrace();
+		}
+
+		;
+		try {
+			ThreadLocalReport.get().addScreenCaptureFromPath(takeScreenShot(driver, result.getName()));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
-		ThreadLocalReport.get().log(Status.SKIP, "There is exception in execution and skipped for another try " + result.getThrowable());
+		ThreadLocalReport.get().log(Status.SKIP,
+				"There is exception in execution and skipped for another try " + result.getThrowable());
+
 	}
 
 	@Override

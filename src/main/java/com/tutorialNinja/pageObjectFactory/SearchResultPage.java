@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class SearchResultPage {
 
-	private WebDriver driver;
+	public WebDriver driver;
 
 	public SearchResultPage(WebDriver driver) {
 		this.driver=driver;

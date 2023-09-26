@@ -4,15 +4,15 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.tutorialNinja.base.InitialComponents;
-import com.tutorialNinja.pageObjectFactory.HeadersAndFootersObjects;
+import com.tutorialNinja.pageObjectFactory.HomePageObjects;
 import com.tutorialNinja.pageObjectFactory.ProductDetailsPage;
 import com.tutorialNinja.pageObjectFactory.SearchResultPage;
 
 public class R1dot2_TS005_ProductSearchFunctionality extends InitialComponents {
 
-	@Test(priority = 1, description = "R1.2_TS005_TC001 As an user I should be able to search a product which is present in database.")
+	@Test(priority = 1, groups = "smoke", description = "R1.2_TS005_TC001 As an user I should be able to search a product which is present in database.")
 	public void r1dot2_TS005_TC001() {
-		HeadersAndFootersObjects homePage = launchApplicationHomePage().getHomePageHeadersAndFooters();
+		HomePageObjects homePage = launchApplicationHomePage();
 		Assert.assertEquals("Qafox.com", homePage.getLogoText());
 		String productName= "Mac";
 		String expectedProduct= "MacBook";

@@ -6,7 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.tutorialNinja.base.Reuseables;
 
 public class LogOutPage extends Reuseables {
-	private WebDriver driver;
+	public WebDriver driver;
 
 	public LogOutPage(WebDriver driver) {
 		this.driver=driver;
@@ -17,7 +17,7 @@ public class LogOutPage extends Reuseables {
 		return driver.getTitle();
 	}
 	
-	public HeadersAndFootersObjects getLogoutPageHeadersAndFooters() {
-		return new HeadersAndFootersObjects(driver);
+	public void validateLogoutPageFooterLinks() {
+		 validateAllFooterLinks(driver);
 	}
 }

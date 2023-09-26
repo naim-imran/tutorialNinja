@@ -4,14 +4,14 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.tutorialNinja.base.InitialComponents;
-import com.tutorialNinja.pageObjectFactory.HeadersAndFootersObjects;
+import com.tutorialNinja.pageObjectFactory.HomePageObjects;
 import com.tutorialNinja.pageObjectFactory.ProductsComparisonPage;
 import com.tutorialNinja.pageObjectFactory.SearchResultPage;
 
 public class R1dot2_TS006_ProductCompareFunctionality extends InitialComponents{
-	@Test(priority = 0, description = "R1.2_TS006_TC001 As an user I should be able to select products for comparison.")
+	@Test(priority = 0, groups = "smoke", description = "R1.2_TS006_TC001 As an user I should be able to select products for comparison.")
 	public void r1dot2_TS006_TC001() {
-		HeadersAndFootersObjects homePage = launchApplicationHomePage().getHomePageHeadersAndFooters();
+		HomePageObjects homePage = launchApplicationHomePage();
 		Assert.assertEquals("Qafox.com", homePage.getLogoText());
 		String productName= "Mac";
 		homePage.setText(productName);
