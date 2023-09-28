@@ -26,7 +26,7 @@
 					<plugins>
 						<plugin>
 							<artifactId>maven-surefire-plugin</artifactId>
-							<version>2.22.1</version>
+							<version>3.1.2</version>
 							<configuration>
 								<suiteXmlFiles>
 									<suiteXmlFile>smoke.xml</suiteXmlFile>
@@ -45,10 +45,10 @@
 					<plugins>
 						<plugin>
 							<artifactId>maven-surefire-plugin</artifactId>
-							<version>2.22.1</version>
+							<version>3.1.2</version>
 							<configuration>
 								<suiteXmlFiles>
-									<suiteXmlFile>draftTestng.xml</suiteXmlFile>
+									<suiteXmlFile>regressionTest.xml</suiteXmlFile>
 								</suiteXmlFiles>
 							</configuration>
 						</plugin>
@@ -134,30 +134,60 @@
 			<version>1.0.2</version>
 		</dependency>
 
+		<!--https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
+		<!--<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<version>3.11.0</version>
+		</dependency>
+
+		https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin 
+		<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-surefire-plugin</artifactId>
+			<version>3.1.2</version>
+		</dependency>
+
+		https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-resources-plugin 
+		<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-resources-plugin</artifactId>
+			<version>3.3.1</version>
+		</dependency>-->
+
 
 	</dependencies>
+
 
 	<build>
 		<pluginManagement><!-- lock down plugins versions to avoid using Maven
 			defaults (may be moved to parent pom) -->
 			<plugins>
 				<plugin>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.11.0</version>
+				</plugin>
+
+				<plugin>
 					<artifactId>maven-clean-plugin</artifactId>
-					<version>3.0.0</version>
+					<version>3.3.1</version>
 				</plugin>
 				<!-- see
 				http://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->
 				<plugin>
 					<artifactId>maven-resources-plugin</artifactId>
-					<version>3.0.2</version>
+					<version>3.3.1</version>
 				</plugin>
-				<plugin>
-					<artifactId>maven-compiler-plugin</artifactId>
-					<version>3.7.0</version>
-				</plugin>
+
+
 				<plugin>
 					<artifactId>maven-surefire-plugin</artifactId>
-					<version>2.20.1</version>
+					<version>3.1.2</version>
+					<configuration>
+						<suiteXmlFiles>
+							<suiteXmlFile>regressionTest.xml</suiteXmlFile>
+						</suiteXmlFiles>
+					</configuration>
 				</plugin>
 				<plugin>
 					<artifactId>maven-jar-plugin</artifactId>

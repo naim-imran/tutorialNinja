@@ -1,0 +1,13 @@
+com\tutorialNinja\pageObjectFactory\HomePageObjects.class
+com\tutorialNinja\pageObjectFactory\RegistrationPage.class
+com\tutorialNinja\pageObjectFactory\ProductsComparisonPage.class
+com\tutorialNinja\base\InitialComponents.class
+com\tutorialNinja\pageObjectFactory\ShoppingCartPage.class
+com\tutorialNinja\pageObjectFactory\AccountCreationSuccessPage.class
+com\tutorialNinja\pageObjectFactory\LoginPage.class
+com\tutorialNinja\pageObjectFactory\ContactPage.class
+com\tutorialNinja\pageObjectFactory\SearchResultPage.class
+com\tutorialNinja\base\Reuseables.class
+com\tutorialNinja\pageObjectFactory\MyAccountPage.class
+com\tutorialNinja\pageObjectFactory\LogOutPage.class
+com\tutorialNinja\pageObjectFactory\ProductDetailsPage.class
