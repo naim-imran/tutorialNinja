@@ -27,11 +27,11 @@
 						<plugin>
 							<artifactId>maven-surefire-plugin</artifactId>
 							<version>3.1.2</version>
-							<!--<configuration>
+							<configuration>
 								<suiteXmlFiles>
 									<suiteXmlFile>smoke.xml</suiteXmlFile>
 								</suiteXmlFiles>
-							</configuration>-->
+							</configuration>
 						</plugin>
 					</plugins>
 				</pluginManagement>
@@ -127,35 +127,12 @@
 			<version>5.2.3</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
 		<dependency>
 			<groupId>com.github.javafaker</groupId>
 			<artifactId>javafaker</artifactId>
 			<version>1.0.2</version>
 		</dependency>
-
-		<!--https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
-		<!--<dependency>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-compiler-plugin</artifactId>
-			<version>3.11.0</version>
-		</dependency>
-
-		https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin 
-		<dependency>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-surefire-plugin</artifactId>
-			<version>3.1.2</version>
-		</dependency>
-
-		https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-resources-plugin 
-		<dependency>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-resources-plugin</artifactId>
-			<version>3.3.1</version>
-		</dependency>-->
-
-
+		
 	</dependencies>
 
 
@@ -172,8 +149,8 @@
 					<artifactId>maven-clean-plugin</artifactId>
 					<version>3.3.1</version>
 				</plugin>
-				<!-- see
-				http://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->
+
+				<!--http://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->
 				<plugin>
 					<artifactId>maven-resources-plugin</artifactId>
 					<version>3.3.1</version>
