@@ -10,10 +10,16 @@
       <class name="com.tutorialNinja.functionalTests.Draft">
         <methods>
           <include name="draftfail"/>
-          <include name="liginPagefail"/>
+          <include name="loginPagefail"/>
           <include name="quitDriver"/>
         </methods>
       </class> <!-- com.tutorialNinja.functionalTests.Draft -->
+      <class name="com.tutorialNinja.functionalTests.R1dot2_TS006_ProductCompareFunctionality">
+        <methods>
+          <include name="r1dot2_TS006_TC001"/>
+          <include name="quitDriver"/>
+        </methods>
+      </class> <!-- com.tutorialNinja.functionalTests.R1dot2_TS006_ProductCompareFunctionality -->
     </classes>
   </test> <!-- Tutorial Ninja functional Regression Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

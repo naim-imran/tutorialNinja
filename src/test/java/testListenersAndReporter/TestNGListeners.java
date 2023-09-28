@@ -19,14 +19,14 @@ public class TestNGListeners extends Extendreporter implements ITestListener {
 
 	@Override
 	public void onTestStart(ITestResult result) {
-		report = extentReport.createTest(result.getName());
+		report = extentReport.createTest(result.getMethod().getDescription());
 		ThreadLocalReport.set(report);
+		
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		ThreadLocalReport.get().log(Status.PASS, "Test passed");
-
 	}
 
 	@Override

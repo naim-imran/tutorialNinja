@@ -19,7 +19,7 @@ import com.tutorialNinja.pageObjectFactory.HomePageObjects;
 
 public class InitialComponents extends Reuseables {
 
-	public WebDriver driver;
+	public WebDriver driver;// driver has to be public because we have to get it through reflection API in listener class
 	private ThreadLocal<WebDriver> threadLocaldriver = new ThreadLocal<WebDriver>();
 	
 	
@@ -31,7 +31,7 @@ public class InitialComponents extends Reuseables {
 
 		if (browserName.equalsIgnoreCase("chrome") && threadLocaldriver.get() == null) {
 			ChromeOptions co = new ChromeOptions();
-			co.setBrowserVersion("116");
+			co.setBrowserVersion(loadProperty().getProperty("browserVersion"));
 			co.setAcceptInsecureCerts(Boolean.parseBoolean(loadProperty().getProperty("insecureCertificate")));
 			driver = new ChromeDriver(co);
 			threadLocaldriver.set(driver);
@@ -107,5 +107,4 @@ public class InitialComponents extends Reuseables {
 			threadLocaldriver.remove();
 		}
 	}
-
 }

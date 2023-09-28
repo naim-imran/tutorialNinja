@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="4" ignored="4" total="19" passed="9" failed="2" skipped="0">
+<testng-results retried="5" ignored="5" total="21" passed="9" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-26T04:52:21 EDT" name="Suite" finished-at="2023-09-26T04:53:10 EDT" duration-ms="48634">
+  <suite started-at="2023-09-28T00:03:43 EDT" name="Suite" finished-at="2023-09-28T00:04:35 EDT" duration-ms="51646">
     <groups>
       <group name="regression">
-        <method signature="R1dot1_TS002_LoginFunctionality.r1dot1_TS002_TC001()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality@489115ef]" name="r1dot1_TS002_TC001" class="com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality"/>
+        <method signature="R1dot1_TS002_LoginFunctionality.r1dot1_TS002_TC001()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality@3b0090a4]" name="r1dot1_TS002_TC001" class="com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality"/>
       </group> <!-- regression -->
       <group name="smoke">
-        <method signature="R1dot1_TS002_LoginFunctionality.r1dot1_TS002_TC001()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality@489115ef]" name="r1dot1_TS002_TC001" class="com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality"/>
-        <method signature="R1dot1_TS003_LogoutFunctionality.r1dot1_TS003_TC001()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality@3857f613]" name="r1dot1_TS003_TC001" class="com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality"/>
-        <method signature="R1dot2_TS006_ProductCompareFunctionality.r1dot2_TS006_TC001()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot2_TS006_ProductCompareFunctionality@198b6731]" name="r1dot2_TS006_TC001" class="com.tutorialNinja.functionalTests.R1dot2_TS006_ProductCompareFunctionality"/>
-        <method signature="R1dot1_TS001_RegisterFunctionality.r1dot1_TS001_TC001()[pri:1, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@15de0b3c]" name="r1dot1_TS001_TC001" class="com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality"/>
-        <method signature="R1dot2_TS005_ProductSearchFunctionality.r1dot2_TS005_TC001()[pri:1, instance:com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@7c6908d7]" name="r1dot2_TS005_TC001" class="com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality"/>
-        <method signature="R1dot1_TS001_RegisterFunctionality.r1dot1_TS001_TC003()[pri:3, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@15de0b3c]" name="r1dot1_TS001_TC003" class="com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality"/>
-        <method signature="R1dot1_TS001_RegisterFunctionality.r1dot1_TS001_TC004()[pri:4, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@15de0b3c]" name="r1dot1_TS001_TC004" class="com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality"/>
-        <method signature="R1dot1_TS001_RegisterFunctionality.r1dot1_TS001_TC028()[pri:28, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@15de0b3c]" name="r1dot1_TS001_TC028" class="com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality"/>
+        <method signature="R1dot1_TS002_LoginFunctionality.r1dot1_TS002_TC001()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality@3b0090a4]" name="r1dot1_TS002_TC001" class="com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality"/>
+        <method signature="R1dot1_TS003_LogoutFunctionality.r1dot1_TS003_TC001()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality@3cd3e762]" name="r1dot1_TS003_TC001" class="com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality"/>
+        <method signature="R1dot2_TS006_ProductCompareFunctionality.r1dot2_TS006_TC001()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot2_TS006_ProductCompareFunctionality@1fa121e2]" name="r1dot2_TS006_TC001" class="com.tutorialNinja.functionalTests.R1dot2_TS006_ProductCompareFunctionality"/>
+        <method signature="R1dot1_TS001_RegisterFunctionality.r1dot1_TS001_TC001()[pri:1, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@179ece50]" name="r1dot1_TS001_TC001" class="com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality"/>
+        <method signature="R1dot2_TS005_ProductSearchFunctionality.r1dot2_TS005_TC001()[pri:1, instance:com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@7eac9008]" name="r1dot2_TS005_TC001" class="com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality"/>
+        <method signature="R1dot1_TS001_RegisterFunctionality.r1dot1_TS001_TC003()[pri:3, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@179ece50]" name="r1dot1_TS001_TC003" class="com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality"/>
+        <method signature="R1dot1_TS001_RegisterFunctionality.r1dot1_TS001_TC004()[pri:4, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@179ece50]" name="r1dot1_TS001_TC004" class="com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality"/>
+        <method signature="R1dot1_TS001_RegisterFunctionality.r1dot1_TS001_TC028()[pri:28, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@179ece50]" name="r1dot1_TS001_TC028" class="com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2023-09-26T04:52:21 EDT" name="Tutorial Ninja functional Regression Test" finished-at="2023-09-26T04:53:10 EDT" duration-ms="48634">
+    <test started-at="2023-09-28T00:03:43 EDT" name="Tutorial Ninja functional Regression Test" finished-at="2023-09-28T00:04:35 EDT" duration-ms="51646">
       <class name="com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality">
-        <test-method signature="r1dot1_TS003_TC001()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality@3857f613]" started-at="2023-09-26T04:52:22 EDT" name="r1dot1_TS003_TC001" description="R1.1_TS003_TC001 Verify Logging out by selecting Logout option from &#039;My Account&#039; drop menu" finished-at="2023-09-26T04:52:36 EDT" duration-ms="14080" status="PASS">
+        <test-method signature="r1dot1_TS003_TC001()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality@3cd3e762]" started-at="2023-09-28T00:03:44 EDT" name="r1dot1_TS003_TC001" description="R1.1_TS003_TC001 Verify Logging out by selecting Logout option from &#039;My Account&#039; drop menu" finished-at="2023-09-28T00:04:00 EDT" duration-ms="15917" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- r1dot1_TS003_TC001 -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality@3857f613]" started-at="2023-09-26T04:52:36 EDT" name="quitDriver" finished-at="2023-09-26T04:52:36 EDT" duration-ms="335" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality@3cd3e762]" started-at="2023-09-28T00:04:00 EDT" name="quitDriver" finished-at="2023-09-28T00:04:01 EDT" duration-ms="752" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality -->
       <class name="com.tutorialNinja.functionalTests.Draft">
-        <test-method retried="true" signature="draftfail()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@7586beff]" started-at="2023-09-26T04:52:22 EDT" name="draftfail" finished-at="2023-09-26T04:52:31 EDT" duration-ms="9799" status="SKIP">
+        <test-method retried="true" signature="draftfail()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@43bc63a3]" started-at="2023-09-28T00:03:44 EDT" name="draftfail" description="negetive test case draftfail" finished-at="2023-09-28T00:03:56 EDT" duration-ms="12088" status="SKIP">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -66,11 +66,11 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- draftfail -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@7586beff]" started-at="2023-09-26T04:52:31 EDT" name="quitDriver" finished-at="2023-09-26T04:52:32 EDT" duration-ms="529" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@43bc63a3]" started-at="2023-09-28T00:03:56 EDT" name="quitDriver" finished-at="2023-09-28T00:03:57 EDT" duration-ms="731" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method retried="true" signature="draftfail()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@7586beff]" started-at="2023-09-26T04:52:32 EDT" name="draftfail" finished-at="2023-09-26T04:52:39 EDT" duration-ms="6937" status="SKIP">
+        <test-method retried="true" signature="draftfail()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@43bc63a3]" started-at="2023-09-28T00:03:57 EDT" name="draftfail" description="negetive test case draftfail" finished-at="2023-09-28T00:04:07 EDT" duration-ms="10628" status="SKIP">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -106,11 +106,11 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- draftfail -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@7586beff]" started-at="2023-09-26T04:52:39 EDT" name="quitDriver" finished-at="2023-09-26T04:52:39 EDT" duration-ms="149" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@43bc63a3]" started-at="2023-09-28T00:04:07 EDT" name="quitDriver" finished-at="2023-09-28T00:04:08 EDT" duration-ms="215" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method signature="draftfail()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@7586beff]" started-at="2023-09-26T04:52:39 EDT" name="draftfail" finished-at="2023-09-26T04:52:45 EDT" duration-ms="6001" status="FAIL">
+        <test-method signature="draftfail()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@43bc63a3]" started-at="2023-09-28T00:04:08 EDT" name="draftfail" description="negetive test case draftfail" finished-at="2023-09-28T00:04:14 EDT" duration-ms="5989" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -146,11 +146,11 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- draftfail -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@7586beff]" started-at="2023-09-26T04:52:45 EDT" name="quitDriver" finished-at="2023-09-26T04:52:46 EDT" duration-ms="244" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@43bc63a3]" started-at="2023-09-28T00:04:14 EDT" name="quitDriver" finished-at="2023-09-28T00:04:14 EDT" duration-ms="149" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method retried="true" signature="liginPagefail()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@7586beff]" started-at="2023-09-26T04:52:46 EDT" name="liginPagefail" finished-at="2023-09-26T04:52:52 EDT" duration-ms="5860" status="SKIP">
+        <test-method retried="true" signature="loginPagefail()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@43bc63a3]" started-at="2023-09-28T00:04:14 EDT" name="loginPagefail" description="negetive test case loginPagefail" finished-at="2023-09-28T00:04:21 EDT" duration-ms="7103" status="SKIP">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Customer] but found [Account Login]]]>
@@ -163,7 +163,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:656)
 at org.testng.Assert.assertEquals(Assert.java:666)
-at com.tutorialNinja.functionalTests.Draft.liginPagefail(Draft.java:32)
+at com.tutorialNinja.functionalTests.Draft.loginPagefail(Draft.java:32)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -184,12 +184,12 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- liginPagefail -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@7586beff]" started-at="2023-09-26T04:52:52 EDT" name="quitDriver" finished-at="2023-09-26T04:52:52 EDT" duration-ms="175" status="PASS">
+        </test-method> <!-- loginPagefail -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@43bc63a3]" started-at="2023-09-28T00:04:21 EDT" name="quitDriver" finished-at="2023-09-28T00:04:22 EDT" duration-ms="531" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method retried="true" signature="liginPagefail()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@7586beff]" started-at="2023-09-26T04:52:52 EDT" name="liginPagefail" finished-at="2023-09-26T04:52:56 EDT" duration-ms="4686" status="SKIP">
+        <test-method retried="true" signature="loginPagefail()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@43bc63a3]" started-at="2023-09-28T00:04:22 EDT" name="loginPagefail" description="negetive test case loginPagefail" finished-at="2023-09-28T00:04:28 EDT" duration-ms="6178" status="SKIP">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Customer] but found [Account Login]]]>
@@ -202,7 +202,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:656)
 at org.testng.Assert.assertEquals(Assert.java:666)
-at com.tutorialNinja.functionalTests.Draft.liginPagefail(Draft.java:32)
+at com.tutorialNinja.functionalTests.Draft.loginPagefail(Draft.java:32)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -223,12 +223,12 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- liginPagefail -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@7586beff]" started-at="2023-09-26T04:52:56 EDT" name="quitDriver" finished-at="2023-09-26T04:52:57 EDT" duration-ms="221" status="PASS">
+        </test-method> <!-- loginPagefail -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@43bc63a3]" started-at="2023-09-28T00:04:28 EDT" name="quitDriver" finished-at="2023-09-28T00:04:28 EDT" duration-ms="195" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method signature="liginPagefail()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@7586beff]" started-at="2023-09-26T04:52:57 EDT" name="liginPagefail" finished-at="2023-09-26T04:53:01 EDT" duration-ms="4840" status="FAIL">
+        <test-method signature="loginPagefail()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@43bc63a3]" started-at="2023-09-28T00:04:28 EDT" name="loginPagefail" description="negetive test case loginPagefail" finished-at="2023-09-28T00:04:34 EDT" duration-ms="5746" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Customer] but found [Account Login]]]>
@@ -241,7 +241,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:656)
 at org.testng.Assert.assertEquals(Assert.java:666)
-at com.tutorialNinja.functionalTests.Draft.liginPagefail(Draft.java:32)
+at com.tutorialNinja.functionalTests.Draft.loginPagefail(Draft.java:32)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -262,80 +262,150 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- liginPagefail -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@7586beff]" started-at="2023-09-26T04:53:02 EDT" name="quitDriver" finished-at="2023-09-26T04:53:02 EDT" duration-ms="138" status="PASS">
+        </test-method> <!-- loginPagefail -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@43bc63a3]" started-at="2023-09-28T00:04:34 EDT" name="quitDriver" finished-at="2023-09-28T00:04:34 EDT" duration-ms="127" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method signature="readExcelDraft()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@7586beff]" started-at="2023-09-26T04:53:02 EDT" name="readExcelDraft" finished-at="2023-09-26T04:53:03 EDT" duration-ms="1020" status="PASS">
+        <test-method signature="readExcelDraft()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@43bc63a3]" started-at="2023-09-28T00:04:34 EDT" name="readExcelDraft" description="validate readExcelDraft" finished-at="2023-09-28T00:04:35 EDT" duration-ms="1127" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- readExcelDraft -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@7586beff]" started-at="2023-09-26T04:53:03 EDT" name="quitDriver" finished-at="2023-09-26T04:53:03 EDT" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@43bc63a3]" started-at="2023-09-28T00:04:35 EDT" name="quitDriver" finished-at="2023-09-28T00:04:35 EDT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- com.tutorialNinja.functionalTests.Draft -->
       <class name="com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality">
-        <test-method signature="r1dot1_TS002_TC001()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality@489115ef]" started-at="2023-09-26T04:52:22 EDT" name="r1dot1_TS002_TC001" description="R1.1_TS002_TC001 Verify logging into the Application using valid credentials" finished-at="2023-09-26T04:52:36 EDT" duration-ms="14236" status="PASS">
+        <test-method signature="r1dot1_TS002_TC001()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality@3b0090a4]" started-at="2023-09-28T00:03:44 EDT" name="r1dot1_TS002_TC001" description="R1.1_TS002_TC001 Verify logging into the Application using valid credentials" finished-at="2023-09-28T00:03:57 EDT" duration-ms="13456" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- r1dot1_TS002_TC001 -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality@489115ef]" started-at="2023-09-26T04:52:36 EDT" name="quitDriver" finished-at="2023-09-26T04:52:36 EDT" duration-ms="263" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality@3b0090a4]" started-at="2023-09-28T00:03:57 EDT" name="quitDriver" finished-at="2023-09-28T00:03:58 EDT" duration-ms="313" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality -->
       <class name="com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality">
-        <test-method signature="r1dot1_TS001_TC001()[pri:1, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@15de0b3c]" started-at="2023-09-26T04:52:22 EDT" name="r1dot1_TS001_TC001" description="R1.1_TS001_TC001 As a user I should be able to Register an Account by providing only the Mandatory fields" finished-at="2023-09-26T04:52:38 EDT" duration-ms="16680" status="PASS">
+        <test-method signature="r1dot1_TS001_TC001()[pri:1, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@179ece50]" started-at="2023-09-28T00:03:44 EDT" name="r1dot1_TS001_TC001" description="R1.1_TS001_TC001 As a user I should be able to Register an Account by providing only the Mandatory fields" finished-at="2023-09-28T00:04:00 EDT" duration-ms="15973" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- r1dot1_TS001_TC001 -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@15de0b3c]" started-at="2023-09-26T04:52:38 EDT" name="quitDriver" finished-at="2023-09-26T04:52:38 EDT" duration-ms="190" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@179ece50]" started-at="2023-09-28T00:04:00 EDT" name="quitDriver" finished-at="2023-09-28T00:04:00 EDT" duration-ms="485" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method signature="r1dot1_TS001_TC003()[pri:3, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@15de0b3c]" started-at="2023-09-26T04:52:39 EDT" name="r1dot1_TS001_TC003" description="R1.1_TS001_TC003 Verify Registering an Account by providing all the fields" finished-at="2023-09-26T04:52:49 EDT" duration-ms="10891" status="PASS">
+        <test-method signature="r1dot1_TS001_TC003()[pri:3, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@179ece50]" started-at="2023-09-28T00:04:00 EDT" name="r1dot1_TS001_TC003" description="R1.1_TS001_TC003 Verify Registering an Account by providing all the fields" finished-at="2023-09-28T00:04:11 EDT" duration-ms="10778" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- r1dot1_TS001_TC003 -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@15de0b3c]" started-at="2023-09-26T04:52:49 EDT" name="quitDriver" finished-at="2023-09-26T04:52:50 EDT" duration-ms="192" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@179ece50]" started-at="2023-09-28T00:04:11 EDT" name="quitDriver" finished-at="2023-09-28T00:04:11 EDT" duration-ms="158" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method signature="r1dot1_TS001_TC004()[pri:4, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@15de0b3c]" started-at="2023-09-26T04:52:50 EDT" name="r1dot1_TS001_TC004" description="R1.1_TS001_TC004 Verify proper error messages are displayed for the mandatory fields, when you don&#039;t provide any fields in the &#039;Register Account&#039; page and submit" finished-at="2023-09-26T04:52:58 EDT" duration-ms="8477" status="PASS">
+        <test-method signature="r1dot1_TS001_TC004()[pri:4, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@179ece50]" started-at="2023-09-28T00:04:11 EDT" name="r1dot1_TS001_TC004" description="R1.1_TS001_TC004 Verify proper error messages are displayed for the mandatory fields, when you don&#039;t provide any fields in the &#039;Register Account&#039; page and submit" finished-at="2023-09-28T00:04:20 EDT" duration-ms="8883" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- r1dot1_TS001_TC004 -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@15de0b3c]" started-at="2023-09-26T04:52:58 EDT" name="quitDriver" finished-at="2023-09-26T04:52:58 EDT" duration-ms="197" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@179ece50]" started-at="2023-09-28T00:04:20 EDT" name="quitDriver" finished-at="2023-09-28T00:04:20 EDT" duration-ms="163" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method signature="r1dot1_TS001_TC028()[pri:28, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@15de0b3c]" started-at="2023-09-26T04:52:58 EDT" name="r1dot1_TS001_TC028" description="R1.1_TS001_TC028 Verify the application throws proper error message when user click continue button without selecting privacy and policy check box." finished-at="2023-09-26T04:53:10 EDT" duration-ms="11403" status="PASS">
+        <test-method signature="r1dot1_TS001_TC028()[pri:28, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@179ece50]" started-at="2023-09-28T00:04:20 EDT" name="r1dot1_TS001_TC028" description="R1.1_TS001_TC028 Verify the application throws proper error message when user click continue button without selecting privacy and policy check box." finished-at="2023-09-28T00:04:32 EDT" duration-ms="11442" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- r1dot1_TS001_TC028 -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@15de0b3c]" started-at="2023-09-26T04:53:10 EDT" name="quitDriver" finished-at="2023-09-26T04:53:10 EDT" duration-ms="189" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@179ece50]" started-at="2023-09-28T00:04:32 EDT" name="quitDriver" finished-at="2023-09-28T00:04:32 EDT" duration-ms="130" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality -->
       <class name="com.tutorialNinja.functionalTests.R1dot2_TS006_ProductCompareFunctionality">
-        <test-method signature="r1dot2_TS006_TC001()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot2_TS006_ProductCompareFunctionality@198b6731]" started-at="2023-09-26T04:52:22 EDT" name="r1dot2_TS006_TC001" description="R1.2_TS006_TC001 As an user I should be able to select products for comparison." finished-at="2023-09-26T04:52:37 EDT" duration-ms="15269" status="PASS">
+        <test-method retried="true" signature="r1dot2_TS006_TC001()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot2_TS006_ProductCompareFunctionality@1fa121e2]" started-at="2023-09-28T00:03:44 EDT" name="r1dot2_TS006_TC001" description="R1.2_TS006_TC001 As an user I should be able to select products for comparison." finished-at="2023-09-28T00:03:59 EDT" duration-ms="14907" status="SKIP">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a href="https://tutorialsninja.com/demo/index.php?route=product/compare">...</a> is not clickable at point (446, 218). Other element would receive the click: <ul class="breadcrumb">...</ul>
+  (Session info: chrome=117.0.5938.92)
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [00a24a81f0cfbae55254bc1afbcf1ade, clickElement {id=96DE87BCAE1EDB5485CEC5C0DE67A326_element_85}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.92, chrome: {chromedriverVersion: 117.0.5938.92 (67649b10b92b..., userDataDir: C:\Users\naimn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49999}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49999/devtoo..., se:cdpVersion: 117.0.5938.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (00a24a81f0cfbae55254bc1afbcf1ade)] -> xpath: //a[text()='product comparison']]
+Session ID: 00a24a81f0cfbae55254bc1afbcf1ade]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="https://tutorialsninja.com/demo/index.php?route=product/compare">...</a> is not clickable at point (446, 218). Other element would receive the click: <ul class="breadcrumb">...</ul>
+  (Session info: chrome=117.0.5938.92)
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [00a24a81f0cfbae55254bc1afbcf1ade, clickElement {id=96DE87BCAE1EDB5485CEC5C0DE67A326_element_85}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.92, chrome: {chromedriverVersion: 117.0.5938.92 (67649b10b92b..., userDataDir: C:\Users\naimn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49999}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49999/devtoo..., se:cdpVersion: 117.0.5938.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (00a24a81f0cfbae55254bc1afbcf1ade)] -> xpath: //a[text()='product comparison']]
+Session ID: 00a24a81f0cfbae55254bc1afbcf1ade
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+at com.tutorialNinja.pageObjectFactory.SearchResultPage.click_comparisonLinkButton(SearchResultPage.java:56)
+at com.tutorialNinja.functionalTests.R1dot2_TS006_ProductCompareFunctionality.r1dot2_TS006_TC001(R1dot2_TS006_ProductCompareFunctionality.java:24)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- r1dot2_TS006_TC001 -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot2_TS006_ProductCompareFunctionality@198b6731]" started-at="2023-09-26T04:52:37 EDT" name="quitDriver" finished-at="2023-09-26T04:52:37 EDT" duration-ms="232" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot2_TS006_ProductCompareFunctionality@1fa121e2]" started-at="2023-09-28T00:03:59 EDT" name="quitDriver" finished-at="2023-09-28T00:04:00 EDT" duration-ms="1228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method signature="r1dot2_TS006_TC001()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot2_TS006_ProductCompareFunctionality@1fa121e2]" started-at="2023-09-28T00:04:00 EDT" name="r1dot2_TS006_TC001" description="R1.2_TS006_TC001 As an user I should be able to select products for comparison." finished-at="2023-09-28T00:04:08 EDT" duration-ms="8379" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- r1dot2_TS006_TC001 -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot2_TS006_ProductCompareFunctionality@1fa121e2]" started-at="2023-09-28T00:04:08 EDT" name="quitDriver" finished-at="2023-09-28T00:04:09 EDT" duration-ms="252" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- com.tutorialNinja.functionalTests.R1dot2_TS006_ProductCompareFunctionality -->
       <class name="com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality">
-        <test-method signature="r1dot2_TS005_TC001()[pri:1, instance:com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@7c6908d7]" started-at="2023-09-26T04:52:36 EDT" name="r1dot2_TS005_TC001" description="R1.2_TS005_TC001 As an user I should be able to search a product which is present in database." finished-at="2023-09-26T04:52:45 EDT" duration-ms="9252" status="PASS">
+        <test-method signature="r1dot2_TS005_TC001()[pri:1, instance:com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@7eac9008]" started-at="2023-09-28T00:03:58 EDT" name="r1dot2_TS005_TC001" description="R1.2_TS005_TC001 As an user I should be able to search a product which is present in database." finished-at="2023-09-28T00:04:09 EDT" duration-ms="10944" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- r1dot2_TS005_TC001 -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@7c6908d7]" started-at="2023-09-26T04:52:45 EDT" name="quitDriver" finished-at="2023-09-26T04:52:46 EDT" duration-ms="228" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@7eac9008]" started-at="2023-09-28T00:04:09 EDT" name="quitDriver" finished-at="2023-09-28T00:04:09 EDT" duration-ms="613" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
