@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="4" ignored="4" total="19" passed="9" failed="2" skipped="0">
+<testng-results retried="4" ignored="4" total="20" passed="10" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-28T00:46:03 EDT" name="Suite" finished-at="2023-09-28T00:47:02 EDT" duration-ms="59251">
+  <suite started-at="2023-09-28T06:08:50 EDT" name="Suite" finished-at="2023-09-28T06:09:48 EDT" duration-ms="58375">
     <groups>
       <group name="regression">
-        <method signature="R1dot1_TS002_LoginFunctionality.r1dot1_TS002_TC001()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality@3b0090a4]" name="r1dot1_TS002_TC001" class="com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality"/>
+        <method signature="R1dot1_TS002_LoginFunctionality.r1dot1_TS002_TC001()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality@7eac9008]" name="r1dot1_TS002_TC001" class="com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality"/>
       </group> <!-- regression -->
       <group name="smoke">
-        <method signature="R1dot1_TS002_LoginFunctionality.r1dot1_TS002_TC001()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality@3b0090a4]" name="r1dot1_TS002_TC001" class="com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality"/>
-        <method signature="R1dot1_TS003_LogoutFunctionality.r1dot1_TS003_TC001()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality@3cd3e762]" name="r1dot1_TS003_TC001" class="com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality"/>
-        <method signature="R1dot2_TS006_ProductCompareFunctionality.r1dot2_TS006_TC001()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot2_TS006_ProductCompareFunctionality@1fa121e2]" name="r1dot2_TS006_TC001" class="com.tutorialNinja.functionalTests.R1dot2_TS006_ProductCompareFunctionality"/>
-        <method signature="R1dot1_TS001_RegisterFunctionality.r1dot1_TS001_TC001()[pri:1, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@179ece50]" name="r1dot1_TS001_TC001" class="com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality"/>
-        <method signature="R1dot2_TS005_ProductSearchFunctionality.r1dot2_TS005_TC001()[pri:1, instance:com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@7eac9008]" name="r1dot2_TS005_TC001" class="com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality"/>
-        <method signature="R1dot1_TS001_RegisterFunctionality.r1dot1_TS001_TC003()[pri:3, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@179ece50]" name="r1dot1_TS001_TC003" class="com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality"/>
-        <method signature="R1dot1_TS001_RegisterFunctionality.r1dot1_TS001_TC004()[pri:4, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@179ece50]" name="r1dot1_TS001_TC004" class="com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality"/>
-        <method signature="R1dot1_TS001_RegisterFunctionality.r1dot1_TS001_TC028()[pri:28, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@179ece50]" name="r1dot1_TS001_TC028" class="com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality"/>
+        <method signature="R1dot1_TS002_LoginFunctionality.r1dot1_TS002_TC001()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality@7eac9008]" name="r1dot1_TS002_TC001" class="com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality"/>
+        <method signature="R1dot1_TS003_LogoutFunctionality.r1dot1_TS003_TC001()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality@4116aac9]" name="r1dot1_TS003_TC001" class="com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality"/>
+        <method signature="R1dot2_TS006_ProductCompareFunctionality.r1dot2_TS006_TC001()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot2_TS006_ProductCompareFunctionality@62ddbd7e]" name="r1dot2_TS006_TC001" class="com.tutorialNinja.functionalTests.R1dot2_TS006_ProductCompareFunctionality"/>
+        <method signature="R1dot1_TS001_RegisterFunctionality.r1dot1_TS001_TC001()[pri:1, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@1fa121e2]" name="r1dot1_TS001_TC001" class="com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality"/>
+        <method signature="R1dot2_TS005_ProductSearchFunctionality.r1dot2_TS005_TC001()[pri:1, instance:com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@74e52ef6]" name="r1dot2_TS005_TC001" class="com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality"/>
+        <method signature="R1dot1_TS001_RegisterFunctionality.r1dot1_TS001_TC003()[pri:3, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@1fa121e2]" name="r1dot1_TS001_TC003" class="com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality"/>
+        <method signature="R1dot1_TS001_RegisterFunctionality.r1dot1_TS001_TC004()[pri:4, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@1fa121e2]" name="r1dot1_TS001_TC004" class="com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality"/>
+        <method signature="R1dot1_TS001_RegisterFunctionality.r1dot1_TS001_TC028()[pri:28, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@1fa121e2]" name="r1dot1_TS001_TC028" class="com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2023-09-28T00:46:03 EDT" name="Tutorial Ninja functional Regression Test" finished-at="2023-09-28T00:47:02 EDT" duration-ms="59251">
+    <test started-at="2023-09-28T06:08:50 EDT" name="Tutorial Ninja functional Regression Test" finished-at="2023-09-28T06:09:48 EDT" duration-ms="58375">
       <class name="com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality">
-        <test-method signature="r1dot1_TS003_TC001()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality@3cd3e762]" started-at="2023-09-28T00:46:04 EDT" name="r1dot1_TS003_TC001" description="R1.1_TS003_TC001 Verify Logging out by selecting Logout option from &#039;My Account&#039; drop menu" finished-at="2023-09-28T00:46:20 EDT" duration-ms="15968" status="PASS">
+        <test-method signature="r1dot1_TS003_TC001()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality@4116aac9]" started-at="2023-09-28T06:08:50 EDT" name="r1dot1_TS003_TC001" description="R1.1_TS003_TC001 Verify Logging out by selecting Logout option from &#039;My Account&#039; drop menu" finished-at="2023-09-28T06:09:05 EDT" duration-ms="14784" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- r1dot1_TS003_TC001 -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality@3cd3e762]" started-at="2023-09-28T00:46:20 EDT" name="quitDriver" finished-at="2023-09-28T00:46:20 EDT" duration-ms="541" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality@4116aac9]" started-at="2023-09-28T06:09:05 EDT" name="quitDriver" finished-at="2023-09-28T06:09:06 EDT" duration-ms="473" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality -->
       <class name="com.tutorialNinja.functionalTests.Draft">
-        <test-method retried="true" signature="draftfail()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@43bc63a3]" started-at="2023-09-28T00:46:04 EDT" name="draftfail" description="negetive test case draftfail" finished-at="2023-09-28T00:46:15 EDT" duration-ms="11121" status="SKIP">
+        <test-method retried="true" signature="draftfail()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@40a4337a]" started-at="2023-09-28T06:08:50 EDT" name="draftfail" description="negetive test case draftfail" finished-at="2023-09-28T06:09:01 EDT" duration-ms="10345" status="SKIP">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -66,11 +66,11 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- draftfail -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@43bc63a3]" started-at="2023-09-28T00:46:15 EDT" name="quitDriver" finished-at="2023-09-28T00:46:15 EDT" duration-ms="492" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@40a4337a]" started-at="2023-09-28T06:09:01 EDT" name="quitDriver" finished-at="2023-09-28T06:09:01 EDT" duration-ms="560" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method retried="true" signature="draftfail()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@43bc63a3]" started-at="2023-09-28T00:46:15 EDT" name="draftfail" description="negetive test case draftfail" finished-at="2023-09-28T00:46:23 EDT" duration-ms="8037" status="SKIP">
+        <test-method retried="true" signature="draftfail()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@40a4337a]" started-at="2023-09-28T06:09:01 EDT" name="draftfail" description="negetive test case draftfail" finished-at="2023-09-28T06:09:08 EDT" duration-ms="7185" status="SKIP">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -106,11 +106,11 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- draftfail -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@43bc63a3]" started-at="2023-09-28T00:46:23 EDT" name="quitDriver" finished-at="2023-09-28T00:46:23 EDT" duration-ms="183" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@40a4337a]" started-at="2023-09-28T06:09:08 EDT" name="quitDriver" finished-at="2023-09-28T06:09:09 EDT" duration-ms="224" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method signature="draftfail()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@43bc63a3]" started-at="2023-09-28T00:46:23 EDT" name="draftfail" description="negetive test case draftfail" finished-at="2023-09-28T00:46:30 EDT" duration-ms="6220" status="FAIL">
+        <test-method signature="draftfail()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@40a4337a]" started-at="2023-09-28T06:09:09 EDT" name="draftfail" description="negetive test case draftfail" finished-at="2023-09-28T06:09:15 EDT" duration-ms="5819" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -146,11 +146,11 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- draftfail -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@43bc63a3]" started-at="2023-09-28T00:46:30 EDT" name="quitDriver" finished-at="2023-09-28T00:46:30 EDT" duration-ms="203" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@40a4337a]" started-at="2023-09-28T06:09:15 EDT" name="quitDriver" finished-at="2023-09-28T06:09:15 EDT" duration-ms="234" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method retried="true" signature="loginPagefail()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@43bc63a3]" started-at="2023-09-28T00:46:30 EDT" name="loginPagefail" description="negetive test case loginPagefail" finished-at="2023-09-28T00:46:36 EDT" duration-ms="5550" status="SKIP">
+        <test-method retried="true" signature="loginPagefail()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@40a4337a]" started-at="2023-09-28T06:09:15 EDT" name="loginPagefail" description="negetive test case loginPagefail" finished-at="2023-09-28T06:09:21 EDT" duration-ms="5307" status="SKIP">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Customer] but found [Account Login]]]>
@@ -185,11 +185,11 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPagefail -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@43bc63a3]" started-at="2023-09-28T00:46:36 EDT" name="quitDriver" finished-at="2023-09-28T00:46:36 EDT" duration-ms="189" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@40a4337a]" started-at="2023-09-28T06:09:21 EDT" name="quitDriver" finished-at="2023-09-28T06:09:21 EDT" duration-ms="195" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method retried="true" signature="loginPagefail()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@43bc63a3]" started-at="2023-09-28T00:46:36 EDT" name="loginPagefail" description="negetive test case loginPagefail" finished-at="2023-09-28T00:46:42 EDT" duration-ms="6062" status="SKIP">
+        <test-method retried="true" signature="loginPagefail()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@40a4337a]" started-at="2023-09-28T06:09:21 EDT" name="loginPagefail" description="negetive test case loginPagefail" finished-at="2023-09-28T06:09:26 EDT" duration-ms="5635" status="SKIP">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Customer] but found [Account Login]]]>
@@ -224,11 +224,11 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPagefail -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@43bc63a3]" started-at="2023-09-28T00:46:42 EDT" name="quitDriver" finished-at="2023-09-28T00:46:42 EDT" duration-ms="145" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@40a4337a]" started-at="2023-09-28T06:09:26 EDT" name="quitDriver" finished-at="2023-09-28T06:09:27 EDT" duration-ms="160" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method signature="loginPagefail()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@43bc63a3]" started-at="2023-09-28T00:46:42 EDT" name="loginPagefail" description="negetive test case loginPagefail" finished-at="2023-09-28T00:46:47 EDT" duration-ms="5093" status="FAIL">
+        <test-method signature="loginPagefail()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@40a4337a]" started-at="2023-09-28T06:09:27 EDT" name="loginPagefail" description="negetive test case loginPagefail" finished-at="2023-09-28T06:09:32 EDT" duration-ms="5015" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Customer] but found [Account Login]]]>
@@ -263,79 +263,89 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPagefail -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@43bc63a3]" started-at="2023-09-28T00:46:47 EDT" name="quitDriver" finished-at="2023-09-28T00:46:48 EDT" duration-ms="187" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@40a4337a]" started-at="2023-09-28T06:09:32 EDT" name="quitDriver" finished-at="2023-09-28T06:09:32 EDT" duration-ms="473" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method signature="readExcelDraft()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@43bc63a3]" started-at="2023-09-28T00:46:48 EDT" name="readExcelDraft" description="validate readExcelDraft" finished-at="2023-09-28T00:46:49 EDT" duration-ms="986" status="PASS">
+        <test-method signature="readExcelDraft()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@40a4337a]" started-at="2023-09-28T06:09:32 EDT" name="readExcelDraft" description="validate readExcelDraft" finished-at="2023-09-28T06:09:33 EDT" duration-ms="1101" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- readExcelDraft -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@43bc63a3]" started-at="2023-09-28T00:46:49 EDT" name="quitDriver" finished-at="2023-09-28T00:46:49 EDT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.Draft@40a4337a]" started-at="2023-09-28T06:09:33 EDT" name="quitDriver" finished-at="2023-09-28T06:09:33 EDT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- com.tutorialNinja.functionalTests.Draft -->
+      <class name="com.tutorialNinja.functionalTests.R1dot3_TS012_CheckoutFunctionality">
+        <test-method signature="R1dot3_TS012_TC001()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot3_TS012_CheckoutFunctionality@6ed3ccb2]" started-at="2023-09-28T06:08:50 EDT" name="R1dot3_TS012_TC001" description="R1.3_TS012_TC001 Verify navigating to Checkout page when there are no products added to the Shopping Cart" finished-at="2023-09-28T06:09:01 EDT" duration-ms="10302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- R1dot3_TS012_TC001 -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot3_TS012_CheckoutFunctionality@6ed3ccb2]" started-at="2023-09-28T06:09:01 EDT" name="quitDriver" finished-at="2023-09-28T06:09:01 EDT" duration-ms="547" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- com.tutorialNinja.functionalTests.R1dot3_TS012_CheckoutFunctionality -->
       <class name="com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality">
-        <test-method signature="r1dot1_TS002_TC001()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality@3b0090a4]" started-at="2023-09-28T00:46:04 EDT" name="r1dot1_TS002_TC001" description="R1.1_TS002_TC001 Verify logging into the Application using valid credentials" finished-at="2023-09-28T00:46:18 EDT" duration-ms="14854" status="PASS">
+        <test-method signature="r1dot1_TS002_TC001()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality@7eac9008]" started-at="2023-09-28T06:08:50 EDT" name="r1dot1_TS002_TC001" description="R1.1_TS002_TC001 Verify logging into the Application using valid credentials" finished-at="2023-09-28T06:09:06 EDT" duration-ms="15139" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- r1dot1_TS002_TC001 -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality@3b0090a4]" started-at="2023-09-28T00:46:18 EDT" name="quitDriver" finished-at="2023-09-28T00:46:19 EDT" duration-ms="355" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality@7eac9008]" started-at="2023-09-28T06:09:06 EDT" name="quitDriver" finished-at="2023-09-28T06:09:06 EDT" duration-ms="617" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality -->
       <class name="com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality">
-        <test-method signature="r1dot1_TS001_TC001()[pri:1, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@179ece50]" started-at="2023-09-28T00:46:04 EDT" name="r1dot1_TS001_TC001" description="R1.1_TS001_TC001 As a user I should be able to Register an Account by providing only the Mandatory fields" finished-at="2023-09-28T00:46:21 EDT" duration-ms="17368" status="PASS">
+        <test-method signature="r1dot1_TS001_TC001()[pri:1, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@1fa121e2]" started-at="2023-09-28T06:09:01 EDT" name="r1dot1_TS001_TC001" description="R1.1_TS001_TC001 As a user I should be able to Register an Account by providing only the Mandatory fields" finished-at="2023-09-28T06:09:14 EDT" duration-ms="12977" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- r1dot1_TS001_TC001 -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@179ece50]" started-at="2023-09-28T00:46:21 EDT" name="quitDriver" finished-at="2023-09-28T00:46:21 EDT" duration-ms="486" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@1fa121e2]" started-at="2023-09-28T06:09:14 EDT" name="quitDriver" finished-at="2023-09-28T06:09:14 EDT" duration-ms="246" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method signature="r1dot1_TS001_TC003()[pri:3, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@179ece50]" started-at="2023-09-28T00:46:21 EDT" name="r1dot1_TS001_TC003" description="R1.1_TS001_TC003 Verify Registering an Account by providing all the fields" finished-at="2023-09-28T00:46:36 EDT" duration-ms="14441" status="PASS">
+        <test-method signature="r1dot1_TS001_TC003()[pri:3, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@1fa121e2]" started-at="2023-09-28T06:09:14 EDT" name="r1dot1_TS001_TC003" description="R1.1_TS001_TC003 Verify Registering an Account by providing all the fields" finished-at="2023-09-28T06:09:31 EDT" duration-ms="16032" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- r1dot1_TS001_TC003 -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@179ece50]" started-at="2023-09-28T00:46:36 EDT" name="quitDriver" finished-at="2023-09-28T00:46:36 EDT" duration-ms="196" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@1fa121e2]" started-at="2023-09-28T06:09:31 EDT" name="quitDriver" finished-at="2023-09-28T06:09:31 EDT" duration-ms="197" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method signature="r1dot1_TS001_TC004()[pri:4, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@179ece50]" started-at="2023-09-28T00:46:36 EDT" name="r1dot1_TS001_TC004" description="R1.1_TS001_TC004 Verify proper error messages are displayed for the mandatory fields, when you don&#039;t provide any fields in the &#039;Register Account&#039; page and submit" finished-at="2023-09-28T00:46:51 EDT" duration-ms="14551" status="PASS">
+        <test-method signature="r1dot1_TS001_TC004()[pri:4, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@1fa121e2]" started-at="2023-09-28T06:09:31 EDT" name="r1dot1_TS001_TC004" description="R1.1_TS001_TC004 Verify proper error messages are displayed for the mandatory fields, when you don&#039;t provide any fields in the &#039;Register Account&#039; page and submit" finished-at="2023-09-28T06:09:39 EDT" duration-ms="8203" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- r1dot1_TS001_TC004 -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@179ece50]" started-at="2023-09-28T00:46:51 EDT" name="quitDriver" finished-at="2023-09-28T00:46:51 EDT" duration-ms="166" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@1fa121e2]" started-at="2023-09-28T06:09:39 EDT" name="quitDriver" finished-at="2023-09-28T06:09:39 EDT" duration-ms="186" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method signature="r1dot1_TS001_TC028()[pri:28, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@179ece50]" started-at="2023-09-28T00:46:51 EDT" name="r1dot1_TS001_TC028" description="R1.1_TS001_TC028 Verify the application throws proper error message when user click continue button without selecting privacy and policy check box." finished-at="2023-09-28T00:47:02 EDT" duration-ms="11439" status="PASS">
+        <test-method signature="r1dot1_TS001_TC028()[pri:28, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@1fa121e2]" started-at="2023-09-28T06:09:39 EDT" name="r1dot1_TS001_TC028" description="R1.1_TS001_TC028 Verify the application throws proper error message when user click continue button without selecting privacy and policy check box." finished-at="2023-09-28T06:09:48 EDT" duration-ms="9034" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- r1dot1_TS001_TC028 -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@179ece50]" started-at="2023-09-28T00:47:02 EDT" name="quitDriver" finished-at="2023-09-28T00:47:02 EDT" duration-ms="178" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@1fa121e2]" started-at="2023-09-28T06:09:48 EDT" name="quitDriver" finished-at="2023-09-28T06:09:48 EDT" duration-ms="181" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality -->
       <class name="com.tutorialNinja.functionalTests.R1dot2_TS006_ProductCompareFunctionality">
-        <test-method signature="r1dot2_TS006_TC001()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot2_TS006_ProductCompareFunctionality@1fa121e2]" started-at="2023-09-28T00:46:04 EDT" name="r1dot2_TS006_TC001" description="R1.2_TS006_TC001 As an user I should be able to select products for comparison." finished-at="2023-09-28T00:46:21 EDT" duration-ms="17135" status="PASS">
+        <test-method signature="r1dot2_TS006_TC001()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot2_TS006_ProductCompareFunctionality@62ddbd7e]" started-at="2023-09-28T06:08:50 EDT" name="r1dot2_TS006_TC001" description="R1.2_TS006_TC001 As an user I should be able to select products for comparison." finished-at="2023-09-28T06:09:08 EDT" duration-ms="17243" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- r1dot2_TS006_TC001 -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot2_TS006_ProductCompareFunctionality@1fa121e2]" started-at="2023-09-28T00:46:21 EDT" name="quitDriver" finished-at="2023-09-28T00:46:21 EDT" duration-ms="676" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot2_TS006_ProductCompareFunctionality@62ddbd7e]" started-at="2023-09-28T06:09:08 EDT" name="quitDriver" finished-at="2023-09-28T06:09:08 EDT" duration-ms="372" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- com.tutorialNinja.functionalTests.R1dot2_TS006_ProductCompareFunctionality -->
       <class name="com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality">
-        <test-method signature="r1dot2_TS005_TC001()[pri:1, instance:com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@7eac9008]" started-at="2023-09-28T00:46:19 EDT" name="r1dot2_TS005_TC001" description="R1.2_TS005_TC001 As an user I should be able to search a product which is present in database." finished-at="2023-09-28T00:46:30 EDT" duration-ms="11161" status="PASS">
+        <test-method signature="r1dot2_TS005_TC001()[pri:1, instance:com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@74e52ef6]" started-at="2023-09-28T06:09:06 EDT" name="r1dot2_TS005_TC001" description="R1.2_TS005_TC001 As an user I should be able to search a product which is present in database." finished-at="2023-09-28T06:09:17 EDT" duration-ms="11442" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- r1dot2_TS005_TC001 -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@7eac9008]" started-at="2023-09-28T00:46:30 EDT" name="quitDriver" finished-at="2023-09-28T00:46:30 EDT" duration-ms="251" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@74e52ef6]" started-at="2023-09-28T06:09:17 EDT" name="quitDriver" finished-at="2023-09-28T06:09:17 EDT" duration-ms="254" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->

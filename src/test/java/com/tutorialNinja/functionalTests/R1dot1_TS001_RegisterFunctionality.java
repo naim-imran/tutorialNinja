@@ -24,7 +24,7 @@ public class R1dot1_TS001_RegisterFunctionality extends InitialComponents {
 		HomePageObjects homePage = launchApplicationHomePage();
 		homePage.click_MyAccount();
 		RegistrationPage registrationPage = homePage.click_registerButton();
-		Assert.assertEquals(registrationPage.getPagetitle(), "Register Account");
+		Assert.assertEquals(registrationPage.getRegistrationPageTitle(), "Register Account");
 		registrationPage.enterFirstName(testData.get("randomFirstName"));
 		registrationPage.enterLastName(testData.get("randomLastName"));
 		registrationPage.enterEmail(testData.get("randomEmail"));
@@ -47,7 +47,7 @@ public class R1dot1_TS001_RegisterFunctionality extends InitialComponents {
 		HomePageObjects homePage = launchApplicationHomePage();
 		homePage.click_MyAccount();
 		RegistrationPage registrationPage = homePage.click_registerButton();
-		Assert.assertEquals(registrationPage.getPagetitle(), "Register Account");
+		Assert.assertEquals(registrationPage.getRegistrationPageTitle(), "Register Account");
 		registrationPage.enterFirstName(testData.get("randomFirstName"));
 		registrationPage.enterLastName(testData.get("randomLastName"));
 		registrationPage.enterEmail(testData.get("randomEmail"));
@@ -71,7 +71,7 @@ public class R1dot1_TS001_RegisterFunctionality extends InitialComponents {
 		HomePageObjects homePage = launchApplicationHomePage();
 		homePage.click_MyAccount();
 		RegistrationPage registrationPage = homePage.click_registerButton();
-		Assert.assertEquals(registrationPage.getPagetitle(), "Register Account");
+		Assert.assertEquals(registrationPage.getRegistrationPageTitle(), "Register Account");
 		registrationPage.clickContinue();
 		softAssert.assertEquals(registrationPage.getFirstnameErrorMessage(), "First Name must be between 1 and 32 characters!");
 		softAssert.assertEquals(registrationPage.getLastnameErrorMessage(), "Last Name must be between 1 and 32 characters!");
@@ -87,7 +87,7 @@ public class R1dot1_TS001_RegisterFunctionality extends InitialComponents {
 		HomePageObjects homePage = launchApplicationHomePage();
 		homePage.click_MyAccount();
 		RegistrationPage registrationPage = homePage.click_registerButton();
-		Assert.assertEquals(registrationPage.getPagetitle(), "Register Account");
+		Assert.assertEquals(registrationPage.getRegistrationPageTitle(), "Register Account");
 		registrationPage.enterFirstName(testData.get("randomFirstName"));
 		registrationPage.enterLastName(testData.get("randomLastName"));
 		registrationPage.enterEmail(testData.get("randomEmail"));

@@ -199,8 +199,8 @@ public class Reuseables {
 
 		return dataList;
 	}
-	
-	public void validateAllFooterLinks(WebDriver driver){
+
+	public void validateAllFooterLinks(WebDriver driver) {
 		SoftAssert softAssert = new SoftAssert();
 		List<WebElement> footerLinks = driver.findElements(By.xpath("//footer//div[@class='col-sm-3']//li/a"));
 		byte count = 1;
@@ -223,4 +223,14 @@ public class Reuseables {
 		}
 	}
 
+	public void selectElementFromHeaders(WebDriver driver, String element) {
+		List<WebElement> headerElements = driver.findElements(By.xpath("//div[@id='top-links']/ul/li/a"));
+		for (Iterator<WebElement> iterator = headerElements.iterator(); iterator.hasNext();) {
+			WebElement webElement = iterator.next();
+			if (webElement.getText().contains(element)) {
+				webElement.click();
+			}
+
+		}
+	}
 }

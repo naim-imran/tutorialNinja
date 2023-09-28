@@ -44,6 +44,15 @@ public class HomePageObjects extends Reuseables {
 	private WebElement registerButton;
 	@FindBy(xpath = "//a[@href='https://tutorialsninja.com/demo/index.php?route=account/login']")
 	private WebElement loginButton;
+	
+	
+	@FindBy(xpath= "//li/a[@title='Shopping Cart']")
+	private WebElement shoppingCartButton;
+	public ShoppingCartPage clickShoppingCartButton() {
+		 shoppingCartButton.click();
+		 return new ShoppingCartPage(driver);
+	}
+	
 
 	public String getLogoText() {
 		return logo.getText();
@@ -98,6 +107,10 @@ public class HomePageObjects extends Reuseables {
 
 	public void validateHomePageFooterLinks() {
 		validateAllFooterLinks(driver);
+	}
+	
+	public void clickHomePageHeaderObject(String expectedElement) {
+		selectElementFromHeaders(driver, expectedElement);
 	}
 
 }

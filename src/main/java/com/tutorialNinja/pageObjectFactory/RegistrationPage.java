@@ -51,7 +51,7 @@ public class RegistrationPage {
 	
 	
 	
-	public String getPagetitle() {
+	public String getRegistrationPageTitle() {
 		 return driver.getTitle();
 	}
 	public void enterFirstName(String firstName) {

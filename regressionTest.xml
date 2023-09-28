@@ -10,18 +10,12 @@
 	<test name="Tutorial Ninja functional Regression Test">
 		<classes>
 			<class name="com.tutorialNinja.functionalTests.Draft" />
-			<class name="com.tutorialNinja.functionalTests.Draft2" />
-
-			<class
-				name="com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality" />
-			<class
-				name="com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality" />
-			<class
-				name="com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality" />
-			<class
-				name="com.tutorialNinja.functionalTests.R1dot2_TS006_ProductCompareFunctionality" />
-			<class
-				name="com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality" />
+			<class name="com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality" />
+			<class name="com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality" />
+			<class name="com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality" />
+			<class name="com.tutorialNinja.functionalTests.R1dot2_TS006_ProductCompareFunctionality" />
+			<class name="com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality" />
+			<class name="com.tutorialNinja.functionalTests.R1dot3_TS012_CheckoutFunctionality" />
 		</classes>
 	</test>
 
