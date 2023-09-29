@@ -22,9 +22,6 @@ public class InitialComponents extends Reuseables {
 	public WebDriver driver;// driver has to be public because we have to get it through reflection API in listener class
 	private ThreadLocal<WebDriver> threadLocaldriver = new ThreadLocal<WebDriver>();
 	
-	
-	
-	
 	public WebDriver setupThreadLocalDriver() {
 		String browserName = System.getProperty("browser") != null ? System.getProperty("browser")
 				: loadProperty().getProperty("browser");

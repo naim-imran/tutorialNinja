@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.tutorialNinja.functionalTests.R1dot3_TS012_CheckoutFunctionality">
+      <class name="com.tutorialNinja.functionalTests.Draft">
         <methods>
-          <include name="R1dot3_TS012_TC001"/>
+          <include name="testHomepageFeaturedProduct"/>
           <include name="quitDriver"/>
         </methods>
-      </class> <!-- com.tutorialNinja.functionalTests.R1dot3_TS012_CheckoutFunctionality -->
+      </class> <!-- com.tutorialNinja.functionalTests.Draft -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

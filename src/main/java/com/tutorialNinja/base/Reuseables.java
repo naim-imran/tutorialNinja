@@ -11,8 +11,6 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
 import java.util.Properties;
 
 import javax.net.ssl.HttpsURLConnection;
@@ -21,16 +19,15 @@ import org.apache.commons.io.FileUtils;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.json.JSONObject;
-import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.testng.asserts.SoftAssert;
 
 import com.github.javafaker.Faker;
 
 public class Reuseables {
+
+	
 
 	private Properties prop;
 
@@ -200,37 +197,4 @@ public class Reuseables {
 		return dataList;
 	}
 
-	public void validateAllFooterLinks(WebDriver driver) {
-		SoftAssert softAssert = new SoftAssert();
-		List<WebElement> footerLinks = driver.findElements(By.xpath("//footer//div[@class='col-sm-3']//li/a"));
-		byte count = 1;
-		for (Iterator<WebElement> iterator = footerLinks.iterator(); iterator.hasNext();) {
-			WebElement webElement = iterator.next();
-			String link = webElement.getAttribute("href");
-			int responseCode = 0;
-			try {
-				responseCode = getURLresponseCode(link);
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-			if (responseCode > 200) {
-				softAssert.assertTrue(false);
-			} else {
-				System.out.println(count + ": " + link + " responseCode= " + responseCode + ", is valid");
-				softAssert.assertTrue(true);
-			}
-			count++;
-		}
-	}
-
-	public void selectElementFromHeaders(WebDriver driver, String element) {
-		List<WebElement> headerElements = driver.findElements(By.xpath("//div[@id='top-links']/ul/li/a"));
-		for (Iterator<WebElement> iterator = headerElements.iterator(); iterator.hasNext();) {
-			WebElement webElement = iterator.next();
-			if (webElement.getText().contains(element)) {
-				webElement.click();
-			}
-
-		}
-	}
 }

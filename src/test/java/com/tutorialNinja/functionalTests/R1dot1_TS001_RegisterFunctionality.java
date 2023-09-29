@@ -99,5 +99,7 @@ public class R1dot1_TS001_RegisterFunctionality extends InitialComponents {
 		Assert.assertEquals(registrationPage.getPrivacyPolicyErrorMsg(),
 				"Warning: You must agree to the Privacy Policy!");
 	}
+	
+	
 
 }

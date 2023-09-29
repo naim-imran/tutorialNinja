@@ -62,4 +62,10 @@ public class Draft extends InitialComponents {
 		}
 
 	}
+	
+	@Test(description = "click on homepage featured product")
+	public void testHomepageFeaturedProduct() {
+		HomePageObjects homePage = launchApplicationHomePage();
+		homePage.clickHomePageFeaturedProduct("Canon EOS 5D");
+	}
 }

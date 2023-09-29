@@ -5,12 +5,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.tutorialNinja.base.Reuseables;
-
-public class LoginPage extends Reuseables{
+public class LoginPage extends CommonElements{
 	private WebDriver driver;
 
 	public LoginPage(WebDriver driver) {
+		super(driver);
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
