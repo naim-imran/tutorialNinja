@@ -12,11 +12,11 @@ import org.openqa.selenium.support.PageFactory;
 public class HomePageObjects extends CommonElements {
 	
 
-	
+	private WebDriver driver;
 	
 	public HomePageObjects(WebDriver driver) {
 		super(driver);
-		
+		this.driver= driver;
 		PageFactory.initElements(driver, this);
 		
 	}
@@ -26,7 +26,8 @@ public class HomePageObjects extends CommonElements {
 	
 	
 	
-	public void clickHomePageFeaturedProduct(String expectedProduct) {
+	
+	public ProductDetailsPage clickHomePageFeaturedProduct(String expectedProduct) {
 	
 		for (Iterator<WebElement> iterator = featuredProducts.iterator(); iterator.hasNext();) {
 			WebElement webElement =  iterator.next();
@@ -36,6 +37,7 @@ public class HomePageObjects extends CommonElements {
 			}
 			
 		}
+		return new ProductDetailsPage(driver);
 	}
 	
 

@@ -1,6 +1,7 @@
 package com.tutorialNinja.functionalTests;
 
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.tutorialNinja.base.InitialComponents;
@@ -24,5 +25,21 @@ public class R1dot2_TS005_ProductSearchFunctionality extends InitialComponents {
 		
 	}
 	
+	@Test(dataProvider = "productList", priority = 2, description = "R1.2_TS005_TC024 Verify user can select a product from featured product list from HomePage")
+	public void R1dot2_TS005_TC024(String name) {
+		String productName = name;
+		HomePageObjects homePage = launchApplicationHomePage();
+		Assert.assertEquals("Qafox.com", homePage.getLogoText());
+		ProductDetailsPage ProductDetailsPage = homePage.clickHomePageFeaturedProduct(productName);
+		Assert.assertEquals(ProductDetailsPage.getProductName(), productName);
+	}
+	
+	@DataProvider
+	public String[] productList() {
+	String[] product=  {"Apple Cinema 30\"", "MacBook", "iPhone", "Canon EOS 5D"};
+	return product;
+	
+	}
 	
 }
+
