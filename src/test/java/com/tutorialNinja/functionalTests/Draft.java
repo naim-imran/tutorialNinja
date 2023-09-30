@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 
 import com.tutorialNinja.base.InitialComponents;
 import com.tutorialNinja.pageObjectFactory.HomePageObjects;
+import com.tutorialNinja.pageObjectFactory.ProductCatagoryPage;
 
 public class Draft extends InitialComponents {
 	String sheetName = "Customer";
@@ -67,5 +68,13 @@ public class Draft extends InitialComponents {
 	public void testHomepageFeaturedProduct() {
 		HomePageObjects homePage = launchApplicationHomePage();
 		homePage.clickHomePageFeaturedProduct("Canon EOS 5D");
+	}
+	
+	@Test(description = "draft test of product catagory page")
+	public void testHomePageNav() {
+		HomePageObjects homePage = launchApplicationHomePage();
+		homePage.clickNavBarDesktopDropdownButton();
+		ProductCatagoryPage catagoryPage = homePage.clickNavBarDesktopDropdownPC();
+		Assert.assertEquals(catagoryPage.getProductCatagoryPageTitle(), "PC");
 	}
 }

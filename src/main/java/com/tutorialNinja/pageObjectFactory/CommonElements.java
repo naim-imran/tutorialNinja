@@ -50,6 +50,10 @@ public class CommonElements {
 	private WebElement loginButton;
 	@FindBy(xpath= "//span[@id='cart-total']")
 	private WebElement totalCartItemsAndPriceButton;
+	@FindBy(xpath= "//a[text()='Desktops']")
+	private WebElement navBarDesktopDropdownButton;
+	@FindBy(xpath= "//li[@class='dropdown open']//a[contains(text(),'PC')]")
+	private WebElement navBarDesktopDropdownPC;
 
 	public ShoppingCartPage clickShoppingCartButton() {
 		shoppingCartButton.click();
@@ -109,6 +113,14 @@ public class CommonElements {
 	
 	public void clickTotalCartItemsAndPriceButton() {
 		totalCartItemsAndPriceButton.click();
+	}
+	
+	public void clickNavBarDesktopDropdownButton() {
+		navBarDesktopDropdownButton.click();
+	}
+	public ProductCatagoryPage clickNavBarDesktopDropdownPC() {
+		navBarDesktopDropdownPC.click();
+		return new ProductCatagoryPage(driver);
 	}
 
 	public void validateAllFooterLinks(WebDriver driver) {
