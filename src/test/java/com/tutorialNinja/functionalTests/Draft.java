@@ -17,7 +17,7 @@ import com.tutorialNinja.pageObjectFactory.ProductCatagoryPage;
 public class Draft extends InitialComponents {
 	String sheetName = "Customer";
 
-	@Test(description = "negetive test case draftfail")
+	@Test(groups = {"possitive"},description = "negetive test case draftfail")
 	public void draftfail() {
 		HomePageObjects homePage = launchApplicationHomePage();
 		homePage.click_CurrencyDropDown();
@@ -25,7 +25,7 @@ public class Draft extends InitialComponents {
 
 	}
 	
-	@Test(description = "negetive test case loginPagefail")
+	@Test(groups = {"negetive"}, description = "negetive test case loginPagefail")
 	public void loginPagefail() {
 		WebDriver driver = setupThreadLocalDriver();
 		driver.get("https://tutorialsninja.com/demo/index.php?route=account/login");

@@ -5,15 +5,25 @@
     <listener class-name="testListenersAndReporter.TestNGListeners"/>
     <listener class-name="testListenersAndReporter.TestNGitransformer"/>
   </listeners>
-  <test thread-count="5" parallel="classes" name="Tutorial Ninja functional Regression Test(failed)">
+  <test thread-count="5" parallel="classes" name="TutorialNinja functional negetive Test(failed)">
+    <groups>
+      <run>
+        <include name="negetive"/>
+      </run>
+    </groups>
     <classes>
+      <class name="com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality">
+        <methods>
+          <include name="r1dot1_TS002_TC003"/>
+          <include name="quitDriver"/>
+        </methods>
+      </class> <!-- com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality -->
       <class name="com.tutorialNinja.functionalTests.Draft">
         <methods>
-          <include name="draftfail"/>
           <include name="loginPagefail"/>
           <include name="quitDriver"/>
         </methods>
       </class> <!-- com.tutorialNinja.functionalTests.Draft -->
     </classes>
-  </test> <!-- Tutorial Ninja functional Regression Test(failed) -->
+  </test> <!-- TutorialNinja functional negetive Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

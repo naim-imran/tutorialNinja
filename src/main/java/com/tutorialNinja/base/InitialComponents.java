@@ -57,13 +57,13 @@ public class InitialComponents extends Reuseables {
 		String folderPath = System.getProperty("user.dir") + "\\testResultsAndScreecshoots\\";
 
 		try (Stream<Path> paths = Files.walk(Path.of(folderPath))) {
-			paths.filter(Files::isRegularFile).filter(path -> path.getFileName().toString().endsWith(".png"))
-					.forEach(path -> {
+			paths.filter(Files::isRegularFile).filter(p -> p.getFileName().toString().endsWith(".png"))
+					.forEach(p -> {
 						try {
-							Files.delete(path);
-							System.out.println("Deleted: " + path);
+							Files.delete(p);
+							System.out.println("Deleted: " + p);
 						} catch (IOException e) {
-							System.err.println("Failed to delete: " + path);
+							System.err.println("Failed to delete: " + p);
 							e.printStackTrace();
 						}
 					});

@@ -20,6 +20,8 @@ public class LoginPage extends CommonElements{
 	private WebElement passwordInputBox;
 	@FindBy(xpath = "//input[@class='btn btn-primary']")
 	private WebElement loginButton;
+	@FindBy(xpath= "//div[@class='alert alert-danger alert-dismissible']")
+	private WebElement loginErrorMsg;
 
 	public void setEmail_emailAddressInputBox(String email) {
 		emailAddressInputBox.sendKeys(email);
@@ -34,8 +36,14 @@ public class LoginPage extends CommonElements{
 		return new MyAccountPage(driver);
 	}
 
-	public String getPageTitle() {
+	public String getHomePageTitle() {
 		return driver.getTitle();
 	}
+	
+	public String getLoginErrorMsg() {
+		return loginErrorMsg.getText();
+	}
+	
+	
 	
 }
