@@ -7,6 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class MyAccountPage extends CommonElements{
 	private WebDriver driver;
+	
 	public MyAccountPage(WebDriver driver) {
 		super(driver);
 		this.driver= driver;
@@ -22,7 +23,7 @@ public class MyAccountPage extends CommonElements{
 		return new LogOutPage(driver);
 	}
 	public void clickMyAccountDropDown() {
-		click_MyAccount();
+		click_MyAccountDropLisButton();
 	}
 	public void clickOnLogoutButtonFromAccountDropDown() {
 		
@@ -30,5 +31,9 @@ public class MyAccountPage extends CommonElements{
 	
 	public String getPageTitle() {
 		return driver.getTitle();
+	}
+	
+	public WebDriver getDriver() {
+		return driver;
 	}
 }

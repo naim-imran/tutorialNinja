@@ -22,7 +22,7 @@ public class R1dot1_TS001_RegisterFunctionality extends InitialComponents {
 	public void r1dot1_TS001_TC001(){
 		HashMap<String, String> testData = getFakerTestData();
 		HomePageObjects homePage = launchApplicationHomePage();
-		homePage.click_MyAccount();
+		homePage.click_MyAccountDropLisButton();
 		RegistrationPage registrationPage = homePage.click_registerButton();
 		Assert.assertEquals(registrationPage.getRegistrationPageTitle(), "Register Account");
 		registrationPage.enterFirstName(testData.get("randomFirstName"));
@@ -45,7 +45,7 @@ public class R1dot1_TS001_RegisterFunctionality extends InitialComponents {
 	public void r1dot1_TS001_TC003(){
 		HashMap<String, String> testData = getFakerTestData();
 		HomePageObjects homePage = launchApplicationHomePage();
-		homePage.click_MyAccount();
+		homePage.click_MyAccountDropLisButton();
 		RegistrationPage registrationPage = homePage.click_registerButton();
 		Assert.assertEquals(registrationPage.getRegistrationPageTitle(), "Register Account");
 		registrationPage.enterFirstName(testData.get("randomFirstName"));
@@ -69,7 +69,7 @@ public class R1dot1_TS001_RegisterFunctionality extends InitialComponents {
 	public void r1dot1_TS001_TC004() throws InterruptedException, IOException {
 		SoftAssert softAssert= new SoftAssert();
 		HomePageObjects homePage = launchApplicationHomePage();
-		homePage.click_MyAccount();
+		homePage.click_MyAccountDropLisButton();
 		RegistrationPage registrationPage = homePage.click_registerButton();
 		Assert.assertEquals(registrationPage.getRegistrationPageTitle(), "Register Account");
 		registrationPage.clickContinue();
@@ -85,7 +85,7 @@ public class R1dot1_TS001_RegisterFunctionality extends InitialComponents {
 	public void r1dot1_TS001_TC028() {
 		HashMap<String, String> testData = getFakerTestData();
 		HomePageObjects homePage = launchApplicationHomePage();
-		homePage.click_MyAccount();
+		homePage.click_MyAccountDropLisButton();
 		RegistrationPage registrationPage = homePage.click_registerButton();
 		Assert.assertEquals(registrationPage.getRegistrationPageTitle(), "Register Account");
 		registrationPage.enterFirstName(testData.get("randomFirstName"));

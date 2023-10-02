@@ -46,6 +46,8 @@ public class CommonElements {
 	private WebElement myAccountDropList;
 	@FindBy(xpath = "//ul[@class='dropdown-menu dropdown-menu-right']/li/a[text()='Register']")
 	private WebElement registerButton;
+	@FindBy(xpath= "//ul[@class='dropdown-menu dropdown-menu-right']//a[text()='My Account']")
+	private WebElement myAccountButton;
 	@FindBy(xpath = "//a[@href='https://tutorialsninja.com/demo/index.php?route=account/login']")
 	private WebElement loginButton;
 	@FindBy(xpath= "//li[@class='dropdown open']//a[text()='Logout']")
@@ -75,10 +77,13 @@ public class CommonElements {
 		return new SearchResultPage(driver);
 	}
 
-	public void click_MyAccount() {
+	public void click_MyAccountDropLisButton() {
 		myAccountDropList.click();
 	}
-
+	public MyAccountPage click_MyAccount() {
+		myAccountButton.click();
+		return new MyAccountPage(driver);
+	}
 	public RegistrationPage click_registerButton() {
 		registerButton.click();
 		return new RegistrationPage(driver);
