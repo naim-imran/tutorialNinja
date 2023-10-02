@@ -61,7 +61,7 @@ public class TestNGListeners extends Extendreporter implements ITestListener {
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
-		  ThreadLocalReport.get().log(Status.SKIP,"There is exception in execution and skipped for another try " + result.getThrowable());
+		  //ThreadLocalReport.get().log(Status.SKIP,"There is exception in execution and skipped for another try " + result.getThrowable());
 	}
 
 	@Override

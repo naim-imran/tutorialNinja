@@ -38,7 +38,6 @@ public class HomePageObjects extends CommonElements {
 		
 		for (WebElement webElement : featuredProducts) {
 			if (webElement.findElement(By.xpath("div[@class='caption']/h4/a")).getText().contains(expectedProduct)) {
-				System.out.println(webElement.findElement(By.xpath("div[@class='caption']/h4/a")).getText());
 				webElement.findElement(By.xpath("div[@class='caption']/h4/a")).click();
 				break;
 			}
