@@ -36,7 +36,7 @@ public class R1dot2_TS005_ProductSearchFunctionality extends InitialComponents {
 	
 	@DataProvider
 	public String[] productList() {
-	String[] product=  {"Apple Cinema 30\"", "MacBook", "iPhone", "Canon EOS 5D"};
+	String[] product=  {"MacBook", "iPhone","Apple Cinema 30\"","Canon EOS 5D"};
 	return product;
 	
 	}

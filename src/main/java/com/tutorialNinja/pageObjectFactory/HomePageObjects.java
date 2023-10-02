@@ -1,6 +1,5 @@
 package com.tutorialNinja.pageObjectFactory;
 
-import java.util.Iterator;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -29,13 +28,20 @@ public class HomePageObjects extends CommonElements {
 	
 	public ProductDetailsPage clickHomePageFeaturedProduct(String expectedProduct) {
 	
-		for (Iterator<WebElement> iterator = featuredProducts.iterator(); iterator.hasNext();) {
-			WebElement webElement =  iterator.next();
-			if (webElement.findElement(By.xpath("div[@class='caption']")).getText().contains(expectedProduct)) {
-				webElement.click();
+		/*
+		 * for (Iterator<WebElement> iterator = featuredProducts.iterator();
+		 * iterator.hasNext();) { WebElement webElement = iterator.next(); if
+		 * (webElement.findElement(By.xpath("div[@class='caption']/h4/a")).getText().
+		 * contains(expectedProduct)) { webElement.click(); break; } }
+		 */
+		//return new ProductDetailsPage(driver);
+		
+		for (WebElement webElement : featuredProducts) {
+			if (webElement.findElement(By.xpath("div[@class='caption']/h4/a")).getText().contains(expectedProduct)) {
+				System.out.println(webElement.findElement(By.xpath("div[@class='caption']/h4/a")).getText());
+				webElement.findElement(By.xpath("div[@class='caption']/h4/a")).click();
 				break;
 			}
-			
 		}
 		return new ProductDetailsPage(driver);
 	}

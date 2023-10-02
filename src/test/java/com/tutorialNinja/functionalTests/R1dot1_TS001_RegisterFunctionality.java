@@ -65,7 +65,7 @@ public class R1dot1_TS001_RegisterFunctionality extends InitialComponents {
 		System.out.println(myAccountPage.getPageTitle());
 	}
 
-	@Test(priority = 4, groups = {"smoke","negetive"}, description = "R1.1_TS001_TC004 Verify proper error messages are displayed for the mandatory fields, when you don't provide any fields in the 'Register Account' page and submit")
+	@Test(priority = 4, groups = {"smoke","negetive"}, description = "R1.1_TS001_TC004 Verify proper error messages are displayed for the mandatory fields, when you don't provide any mandatory fields in the 'Register Account' page and submit")
 	public void r1dot1_TS001_TC004() throws InterruptedException, IOException {
 		SoftAssert softAssert= new SoftAssert();
 		HomePageObjects homePage = launchApplicationHomePage();
@@ -100,6 +100,4 @@ public class R1dot1_TS001_RegisterFunctionality extends InitialComponents {
 				"Warning: You must agree to the Privacy Policy!");
 	}
 	
-	
-
 }
