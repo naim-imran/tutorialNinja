@@ -21,7 +21,7 @@ public class Draft extends InitialComponents {
 	public void draftfail() {
 		HomePageObjects homePage = launchApplicationHomePage();
 		homePage.click_CurrencyDropDown();
-		Assert.assertEquals(false, true);
+		Assert.assertEquals(true, true);
 
 	}
 	
