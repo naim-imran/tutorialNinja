@@ -18,7 +18,7 @@ import org.testng.annotations.AfterMethod;
 import com.tutorialNinja.pageObjectFactory.HomePageObjects;
 
 public class InitialComponents extends Reuseables {
-// test
+
 	public WebDriver driver;// driver has to be public because we have to get it through reflection API in listener class
 	private ThreadLocal<WebDriver> threadLocaldriver = new ThreadLocal<WebDriver>();
 	
