@@ -68,7 +68,7 @@ public class TestNGListeners extends Extendreporter implements ITestListener {
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
 	}
 
-	@Override
-	public void onTestFailedWithTimeout(ITestResult result) {
-	}
+	/*
+	 * @Override public void onTestFailedWithTimeout(ITestResult result) { }
+	 */
 }
