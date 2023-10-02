@@ -1,79 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-01T23:32:13 EDT" name="Default suite" finished-at="2023-10-01T23:32:49 EDT" duration-ms="35757">
+  <suite started-at="2023-10-02T05:27:08 EDT" name="Default suite" finished-at="2023-10-02T05:27:20 EDT" duration-ms="11693">
     <groups>
-      <group name="possitive">
-        <method signature="R1dot2_TS005_ProductSearchFunctionality.R1dot2_TS005_TC024(java.lang.String)[pri:2, instance:com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@4c12331b]" name="R1dot2_TS005_TC024" class="com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality"/>
-      </group> <!-- possitive -->
       <group name="smoke">
-        <method signature="R1dot2_TS005_ProductSearchFunctionality.R1dot2_TS005_TC024(java.lang.String)[pri:2, instance:com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@4c12331b]" name="R1dot2_TS005_TC024" class="com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality"/>
+        <method signature="R1dot1_TS003_LogoutFunctionality.R1dot1_TS003_TC002()[pri:2, instance:com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality@3c46e67a]" name="R1dot1_TS003_TC002" class="com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2023-10-01T23:32:13 EDT" name="Default test" finished-at="2023-10-01T23:32:49 EDT" duration-ms="35757">
-      <class name="com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality">
-        <test-method signature="R1dot2_TS005_TC024(java.lang.String)[pri:2, instance:com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@4c12331b]" started-at="2023-10-01T23:32:13 EDT" name="R1dot2_TS005_TC024" description="R1.2_TS005_TC024 Verify user can select a product from featured product list from HomePage" data-provider="productList" finished-at="2023-10-01T23:32:22 EDT" duration-ms="9476" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[MacBook]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2023-10-02T05:27:08 EDT" name="Default test" finished-at="2023-10-02T05:27:20 EDT" duration-ms="11693">
+      <class name="com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality">
+        <test-method signature="R1dot1_TS003_TC002()[pri:2, instance:com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality@3c46e67a]" started-at="2023-10-02T05:27:08 EDT" name="R1dot1_TS003_TC002" description="R1.1_TS003_TC002 Verify Logging out by selecting Logout option from &#039;Right Column&#039; options" finished-at="2023-10-02T05:27:19 EDT" duration-ms="11414" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- R1dot2_TS005_TC024 -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@4c12331b]" started-at="2023-10-01T23:32:22 EDT" name="quitDriver" finished-at="2023-10-01T23:32:23 EDT" duration-ms="331" status="PASS">
+        </test-method> <!-- R1dot1_TS003_TC002 -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality@3c46e67a]" started-at="2023-10-02T05:27:19 EDT" name="quitDriver" finished-at="2023-10-02T05:27:20 EDT" duration-ms="150" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method signature="R1dot2_TS005_TC024(java.lang.String)[pri:2, instance:com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@4c12331b]" started-at="2023-10-01T23:32:23 EDT" name="R1dot2_TS005_TC024" description="R1.2_TS005_TC024 Verify user can select a product from featured product list from HomePage" data-provider="productList" finished-at="2023-10-01T23:32:31 EDT" duration-ms="8256" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[iPhone]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- R1dot2_TS005_TC024 -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@4c12331b]" started-at="2023-10-01T23:32:31 EDT" name="quitDriver" finished-at="2023-10-01T23:32:31 EDT" duration-ms="318" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-        <test-method signature="R1dot2_TS005_TC024(java.lang.String)[pri:2, instance:com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@4c12331b]" started-at="2023-10-01T23:32:31 EDT" name="R1dot2_TS005_TC024" description="R1.2_TS005_TC024 Verify user can select a product from featured product list from HomePage" data-provider="productList" finished-at="2023-10-01T23:32:40 EDT" duration-ms="8233" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Apple Cinema 30"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- R1dot2_TS005_TC024 -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@4c12331b]" started-at="2023-10-01T23:32:40 EDT" name="quitDriver" finished-at="2023-10-01T23:32:40 EDT" duration-ms="285" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-        <test-method signature="R1dot2_TS005_TC024(java.lang.String)[pri:2, instance:com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@4c12331b]" started-at="2023-10-01T23:32:40 EDT" name="R1dot2_TS005_TC024" description="R1.2_TS005_TC024 Verify user can select a product from featured product list from HomePage" data-provider="productList" finished-at="2023-10-01T23:32:48 EDT" duration-ms="8226" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Canon EOS 5D]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- R1dot2_TS005_TC024 -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@4c12331b]" started-at="2023-10-01T23:32:48 EDT" name="quitDriver" finished-at="2023-10-01T23:32:49 EDT" duration-ms="473" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-      </class> <!-- com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality -->
+      </class> <!-- com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

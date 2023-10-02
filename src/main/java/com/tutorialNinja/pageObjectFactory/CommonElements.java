@@ -48,6 +48,8 @@ public class CommonElements {
 	private WebElement registerButton;
 	@FindBy(xpath = "//a[@href='https://tutorialsninja.com/demo/index.php?route=account/login']")
 	private WebElement loginButton;
+	@FindBy(xpath= "//li[@class='dropdown open']//a[text()='Logout']")
+	private WebElement accountDropDownLogoutButton;
 	@FindBy(xpath= "//span[@id='cart-total']")
 	private WebElement totalCartItemsAndPriceButton;
 	@FindBy(xpath= "//a[text()='Desktops']")
@@ -85,6 +87,10 @@ public class CommonElements {
 	public LoginPage click_LoginButton() {
 		loginButton.click();
 		return new LoginPage(driver);
+	}
+	public LogOutPage clickAccountDropDownLogoutButton() {
+		accountDropDownLogoutButton.click();
+		return new LogOutPage(driver);
 	}
 
 	public List<WebElement> getAllFooterLinks() {
