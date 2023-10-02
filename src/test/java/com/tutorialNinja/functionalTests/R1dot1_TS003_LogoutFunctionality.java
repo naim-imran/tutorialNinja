@@ -60,4 +60,8 @@ public class R1dot1_TS003_LogoutFunctionality extends InitialComponents {
 		MyAccountPage accountPage2 = homePage1.click_MyAccount();
 		Assert.assertEquals(accountPage2.getPageTitle(), "My Account");
 	}
+	
+	
+	
+	
 }
