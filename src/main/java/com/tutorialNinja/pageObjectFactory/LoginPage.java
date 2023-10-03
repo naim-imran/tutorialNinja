@@ -26,6 +26,8 @@ public class LoginPage extends CommonElements{
 	private WebElement forgottenPasswordLinkButtonReturningCustomerBox;
 	@FindBy(xpath= "//div[@class='alert alert-success alert-dismissible']")
 	private WebElement emailSentConfirmationText;
+	@FindBy(xpath= "//aside[@id='column-right']//a[text()='Forgotten Password']")
+	private WebElement forgottenPasswordFromRightColumn;
 
 	public void setEmail_emailAddressInputBox(String email) {
 		emailAddressInputBox.sendKeys(email);
@@ -55,6 +57,9 @@ public class LoginPage extends CommonElements{
 	public String getEmailSentConfirmationText() {
 		return emailSentConfirmationText.getText();
 	}
-	
+	public ForgottenPasswordPage clickforgottenPasswordFromRightColumn() {
+		forgottenPasswordFromRightColumn.click();
+		return new ForgottenPasswordPage(driver);
+	}
 	
 }

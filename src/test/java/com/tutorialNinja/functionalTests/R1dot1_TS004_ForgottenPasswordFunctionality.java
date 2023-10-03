@@ -27,4 +27,18 @@ public class R1dot1_TS004_ForgottenPasswordFunctionality extends InitialComponen
 	}
 	
 	
+	// jira link: https://naayeem.atlassian.net/browse/TN-54
+	@Test(priority = 2, groups = {"smoke", "possitive"}, description = "R1.1_TS004_TC002 as a Registered user I should be able to reset my password by using \"Forgotten Password\" link in right column")
+	public void r1dot1_TS004_TC002() {
+		HomePageObjects homePage = launchApplicationHomePage();
+		homePage.click_MyAccountDropLisButton();
+		LoginPage loginPage = homePage.click_LoginButton();
+		Assert.assertEquals(loginPage.getHomePageTitle(), "Account Login");
+		ForgottenPasswordPage forgottenPasswordPage = loginPage.clickforgottenPasswordFromRightColumn();
+		Assert.assertEquals(forgottenPasswordPage.getForgottenPasswordPageTitle(),"Forgot Your Password?");
+		forgottenPasswordPage.enterEmailInInputBox("dwana.ondricka@gmail.com");
+		LoginPage loginPage2 = forgottenPasswordPage.clickContinueButton();
+		Assert.assertEquals(loginPage2.getHomePageTitle(), "Account Login");
+		Assert.assertEquals(loginPage2.getEmailSentConfirmationText(), "An email with a confirmation link has been sent your email address.");
+	}
 }

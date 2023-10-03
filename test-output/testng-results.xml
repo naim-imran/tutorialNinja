@@ -2,22 +2,22 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-03T02:17:40 EDT" name="Default suite" finished-at="2023-10-03T02:17:49 EDT" duration-ms="9697">
+  <suite started-at="2023-10-03T02:53:29 EDT" name="Default suite" finished-at="2023-10-03T02:53:39 EDT" duration-ms="10574">
     <groups>
       <group name="possitive">
-        <method signature="R1dot1_TS004_ForgottenPasswordFunctionality.r1dot1_TS004_TC001()[pri:1, instance:com.tutorialNinja.functionalTests.R1dot1_TS004_ForgottenPasswordFunctionality@408d971b]" name="r1dot1_TS004_TC001" class="com.tutorialNinja.functionalTests.R1dot1_TS004_ForgottenPasswordFunctionality"/>
+        <method signature="R1dot1_TS004_ForgottenPasswordFunctionality.r1dot1_TS004_TC002()[pri:2, instance:com.tutorialNinja.functionalTests.R1dot1_TS004_ForgottenPasswordFunctionality@6c6cb480]" name="r1dot1_TS004_TC002" class="com.tutorialNinja.functionalTests.R1dot1_TS004_ForgottenPasswordFunctionality"/>
       </group> <!-- possitive -->
       <group name="smoke">
-        <method signature="R1dot1_TS004_ForgottenPasswordFunctionality.r1dot1_TS004_TC001()[pri:1, instance:com.tutorialNinja.functionalTests.R1dot1_TS004_ForgottenPasswordFunctionality@408d971b]" name="r1dot1_TS004_TC001" class="com.tutorialNinja.functionalTests.R1dot1_TS004_ForgottenPasswordFunctionality"/>
+        <method signature="R1dot1_TS004_ForgottenPasswordFunctionality.r1dot1_TS004_TC002()[pri:2, instance:com.tutorialNinja.functionalTests.R1dot1_TS004_ForgottenPasswordFunctionality@6c6cb480]" name="r1dot1_TS004_TC002" class="com.tutorialNinja.functionalTests.R1dot1_TS004_ForgottenPasswordFunctionality"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2023-10-03T02:17:40 EDT" name="Default test" finished-at="2023-10-03T02:17:49 EDT" duration-ms="9697">
+    <test started-at="2023-10-03T02:53:29 EDT" name="Default test" finished-at="2023-10-03T02:53:39 EDT" duration-ms="10574">
       <class name="com.tutorialNinja.functionalTests.R1dot1_TS004_ForgottenPasswordFunctionality">
-        <test-method signature="r1dot1_TS004_TC001()[pri:1, instance:com.tutorialNinja.functionalTests.R1dot1_TS004_ForgottenPasswordFunctionality@408d971b]" started-at="2023-10-03T02:17:40 EDT" name="r1dot1_TS004_TC001" description="R1.1_TS004_TC001 as a Registered user I should be able to reset my password by using &quot;Forgotten Password&quot; link in &quot;Returning Customer&quot; Login box" finished-at="2023-10-03T02:17:49 EDT" duration-ms="9391" status="PASS">
+        <test-method signature="r1dot1_TS004_TC002()[pri:2, instance:com.tutorialNinja.functionalTests.R1dot1_TS004_ForgottenPasswordFunctionality@6c6cb480]" started-at="2023-10-03T02:53:29 EDT" name="r1dot1_TS004_TC002" description="R1.1_TS004_TC002 as a Registered user I should be able to reset my password by using &quot;Forgotten Password&quot; link in right column" finished-at="2023-10-03T02:53:39 EDT" duration-ms="10300" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- r1dot1_TS004_TC001 -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS004_ForgottenPasswordFunctionality@408d971b]" started-at="2023-10-03T02:17:49 EDT" name="quitDriver" finished-at="2023-10-03T02:17:49 EDT" duration-ms="193" status="PASS">
+        </test-method> <!-- r1dot1_TS004_TC002 -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot1_TS004_ForgottenPasswordFunctionality@6c6cb480]" started-at="2023-10-03T02:53:39 EDT" name="quitDriver" finished-at="2023-10-03T02:53:39 EDT" duration-ms="196" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->

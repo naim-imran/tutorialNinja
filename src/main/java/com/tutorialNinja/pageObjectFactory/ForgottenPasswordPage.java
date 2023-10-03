@@ -19,7 +19,8 @@ public class ForgottenPasswordPage extends CommonElements{
 	private WebElement emailInputBox;
 	@FindBy(xpath= "//input[@class='btn btn-primary']")
 	private WebElement continueButton;
-	
+	@FindBy(xpath= "//aside[@id='column-right']//a[text()='Forgotten Password']")
+	private WebElement forgottenPassword;
 	
 	public String getForgottenPasswordPageTitle() {
 		return driver.getTitle();
