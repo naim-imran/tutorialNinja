@@ -7,7 +7,6 @@
 			<include name="smoke"></include>
 		</run>
 	</groups>
-	
 
 	<listeners>
 		<listener class-name="testListenersAndReporter.TestNGListeners"></listener>
