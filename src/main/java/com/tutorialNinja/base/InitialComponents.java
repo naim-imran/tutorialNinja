@@ -96,7 +96,7 @@ public class InitialComponents extends Reuseables {
 	}
 	
 	
-	//@AfterMethod(alwaysRun = true)
+	@AfterMethod(alwaysRun = true)
 	public void quitDriver() {
 		WebDriver driver = threadLocaldriver.get();
 		if (driver != null) {

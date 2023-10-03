@@ -28,7 +28,6 @@ public class TestNGListeners extends Extendreporter implements ITestListener {
 	public void onFinish(ITestContext context) {
 		extentReport.flush();
 		ThreadLocalReport.remove();
-		quitDriver();
 	}
 	
 	@Override
