@@ -2,11 +2,9 @@ package com.tutorialNinja.functionalTests;
 
 import java.io.IOException;
 import java.util.HashMap;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-
 import com.tutorialNinja.base.InitialComponents;
 import com.tutorialNinja.pageObjectFactory.AccountCreationSuccessPage;
 import com.tutorialNinja.pageObjectFactory.HomePageObjects;
@@ -14,9 +12,6 @@ import com.tutorialNinja.pageObjectFactory.MyAccountPage;
 import com.tutorialNinja.pageObjectFactory.RegistrationPage;
 
 public class R1dot1_TS001_RegisterFunctionality extends InitialComponents {
-	
-	
-
 
 	@Test(priority = 1, groups = {"smoke", "possitive"}, description = "R1.1_TS001_TC001 As a user I should be able to Register an Account by providing only the Mandatory fields")
 	public void r1dot1_TS001_TC001(){
