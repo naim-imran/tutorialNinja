@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Tutorial Ninja functional Regression Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/2/4</td>
+<td>Tests passed/Failed/Skipped:</td><td>19/5/10</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Oct 01 22:03:45 EDT 2023</td>
+<td>Started on:</td><td>Thu Oct 05 00:46:22 EDT 2023</td>
 </tr>
-<tr><td>Total time:</td><td>130 seconds (130474 ms)</td>
+<tr><td>Total time:</td><td>122 seconds (122598 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,66 +76,22 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality.R1dot2_TS005_TC024()'><b>R1dot2_TS005_TC024</b><br>Test class: com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality<br>Test method: R1.2_TS005_TC024 Verify user can select a product from featured product list from HomePage<br>Parameters: iPhone</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;col-sm-4&apos;]/div[@class=&apos;btn-group&apos;]/following-sibling::h1&quot;}
-  (Session info: chrome=117.0.5938.92)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fd40f485c05991565dd2b5a87a602e96, findElement {using=xpath, value=//div[@class=&apos;col-sm-4&apos;]/div[@class=&apos;btn-group&apos;]/following-sibling::h1}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.92, chrome: {chromedriverVersion: 117.0.5938.92 (67649b10b92b..., userDataDir: C:\Users\naimn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51296}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51296/devtoo..., se:cdpVersion: 117.0.5938.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fd40f485c05991565dd2b5a87a602e96
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.getText(Unknown Source)
-	at com.tutorialNinja.pageObjectFactory.ProductDetailsPage.getProductName(ProductDetailsPage.java:25)
-	at com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality.R1dot2_TS005_TC024(R1dot2_TS005_ProductSearchFunctionality.java:34)
+<td title='com.tutorialNinja.functionalTests.Draft.draftfail()'><b>draftfail</b><br>Test class: com.tutorialNinja.functionalTests.Draft<br>Test method: negetive test case draftfail</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.tutorialNinja.functionalTests.Draft.draftfail(Draft.java:24)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2058988685", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2058988685'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;col-sm-4&apos;]/div[@class=&apos;btn-group&apos;]/following-sibling::h1&quot;}
-  (Session info: chrome=117.0.5938.92)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fd40f485c05991565dd2b5a87a602e96, findElement {using=xpath, value=//div[@class=&apos;col-sm-4&apos;]/div[@class=&apos;btn-group&apos;]/following-sibling::h1}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.92, chrome: {chromedriverVersion: 117.0.5938.92 (67649b10b92b..., userDataDir: C:\Users\naimn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51296}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51296/devtoo..., se:cdpVersion: 117.0.5938.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fd40f485c05991565dd2b5a87a602e96
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.getText(Unknown Source)
-	at com.tutorialNinja.pageObjectFactory.ProductDetailsPage.getProductName(ProductDetailsPage.java:25)
-	at com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality.R1dot2_TS005_TC024(R1dot2_TS005_ProductSearchFunctionality.java:34)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace52129675", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace52129675'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1067)
+	at org.testng.Assert.assertEquals(Assert.java:1031)
+	at org.testng.Assert.assertEquals(Assert.java:1077)
+	at com.tutorialNinja.functionalTests.Draft.draftfail(Draft.java:24)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -152,19 +108,117 @@ Session ID: fd40f485c05991565dd2b5a87a602e96
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
 </pre></div></td>
-<td>17</td>
-<td>com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@7586beff</td></tr>
+<td>6</td>
+<td>com.tutorialNinja.functionalTests.Draft@31190526</td></tr>
 <tr>
-<td title='com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality.R1dot2_TS005_TC024()'><b>R1dot2_TS005_TC024</b><br>Test class: com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality<br>Test method: R1.2_TS005_TC024 Verify user can select a product from featured product list from HomePage<br>Parameters: MacBook</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;col-sm-4&apos;]/div[@class=&apos;btn-group&apos;]/following-sibling::h1&quot;}
-  (Session info: chrome=117.0.5938.92)
+<td title='com.tutorialNinja.functionalTests.Draft.loginPagefail()'><b>loginPagefail</b><br>Test class: com.tutorialNinja.functionalTests.Draft<br>Test method: negetive test case loginPagefail</td>
+<td><div><pre>java.lang.AssertionError: expected [Customer] but found [Account Login]
+	at com.tutorialNinja.functionalTests.Draft.loginPagefail(Draft.java:33)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2035921291", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2035921291'><pre>java.lang.AssertionError: expected [Customer] but found [Account Login]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.tutorialNinja.functionalTests.Draft.loginPagefail(Draft.java:33)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>7</td>
+<td>com.tutorialNinja.functionalTests.Draft@31190526</td></tr>
+<tr>
+<td title='com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality.r1dot1_TS002_TC003()'><b>r1dot1_TS002_TC003</b><br>Test class: com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality<br>Test method: R1.1_TS002_TC003 Verify logging into the Application using invalid email address and valid Password</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality.r1dot1_TS002_TC003(R1dot1_TS002_LoginFunctionality.java:58)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace74231737", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace74231737'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality.r1dot1_TS002_TC003(R1dot1_TS002_LoginFunctionality.java:58)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>11</td>
+<td>com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality@2aceadd4</td></tr>
+<tr>
+<td title='com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality.r1dot1_TS002_TC002()'><b>r1dot1_TS002_TC002</b><br>Test class: com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality<br>Test method: R1.1_TS002_TC002 Verify logging into the Application using invalid credentials (i.e. Invalid email address and Invalid Password)</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality.r1dot1_TS002_TC002(R1dot1_TS002_LoginFunctionality.java:43)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1164918757", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1164918757'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality.r1dot1_TS002_TC002(R1dot1_TS002_LoginFunctionality.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>9</td>
+<td>com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality@2aceadd4</td></tr>
+<tr>
+<td title='com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality.r1dot1_TS003_TC003()'><b>r1dot1_TS003_TC003</b><br>Test class: com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality<br>Test method: R1.1_TS003_TC003 Verify the Application session status, after logging and closing the Browser without logging out</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//ul[@class=&apos;dropdown-menu dropdown-menu-right&apos;]//a[text()=&apos;My Account&apos;]&quot;}
+  (Session info: chrome=117.0.5938.132)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4a82b985eed00fd5b14165c098d939f7, findElement {using=xpath, value=//div[@class=&apos;col-sm-4&apos;]/div[@class=&apos;btn-group&apos;]/following-sibling::h1}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.92, chrome: {chromedriverVersion: 117.0.5938.92 (67649b10b92b..., userDataDir: C:\Users\naimn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51215}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51215/devtoo..., se:cdpVersion: 117.0.5938.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4a82b985eed00fd5b14165c098d939f7
+Command: [7ea78bbf43096dffb725f170ec52396c, findElement {using=xpath, value=//ul[@class=&apos;dropdown-menu dropdown-menu-right&apos;]//a[text()=&apos;My Account&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.132, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\naimn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51736}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51736/devtoo..., se:cdpVersion: 117.0.5938.132, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7ea78bbf43096dffb725f170ec52396c
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -178,22 +232,22 @@ Session ID: 4a82b985eed00fd5b14165c098d939f7
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.getText(Unknown Source)
-	at com.tutorialNinja.pageObjectFactory.ProductDetailsPage.getProductName(ProductDetailsPage.java:25)
-	at com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality.R1dot2_TS005_TC024(R1dot2_TS005_ProductSearchFunctionality.java:34)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+	at com.tutorialNinja.pageObjectFactory.CommonElements.click_MyAccount(CommonElements.java:84)
+	at com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality.r1dot1_TS003_TC003(R1dot1_TS003_LogoutFunctionality.java:60)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1799591957", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1799591957'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;col-sm-4&apos;]/div[@class=&apos;btn-group&apos;]/following-sibling::h1&quot;}
-  (Session info: chrome=117.0.5938.92)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace737175390", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace737175390'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//ul[@class=&apos;dropdown-menu dropdown-menu-right&apos;]//a[text()=&apos;My Account&apos;]&quot;}
+  (Session info: chrome=117.0.5938.132)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4a82b985eed00fd5b14165c098d939f7, findElement {using=xpath, value=//div[@class=&apos;col-sm-4&apos;]/div[@class=&apos;btn-group&apos;]/following-sibling::h1}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.92, chrome: {chromedriverVersion: 117.0.5938.92 (67649b10b92b..., userDataDir: C:\Users\naimn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51215}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51215/devtoo..., se:cdpVersion: 117.0.5938.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4a82b985eed00fd5b14165c098d939f7
+Command: [7ea78bbf43096dffb725f170ec52396c, findElement {using=xpath, value=//ul[@class=&apos;dropdown-menu dropdown-menu-right&apos;]//a[text()=&apos;My Account&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.132, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\naimn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51736}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51736/devtoo..., se:cdpVersion: 117.0.5938.132, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7ea78bbf43096dffb725f170ec52396c
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -212,9 +266,9 @@ Session ID: 4a82b985eed00fd5b14165c098d939f7
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.getText(Unknown Source)
-	at com.tutorialNinja.pageObjectFactory.ProductDetailsPage.getProductName(ProductDetailsPage.java:25)
-	at com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality.R1dot2_TS005_TC024(R1dot2_TS005_ProductSearchFunctionality.java:34)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+	at com.tutorialNinja.pageObjectFactory.CommonElements.click_MyAccount(CommonElements.java:84)
+	at com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality.r1dot1_TS003_TC003(R1dot1_TS003_LogoutFunctionality.java:60)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -231,8 +285,8 @@ Session ID: 4a82b985eed00fd5b14165c098d939f7
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
 </pre></div></td>
-<td>18</td>
-<td>com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@7586beff</td></tr>
+<td>27</td>
+<td>com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality@24aed80c</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -243,15 +297,100 @@ Session ID: 4a82b985eed00fd5b14165c098d939f7
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality.R1dot2_TS005_TC024()'><b>R1dot2_TS005_TC024</b><br>Test class: com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality<br>Test method: R1.2_TS005_TC024 Verify user can select a product from featured product list from HomePage<br>Parameters: Canon EOS 5D</td>
+<td title='com.tutorialNinja.functionalTests.R1dot3_TS012_CheckoutFunctionality.R1dot3_TS012_TC001()'><b>R1dot3_TS012_TC001</b><br>Test class: com.tutorialNinja.functionalTests.R1dot3_TS012_CheckoutFunctionality<br>Test method: R1.3_TS012_TC001 As a user I shouldn't be able to  navigate to Checkout page when there is no product in the Shopping Cart</td>
 <td></td>
-<td>9</td>
-<td>com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@7586beff</td></tr>
+<td>12</td>
+<td>com.tutorialNinja.functionalTests.R1dot3_TS012_CheckoutFunctionality@752325ad</td></tr>
+<tr>
+<td title='com.tutorialNinja.functionalTests.Draft.testHomePageNav()'><b>testHomePageNav</b><br>Test class: com.tutorialNinja.functionalTests.Draft<br>Test method: draft test of product catagory page</td>
+<td></td>
+<td>13</td>
+<td>com.tutorialNinja.functionalTests.Draft@31190526</td></tr>
+<tr>
+<td title='com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality.R1dot2_TS005_TC024()'><b>R1dot2_TS005_TC024</b><br>Test class: com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality<br>Test method: R1.2_TS005_TC024 Verify user can select a product from featured product list from HomePage<br>Parameters: iPhone</td>
+<td></td>
+<td>7</td>
+<td>com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@2a5c8d3f</td></tr>
+<tr>
+<td title='com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality.r1dot1_TS001_TC004()'><b>r1dot1_TS001_TC004</b><br>Test class: com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality<br>Test method: R1.1_TS001_TC004 Verify proper error messages are displayed for the mandatory fields, when you don't provide any mandatory fields in the 'Register Account' page and submit</td>
+<td></td>
+<td>10</td>
+<td>com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@24269709</td></tr>
+<tr>
+<td title='com.tutorialNinja.functionalTests.Draft.testHomepageFeaturedProduct()'><b>testHomepageFeaturedProduct</b><br>Test class: com.tutorialNinja.functionalTests.Draft<br>Test method: click on homepage featured product</td>
+<td></td>
+<td>11</td>
+<td>com.tutorialNinja.functionalTests.Draft@31190526</td></tr>
+<tr>
+<td title='com.tutorialNinja.functionalTests.R1dot2_TS006_ProductCompareFunctionality.r1dot2_TS006_TC001()'><b>r1dot2_TS006_TC001</b><br>Test class: com.tutorialNinja.functionalTests.R1dot2_TS006_ProductCompareFunctionality<br>Test method: R1.2_TS006_TC001 As an user I should be able to select products for comparison.</td>
+<td></td>
+<td>15</td>
+<td>com.tutorialNinja.functionalTests.R1dot2_TS006_ProductCompareFunctionality@3a52dba3</td></tr>
+<tr>
+<td title='com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality.r1dot1_TS002_TC001()'><b>r1dot1_TS002_TC001</b><br>Test class: com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality<br>Test method: R1.1_TS002_TC001 Verify logging into the Application using valid credentials</td>
+<td></td>
+<td>15</td>
+<td>com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality@2aceadd4</td></tr>
 <tr>
 <td title='com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality.R1dot2_TS005_TC024()'><b>R1dot2_TS005_TC024</b><br>Test class: com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality<br>Test method: R1.2_TS005_TC024 Verify user can select a product from featured product list from HomePage<br>Parameters: Apple Cinema 30"</td>
 <td></td>
+<td>16</td>
+<td>com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@2a5c8d3f</td></tr>
+<tr>
+<td title='com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality.r1dot2_TS005_TC001()'><b>r1dot2_TS005_TC001</b><br>Test class: com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality<br>Test method: R1.2_TS005_TC001 As an user I should be able to search a product which is present in database.</td>
+<td></td>
+<td>11</td>
+<td>com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@2a5c8d3f</td></tr>
+<tr>
+<td title='com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality.r1dot1_TS003_TC002()'><b>r1dot1_TS003_TC002</b><br>Test class: com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality<br>Test method: R1.1_TS003_TC002 Verify Logging out by selecting Logout option from 'Right Column' options</td>
+<td></td>
+<td>10</td>
+<td>com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality@24aed80c</td></tr>
+<tr>
+<td title='com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality.r1dot1_TS001_TC001()'><b>r1dot1_TS001_TC001</b><br>Test class: com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality<br>Test method: R1.1_TS001_TC001 As a user I should be able to Register an Account by providing only the Mandatory fields</td>
+<td></td>
+<td>17</td>
+<td>com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@24269709</td></tr>
+<tr>
+<td title='com.tutorialNinja.functionalTests.Draft.readExcelDraft()'><b>readExcelDraft</b><br>Test class: com.tutorialNinja.functionalTests.Draft<br>Test method: validate readExcelDraft</td>
+<td></td>
+<td>2</td>
+<td>com.tutorialNinja.functionalTests.Draft@31190526</td></tr>
+<tr>
+<td title='com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality.R1dot2_TS005_TC024()'><b>R1dot2_TS005_TC024</b><br>Test class: com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality<br>Test method: R1.2_TS005_TC024 Verify user can select a product from featured product list from HomePage<br>Parameters: MacBook</td>
+<td></td>
+<td>7</td>
+<td>com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@2a5c8d3f</td></tr>
+<tr>
+<td title='com.tutorialNinja.functionalTests.R1dot1_TS004_ForgottenPasswordFunctionality.r1dot1_TS004_TC001()'><b>r1dot1_TS004_TC001</b><br>Test class: com.tutorialNinja.functionalTests.R1dot1_TS004_ForgottenPasswordFunctionality<br>Test method: R1.1_TS004_TC001 as a Registered user I should be able to reset my password by using "Forgotten Password" link in "Returning Customer" Login box</td>
+<td></td>
+<td>11</td>
+<td>com.tutorialNinja.functionalTests.R1dot1_TS004_ForgottenPasswordFunctionality@279fedbd</td></tr>
+<tr>
+<td title='com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality.r1dot1_TS001_TC028()'><b>r1dot1_TS001_TC028</b><br>Test class: com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality<br>Test method: R1.1_TS001_TC028 Verify the application throws proper error message when user click continue button without selecting privacy and policy check box.</td>
+<td></td>
+<td>11</td>
+<td>com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@24269709</td></tr>
+<tr>
+<td title='com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality.r1dot1_TS001_TC003()'><b>r1dot1_TS001_TC003</b><br>Test class: com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality<br>Test method: R1.1_TS001_TC003 Verify Registering an Account by providing all the fields</td>
+<td></td>
+<td>14</td>
+<td>com.tutorialNinja.functionalTests.R1dot1_TS001_RegisterFunctionality@24269709</td></tr>
+<tr>
+<td title='com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality.R1dot2_TS005_TC024()'><b>R1dot2_TS005_TC024</b><br>Test class: com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality<br>Test method: R1.2_TS005_TC024 Verify user can select a product from featured product list from HomePage<br>Parameters: Canon EOS 5D</td>
+<td></td>
 <td>8</td>
-<td>com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@7586beff</td></tr>
+<td>com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@2a5c8d3f</td></tr>
+<tr>
+<td title='com.tutorialNinja.functionalTests.R1dot1_TS004_ForgottenPasswordFunctionality.r1dot1_TS004_TC002()'><b>r1dot1_TS004_TC002</b><br>Test class: com.tutorialNinja.functionalTests.R1dot1_TS004_ForgottenPasswordFunctionality<br>Test method: R1.1_TS004_TC002 as a Registered user I should be able to reset my password by using "Forgotten Password" link in right column</td>
+<td></td>
+<td>13</td>
+<td>com.tutorialNinja.functionalTests.R1dot1_TS004_ForgottenPasswordFunctionality@279fedbd</td></tr>
+<tr>
+<td title='com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality.r1dot1_TS003_TC001()'><b>r1dot1_TS003_TC001</b><br>Test class: com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality<br>Test method: R1.1_TS003_TC001 Verify Logging out by selecting Logout option from 'My Account' drop menu</td>
+<td></td>
+<td>12</td>
+<td>com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality@24aed80c</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -262,66 +401,22 @@ Session ID: 4a82b985eed00fd5b14165c098d939f7
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality.R1dot2_TS005_TC024()'><b>R1dot2_TS005_TC024</b><br>Test class: com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality<br>Test method: R1.2_TS005_TC024 Verify user can select a product from featured product list from HomePage<br>Parameters: MacBook</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;col-sm-4&apos;]/div[@class=&apos;btn-group&apos;]/following-sibling::h1&quot;}
-  (Session info: chrome=117.0.5938.92)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8b90da76f72b2487f691bbc724f4e273, findElement {using=xpath, value=//div[@class=&apos;col-sm-4&apos;]/div[@class=&apos;btn-group&apos;]/following-sibling::h1}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.92, chrome: {chromedriverVersion: 117.0.5938.92 (67649b10b92b..., userDataDir: C:\Users\naimn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51188}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51188/devtoo..., se:cdpVersion: 117.0.5938.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8b90da76f72b2487f691bbc724f4e273
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.getText(Unknown Source)
-	at com.tutorialNinja.pageObjectFactory.ProductDetailsPage.getProductName(ProductDetailsPage.java:25)
-	at com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality.R1dot2_TS005_TC024(R1dot2_TS005_ProductSearchFunctionality.java:34)
+<td title='com.tutorialNinja.functionalTests.Draft.draftfail()'><b>draftfail</b><br>Test class: com.tutorialNinja.functionalTests.Draft<br>Test method: negetive test case draftfail</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.tutorialNinja.functionalTests.Draft.draftfail(Draft.java:24)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1296359682", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1296359682'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;col-sm-4&apos;]/div[@class=&apos;btn-group&apos;]/following-sibling::h1&quot;}
-  (Session info: chrome=117.0.5938.92)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8b90da76f72b2487f691bbc724f4e273, findElement {using=xpath, value=//div[@class=&apos;col-sm-4&apos;]/div[@class=&apos;btn-group&apos;]/following-sibling::h1}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.92, chrome: {chromedriverVersion: 117.0.5938.92 (67649b10b92b..., userDataDir: C:\Users\naimn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51188}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51188/devtoo..., se:cdpVersion: 117.0.5938.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8b90da76f72b2487f691bbc724f4e273
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.getText(Unknown Source)
-	at com.tutorialNinja.pageObjectFactory.ProductDetailsPage.getProductName(ProductDetailsPage.java:25)
-	at com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality.R1dot2_TS005_TC024(R1dot2_TS005_ProductSearchFunctionality.java:34)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace514525002", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace514525002'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1067)
+	at org.testng.Assert.assertEquals(Assert.java:1031)
+	at org.testng.Assert.assertEquals(Assert.java:1077)
+	at com.tutorialNinja.functionalTests.Draft.draftfail(Draft.java:24)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -338,69 +433,91 @@ Session ID: 8b90da76f72b2487f691bbc724f4e273
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
 </pre></div></td>
-<td>18</td>
-<td>com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@7586beff</td></tr>
+<td>7</td>
+<td>com.tutorialNinja.functionalTests.Draft@31190526</td></tr>
 <tr>
-<td title='com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality.R1dot2_TS005_TC024()'><b>R1dot2_TS005_TC024</b><br>Test class: com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality<br>Test method: R1.2_TS005_TC024 Verify user can select a product from featured product list from HomePage<br>Parameters: iPhone</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;col-sm-4&apos;]/div[@class=&apos;btn-group&apos;]/following-sibling::h1&quot;}
-  (Session info: chrome=117.0.5938.92)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d8a402e13e9ea6e3f4ac0ba9b9254d91, findElement {using=xpath, value=//div[@class=&apos;col-sm-4&apos;]/div[@class=&apos;btn-group&apos;]/following-sibling::h1}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.92, chrome: {chromedriverVersion: 117.0.5938.92 (67649b10b92b..., userDataDir: C:\Users\naimn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51270}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51270/devtoo..., se:cdpVersion: 117.0.5938.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d8a402e13e9ea6e3f4ac0ba9b9254d91
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.getText(Unknown Source)
-	at com.tutorialNinja.pageObjectFactory.ProductDetailsPage.getProductName(ProductDetailsPage.java:25)
-	at com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality.R1dot2_TS005_TC024(R1dot2_TS005_ProductSearchFunctionality.java:34)
+<td title='com.tutorialNinja.functionalTests.Draft.draftfail()'><b>draftfail</b><br>Test class: com.tutorialNinja.functionalTests.Draft<br>Test method: negetive test case draftfail</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.tutorialNinja.functionalTests.Draft.draftfail(Draft.java:24)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2128162499", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2128162499'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;col-sm-4&apos;]/div[@class=&apos;btn-group&apos;]/following-sibling::h1&quot;}
-  (Session info: chrome=117.0.5938.92)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d8a402e13e9ea6e3f4ac0ba9b9254d91, findElement {using=xpath, value=//div[@class=&apos;col-sm-4&apos;]/div[@class=&apos;btn-group&apos;]/following-sibling::h1}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.92, chrome: {chromedriverVersion: 117.0.5938.92 (67649b10b92b..., userDataDir: C:\Users\naimn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51270}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51270/devtoo..., se:cdpVersion: 117.0.5938.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d8a402e13e9ea6e3f4ac0ba9b9254d91
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.getText(Unknown Source)
-	at com.tutorialNinja.pageObjectFactory.ProductDetailsPage.getProductName(ProductDetailsPage.java:25)
-	at com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality.R1dot2_TS005_TC024(R1dot2_TS005_ProductSearchFunctionality.java:34)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1470617940", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1470617940'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1067)
+	at org.testng.Assert.assertEquals(Assert.java:1031)
+	at org.testng.Assert.assertEquals(Assert.java:1077)
+	at com.tutorialNinja.functionalTests.Draft.draftfail(Draft.java:24)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>12</td>
+<td>com.tutorialNinja.functionalTests.Draft@31190526</td></tr>
+<tr>
+<td title='com.tutorialNinja.functionalTests.Draft.loginPagefail()'><b>loginPagefail</b><br>Test class: com.tutorialNinja.functionalTests.Draft<br>Test method: negetive test case loginPagefail</td>
+<td><div><pre>java.lang.AssertionError: expected [Customer] but found [Account Login]
+	at com.tutorialNinja.functionalTests.Draft.loginPagefail(Draft.java:33)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1113670098", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1113670098'><pre>java.lang.AssertionError: expected [Customer] but found [Account Login]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.tutorialNinja.functionalTests.Draft.loginPagefail(Draft.java:33)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>6</td>
+<td>com.tutorialNinja.functionalTests.Draft@31190526</td></tr>
+<tr>
+<td title='com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality.r1dot1_TS002_TC002()'><b>r1dot1_TS002_TC002</b><br>Test class: com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality<br>Test method: R1.1_TS002_TC002 Verify logging into the Application using invalid credentials (i.e. Invalid email address and Invalid Password)</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality.r1dot1_TS002_TC002(R1dot1_TS002_LoginFunctionality.java:43)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1179837494", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1179837494'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality.r1dot1_TS002_TC002(R1dot1_TS002_LoginFunctionality.java:43)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -417,19 +534,19 @@ Session ID: d8a402e13e9ea6e3f4ac0ba9b9254d91
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
 </pre></div></td>
-<td>16</td>
-<td>com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@7586beff</td></tr>
+<td>10</td>
+<td>com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality@2aceadd4</td></tr>
 <tr>
-<td title='com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality.R1dot2_TS005_TC024()'><b>R1dot2_TS005_TC024</b><br>Test class: com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality<br>Test method: R1.2_TS005_TC024 Verify user can select a product from featured product list from HomePage<br>Parameters: MacBook</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;col-sm-4&apos;]/div[@class=&apos;btn-group&apos;]/following-sibling::h1&quot;}
-  (Session info: chrome=117.0.5938.92)
+<td title='com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality.r1dot1_TS003_TC003()'><b>r1dot1_TS003_TC003</b><br>Test class: com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality<br>Test method: R1.1_TS003_TC003 Verify the Application session status, after logging and closing the Browser without logging out</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//ul[@class=&apos;dropdown-menu dropdown-menu-right&apos;]//a[text()=&apos;My Account&apos;]&quot;}
+  (Session info: chrome=117.0.5938.132)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [876aeb5673448453484e1772a9c6239b, findElement {using=xpath, value=//div[@class=&apos;col-sm-4&apos;]/div[@class=&apos;btn-group&apos;]/following-sibling::h1}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.92, chrome: {chromedriverVersion: 117.0.5938.92 (67649b10b92b..., userDataDir: C:\Users\naimn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51157}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51157/devtoo..., se:cdpVersion: 117.0.5938.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 876aeb5673448453484e1772a9c6239b
+Command: [86ed432d4e349ff9a844e111b337041f, findElement {using=xpath, value=//ul[@class=&apos;dropdown-menu dropdown-menu-right&apos;]//a[text()=&apos;My Account&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.132, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\naimn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51470}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51470/devtoo..., se:cdpVersion: 117.0.5938.132, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 86ed432d4e349ff9a844e111b337041f
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -443,22 +560,22 @@ Session ID: 876aeb5673448453484e1772a9c6239b
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.getText(Unknown Source)
-	at com.tutorialNinja.pageObjectFactory.ProductDetailsPage.getProductName(ProductDetailsPage.java:25)
-	at com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality.R1dot2_TS005_TC024(R1dot2_TS005_ProductSearchFunctionality.java:34)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+	at com.tutorialNinja.pageObjectFactory.CommonElements.click_MyAccount(CommonElements.java:84)
+	at com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality.r1dot1_TS003_TC003(R1dot1_TS003_LogoutFunctionality.java:60)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1560467564", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1560467564'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;col-sm-4&apos;]/div[@class=&apos;btn-group&apos;]/following-sibling::h1&quot;}
-  (Session info: chrome=117.0.5938.92)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace911965374", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace911965374'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//ul[@class=&apos;dropdown-menu dropdown-menu-right&apos;]//a[text()=&apos;My Account&apos;]&quot;}
+  (Session info: chrome=117.0.5938.132)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [876aeb5673448453484e1772a9c6239b, findElement {using=xpath, value=//div[@class=&apos;col-sm-4&apos;]/div[@class=&apos;btn-group&apos;]/following-sibling::h1}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.92, chrome: {chromedriverVersion: 117.0.5938.92 (67649b10b92b..., userDataDir: C:\Users\naimn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51157}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51157/devtoo..., se:cdpVersion: 117.0.5938.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 876aeb5673448453484e1772a9c6239b
+Command: [86ed432d4e349ff9a844e111b337041f, findElement {using=xpath, value=//ul[@class=&apos;dropdown-menu dropdown-menu-right&apos;]//a[text()=&apos;My Account&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.132, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\naimn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51470}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51470/devtoo..., se:cdpVersion: 117.0.5938.132, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 86ed432d4e349ff9a844e111b337041f
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -477,9 +594,9 @@ Session ID: 876aeb5673448453484e1772a9c6239b
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.getText(Unknown Source)
-	at com.tutorialNinja.pageObjectFactory.ProductDetailsPage.getProductName(ProductDetailsPage.java:25)
-	at com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality.R1dot2_TS005_TC024(R1dot2_TS005_ProductSearchFunctionality.java:34)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+	at com.tutorialNinja.pageObjectFactory.CommonElements.click_MyAccount(CommonElements.java:84)
+	at com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality.r1dot1_TS003_TC003(R1dot1_TS003_LogoutFunctionality.java:60)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -496,19 +613,51 @@ Session ID: 876aeb5673448453484e1772a9c6239b
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
 </pre></div></td>
-<td>22</td>
-<td>com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@7586beff</td></tr>
+<td>29</td>
+<td>com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality@24aed80c</td></tr>
 <tr>
-<td title='com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality.R1dot2_TS005_TC024()'><b>R1dot2_TS005_TC024</b><br>Test class: com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality<br>Test method: R1.2_TS005_TC024 Verify user can select a product from featured product list from HomePage<br>Parameters: iPhone</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;col-sm-4&apos;]/div[@class=&apos;btn-group&apos;]/following-sibling::h1&quot;}
-  (Session info: chrome=117.0.5938.92)
+<td title='com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality.r1dot1_TS002_TC003()'><b>r1dot1_TS002_TC003</b><br>Test class: com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality<br>Test method: R1.1_TS002_TC003 Verify logging into the Application using invalid email address and valid Password</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality.r1dot1_TS002_TC003(R1dot1_TS002_LoginFunctionality.java:58)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1939411025", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1939411025'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality.r1dot1_TS002_TC003(R1dot1_TS002_LoginFunctionality.java:58)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>9</td>
+<td>com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality@2aceadd4</td></tr>
+<tr>
+<td title='com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality.r1dot1_TS003_TC003()'><b>r1dot1_TS003_TC003</b><br>Test class: com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality<br>Test method: R1.1_TS003_TC003 Verify the Application session status, after logging and closing the Browser without logging out</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//ul[@class=&apos;dropdown-menu dropdown-menu-right&apos;]//a[text()=&apos;My Account&apos;]&quot;}
+  (Session info: chrome=117.0.5938.132)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3fd7e770fbe7a7b349e2698d2c9c4b77, findElement {using=xpath, value=//div[@class=&apos;col-sm-4&apos;]/div[@class=&apos;btn-group&apos;]/following-sibling::h1}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.92, chrome: {chromedriverVersion: 117.0.5938.92 (67649b10b92b..., userDataDir: C:\Users\naimn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51244}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51244/devtoo..., se:cdpVersion: 117.0.5938.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3fd7e770fbe7a7b349e2698d2c9c4b77
+Command: [35137720100261b55256e724f23929eb, findElement {using=xpath, value=//ul[@class=&apos;dropdown-menu dropdown-menu-right&apos;]//a[text()=&apos;My Account&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.132, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\naimn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51668}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51668/devtoo..., se:cdpVersion: 117.0.5938.132, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 35137720100261b55256e724f23929eb
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -522,22 +671,22 @@ Session ID: 3fd7e770fbe7a7b349e2698d2c9c4b77
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.getText(Unknown Source)
-	at com.tutorialNinja.pageObjectFactory.ProductDetailsPage.getProductName(ProductDetailsPage.java:25)
-	at com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality.R1dot2_TS005_TC024(R1dot2_TS005_ProductSearchFunctionality.java:34)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+	at com.tutorialNinja.pageObjectFactory.CommonElements.click_MyAccount(CommonElements.java:84)
+	at com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality.r1dot1_TS003_TC003(R1dot1_TS003_LogoutFunctionality.java:60)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace855917114", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace855917114'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;col-sm-4&apos;]/div[@class=&apos;btn-group&apos;]/following-sibling::h1&quot;}
-  (Session info: chrome=117.0.5938.92)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace420524986", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace420524986'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//ul[@class=&apos;dropdown-menu dropdown-menu-right&apos;]//a[text()=&apos;My Account&apos;]&quot;}
+  (Session info: chrome=117.0.5938.132)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3fd7e770fbe7a7b349e2698d2c9c4b77, findElement {using=xpath, value=//div[@class=&apos;col-sm-4&apos;]/div[@class=&apos;btn-group&apos;]/following-sibling::h1}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.92, chrome: {chromedriverVersion: 117.0.5938.92 (67649b10b92b..., userDataDir: C:\Users\naimn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51244}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51244/devtoo..., se:cdpVersion: 117.0.5938.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3fd7e770fbe7a7b349e2698d2c9c4b77
+Command: [35137720100261b55256e724f23929eb, findElement {using=xpath, value=//ul[@class=&apos;dropdown-menu dropdown-menu-right&apos;]//a[text()=&apos;My Account&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.132, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\naimn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51668}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51668/devtoo..., se:cdpVersion: 117.0.5938.132, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 35137720100261b55256e724f23929eb
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -556,9 +705,41 @@ Session ID: 3fd7e770fbe7a7b349e2698d2c9c4b77
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.getText(Unknown Source)
-	at com.tutorialNinja.pageObjectFactory.ProductDetailsPage.getProductName(ProductDetailsPage.java:25)
-	at com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality.R1dot2_TS005_TC024(R1dot2_TS005_ProductSearchFunctionality.java:34)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+	at com.tutorialNinja.pageObjectFactory.CommonElements.click_MyAccount(CommonElements.java:84)
+	at com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality.r1dot1_TS003_TC003(R1dot1_TS003_LogoutFunctionality.java:60)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>26</td>
+<td>com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality@24aed80c</td></tr>
+<tr>
+<td title='com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality.r1dot1_TS002_TC002()'><b>r1dot1_TS002_TC002</b><br>Test class: com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality<br>Test method: R1.1_TS002_TC002 Verify logging into the Application using invalid credentials (i.e. Invalid email address and Invalid Password)</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality.r1dot1_TS002_TC002(R1dot1_TS002_LoginFunctionality.java:43)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1495501208", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1495501208'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality.r1dot1_TS002_TC002(R1dot1_TS002_LoginFunctionality.java:43)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -575,8 +756,74 @@ Session ID: 3fd7e770fbe7a7b349e2698d2c9c4b77
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
 </pre></div></td>
-<td>16</td>
-<td>com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@7586beff</td></tr>
+<td>10</td>
+<td>com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality@2aceadd4</td></tr>
+<tr>
+<td title='com.tutorialNinja.functionalTests.Draft.loginPagefail()'><b>loginPagefail</b><br>Test class: com.tutorialNinja.functionalTests.Draft<br>Test method: negetive test case loginPagefail</td>
+<td><div><pre>java.lang.AssertionError: expected [Customer] but found [Account Login]
+	at com.tutorialNinja.functionalTests.Draft.loginPagefail(Draft.java:33)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace713822183", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace713822183'><pre>java.lang.AssertionError: expected [Customer] but found [Account Login]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.tutorialNinja.functionalTests.Draft.loginPagefail(Draft.java:33)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>6</td>
+<td>com.tutorialNinja.functionalTests.Draft@31190526</td></tr>
+<tr>
+<td title='com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality.r1dot1_TS002_TC003()'><b>r1dot1_TS002_TC003</b><br>Test class: com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality<br>Test method: R1.1_TS002_TC003 Verify logging into the Application using invalid email address and valid Password</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality.r1dot1_TS002_TC003(R1dot1_TS002_LoginFunctionality.java:58)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2112860468", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2112860468'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality.r1dot1_TS002_TC003(R1dot1_TS002_LoginFunctionality.java:58)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>7</td>
+<td>com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality@2aceadd4</td></tr>
 </table><p>
 </body>
 </html>

@@ -4,17 +4,15 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.tutorialNinja.base.InitialComponents;
 
-public class Extendreporter extends  InitialComponents {
-	
-	
-	private ExtentReports extentReports;
+public class ExtendReporter extends  InitialComponents {
+
 
 	public ExtentReports getExtentReporter(String testName) {
-		ExtentSparkReporter extentSparkReporter= new ExtentSparkReporter(System.getProperty("user.dir")+"\\testResultsAndScreecshoots\\"+testName+" report "+getCurrentDateAndTime()+".html");
+		ExtentSparkReporter extentSparkReporter= new ExtentSparkReporter(System.getProperty("user.dir")+"\\testResultsAndScreecshoots\\"+testName+" report "+getTimeStamp()+".html");
 		extentSparkReporter.config().setDocumentTitle("Open Cart functional test");
-		extentSparkReporter.config().setReportName(testName + " " + getCurrentDateAndTime());
+		extentSparkReporter.config().setReportName(testName + " " + getTimeStamp());
 
-		extentReports = new ExtentReports();
+		ExtentReports extentReports = new ExtentReports();
 		extentReports.attachReporter(extentSparkReporter);
 		extentReports.setSystemInfo("Operating System ", System.getProperty("os.name"));
 		return extentReports;

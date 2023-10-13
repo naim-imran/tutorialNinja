@@ -7,12 +7,26 @@
   </listeners>
   <test thread-count="5" parallel="classes" name="Tutorial Ninja functional Regression Test(failed)">
     <classes>
-      <class name="com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality">
+      <class name="com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality">
         <methods>
-          <include name="R1dot2_TS005_TC024" invocation-numbers="1 2"/>
+          <include name="r1dot1_TS002_TC002"/>
+          <include name="r1dot1_TS002_TC003"/>
           <include name="quitDriver"/>
         </methods>
-      </class> <!-- com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality -->
+      </class> <!-- com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality -->
+      <class name="com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality">
+        <methods>
+          <include name="quitDriver"/>
+          <include name="r1dot1_TS003_TC003"/>
+        </methods>
+      </class> <!-- com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality -->
+      <class name="com.tutorialNinja.functionalTests.Draft">
+        <methods>
+          <include name="draftfail"/>
+          <include name="loginPagefail"/>
+          <include name="quitDriver"/>
+        </methods>
+      </class> <!-- com.tutorialNinja.functionalTests.Draft -->
     </classes>
   </test> <!-- Tutorial Ninja functional Regression Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

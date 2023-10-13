@@ -10,7 +10,9 @@ import com.tutorialNinja.pageObjectFactory.ProductDetailsPage;
 import com.tutorialNinja.pageObjectFactory.SearchResultPage;
 
 public class R1dot2_TS005_ProductSearchFunctionality extends InitialComponents {
-
+	
+	
+	// jira link: https://naayeem.atlassian.net/browse/TN-43
 	@Test(priority = 1, groups = {"smoke","possitive"}, description = "R1.2_TS005_TC001 As an user I should be able to search a product which is present in database.")
 	public void r1dot2_TS005_TC001() {
 		HomePageObjects homePage = launchApplicationHomePage();
@@ -24,7 +26,7 @@ public class R1dot2_TS005_ProductSearchFunctionality extends InitialComponents {
 		Assert.assertEquals(productDetailsPage.getProductDetailsPageTitle(), expectedProduct);
 		
 	}
-	
+	// jira link: https://naayeem.atlassian.net/browse/TN-55
 	@Test(groups = {"smoke","possitive"}, dataProvider = "productList", priority = 2, description = "R1.2_TS005_TC024 Verify user can select a product from featured product list from HomePage")
 	public void R1dot2_TS005_TC024(String name) {
 		String productName = name;

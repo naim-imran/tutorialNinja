@@ -84,15 +84,21 @@ public class Reuseables {
 		jsonObject.put("PhoneNumber", hashMap.get("randomPhoneNumber"));
 
 		// Write the JSON object to a file
-
+		FileWriter fileWriter = null;
 		try {
-			FileWriter fileWriter = new FileWriter(
+			 fileWriter = new FileWriter(
 					System.getProperty("user.dir") + "\\src\\test\\resources\\data.json");
 			fileWriter.append(jsonObject.toString());
-			fileWriter.close();
+			
 			System.out.println("Data has been written to data.json");
 		} catch (IOException e) {
 			e.printStackTrace();
+		}finally {
+			try {
+				fileWriter.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 		}
 
 		return hashMap;
@@ -105,7 +111,7 @@ public class Reuseables {
 		return httpsURLConnection.getResponseCode();
 	}
 
-	public String getCurrentDateAndTime() {
+	public String getTimeStamp() {
 		LocalDateTime currentDateAndTime = LocalDateTime.now();
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 		String formatedurrentDateAndTime = formatter.format(currentDateAndTime);
