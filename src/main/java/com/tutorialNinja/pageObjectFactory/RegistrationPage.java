@@ -33,6 +33,8 @@ public class RegistrationPage extends CommonElements{
 	private WebElement continueButton;
 	@FindBy(xpath= "//label[text()='Yes']/input")
 	private WebElement subscribeNewletterYesButton;
+	@FindBy(xpath = "//label[text()='No']/input")
+	private WebElement subscribeNewletterNoButton;
 	@FindBy(xpath= "//div[@class='alert alert-danger alert-dismissible']")
 	private WebElement privacyPolicyErrorMsg;
 	@FindBy(xpath= "//input[@name='firstname']/following-sibling::div[@class='text-danger']")
@@ -80,8 +82,23 @@ public class RegistrationPage extends CommonElements{
 		continueButton.click();
 		return new AccountCreationSuccessPage(driver);
 	}
-	public void clickSubscribeNewletterYesButton() {
-		subscribeNewletterYesButton.click();	
+	public boolean clickSubscribeNewletterYesButton() {
+		subscribeNewletterYesButton.click();
+		return subscribeNewletterYesButton.isSelected();
+	}
+	public boolean clickSubscribeNewletterNoButton() {
+		if (subscribeNewletterNoButton.isSelected()) {
+			return true;
+		}
+		subscribeNewletterNoButton.click();
+		return true;
+	}
+	public boolean checkNewletterSubscribeNoButton() {
+		if (subscribeNewletterNoButton.isSelected()) {
+			return true;
+		}else {
+			return false;
+		}
 	}
 	public String getPrivacyPolicyErrorMsg() {
 		return privacyPolicyErrorMsg.getText();

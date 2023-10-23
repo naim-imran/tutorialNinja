@@ -95,4 +95,49 @@ public class R1dot1_TS001_RegisterFunctionality extends InitialComponents {
 				"Warning: You must agree to the Privacy Policy!");
 	}
 	
+	@Test(priority = 5, groups =  {"smoke","possitive"}, description = "R1.1_TS001_TC005 As an user I should be able to register an Account by providing only the Mandatory fields and 'Yes' option is selected for Newsletter field" )
+	public void r1dot1_TS001_TC005(){
+		HashMap<String, String> testData = getFakerTestData();
+		HomePageObjects homePage = launchApplicationHomePage();
+		homePage.click_MyAccountDropLisButton();
+		RegistrationPage registrationPage = homePage.click_registerButton();
+		Assert.assertEquals(registrationPage.getRegistrationPageTitle(), "Register Account");
+		registrationPage.enterFirstName(testData.get("randomFirstName"));
+		registrationPage.enterLastName(testData.get("randomLastName"));
+		registrationPage.enterEmail(testData.get("randomEmail"));
+		registrationPage.enterTelephone(testData.get("randomPhoneNumber"));
+		registrationPage.enterPassword(testData.get("randomPassword"));
+		registrationPage.confirmPassword(testData.get("randomPassword"));
+		Assert.assertTrue(registrationPage.clickSubscribeNewletterYesButton());
+		registrationPage.checkPrivacyAndPolicyCheckBox();
+		AccountCreationSuccessPage accountCreationSuccessPage = registrationPage.clickContinue();
+		Assert.assertEquals(accountCreationSuccessPage.getAccountCreateConfirmationText(),
+				"Your Account Has Been Created!");
+		System.out.println(accountCreationSuccessPage.getAccountCreateConfirmationText());
+		MyAccountPage myAccountPage = accountCreationSuccessPage.clickContinueButton();
+		Assert.assertEquals(myAccountPage.getPageTitle(), "My Account");
+		System.out.println(myAccountPage.getPageTitle());
+	}
+	
+	@Test(priority = 6, groups =  {"smoke","possitive"}, description = "R1.1_TS001_TC006 As an user when I navigate to the registration page Newsletter field 'No' option should be pre-selected" )
+	public void r1dot1_TS001_TC006(){
+		
+		HomePageObjects homePage = launchApplicationHomePage();
+		homePage.click_MyAccountDropLisButton();
+		RegistrationPage registrationPage = homePage.click_registerButton();
+		Assert.assertEquals(registrationPage.getRegistrationPageTitle(), "Register Account");
+		
+		Assert.assertTrue(registrationPage.checkNewletterSubscribeNoButton());
+		
+	}
+	
+	@Test(priority = 7, groups =  {"smoke","negetive"}, description = "R1.1_TS001_TC029 As an user when I navigate to the registration page NEWSLETTER subscribe \"Yes\" checkBox shouldn’t be pre-selected." )
+	public void r1dot1_TS001_TC029(){
+		
+		HomePageObjects homePage = launchApplicationHomePage();
+		homePage.click_MyAccountDropLisButton();
+		RegistrationPage registrationPage = homePage.click_registerButton();
+		Assert.assertEquals(registrationPage.getRegistrationPageTitle(), "Register Account");
+		Assert.assertTrue(registrationPage.checkNewletterSubscribeNoButton());		
+	}
 }

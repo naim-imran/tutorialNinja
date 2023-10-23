@@ -34,7 +34,7 @@ public class Reuseables {
 	public Properties loadProperty() {
 		FileInputStream fis = null;
 		try {
-			fis = new FileInputStream(".\\src\\main\\resources\\config.properties");
+			fis = new FileInputStream("." + File.separator + "src" + File.separator + "main" + File.separator + "resources"+ File.separator + "config.properties");
 			prop = new Properties();
 			prop.load(fis);
 		} catch (IOException e) {
@@ -53,14 +53,15 @@ public class Reuseables {
 
 		TakesScreenshot screenshot = (TakesScreenshot) driver;
 		File source = screenshot.getScreenshotAs(OutputType.FILE);
-		File file = new File(System.getProperty("user.dir") + "//reports//" + testCaseName + ".png");
+		String dest = File.separator + "testResultsAndScreecshoots" + File.separator +testCaseName + ".png";
+		File file = new File(dest);
 		try {
 			FileUtils.copyFile(source, file);
 
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		return System.getProperty("user.dir") + "//reports//" + testCaseName + ".png";
+		return file.getAbsolutePath();
 	}
 
 	public HashMap<String, String> getFakerTestData() {
@@ -87,7 +88,7 @@ public class Reuseables {
 		FileWriter fileWriter = null;
 		try {
 			 fileWriter = new FileWriter(
-					System.getProperty("user.dir") + "\\src\\test\\resources\\data.json");
+					System.getProperty("user.dir") + File.separator + "src" + File.separator + "test" + File.separator + "resources"+ File.separator +"data.json");
 			fileWriter.append(jsonObject.toString());
 			
 			System.out.println("Data has been written to data.json");
@@ -123,7 +124,7 @@ public class Reuseables {
 		XSSFWorkbook workbook = null;
 		FileInputStream fis = null;
 		try {
-			fis = new FileInputStream(".\\src\\test\\resources\\QaFoxTestData.xlsx"); // dot " . " represents current
+			fis = new FileInputStream("." + File.separator + "src" + File.separator + "test" + File.separator + "resources"+ File.separator +"QaFoxTestData.xlsx"); // dot " . " represents current
 																						// project path
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -166,7 +167,7 @@ public class Reuseables {
 		ArrayList<HashMap<String, Object>> dataList = new ArrayList<>();
 
 		try {
-			fis = new FileInputStream(".\\src\\test\\resources\\QaFoxTestData.xlsx"); // dot " . " represents current
+			fis = new FileInputStream("." + File.separator + "src" + File.separator + "test" + File.separator + "resources"+ File.separator +"QaFoxTestData.xlsx"); // dot " . " represents current
 																						// project path
 			workbook = new XSSFWorkbook(fis);
 			XSSFSheet sheet = workbook.getSheet(sheetName);

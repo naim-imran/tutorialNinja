@@ -1,17 +1,21 @@
 package com.tutorialNinja.base;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
 import java.time.Duration;
+import java.util.HashMap;
 import java.util.stream.Stream;
 
+import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ThreadGuard;
 import org.testng.annotations.AfterMethod;
 
@@ -41,7 +45,7 @@ public class InitialComponents extends Reuseables {
 		return driver;
 	}
 	
-	
+	 
 	public HomePageObjects launchApplicationHomePage() {
 		setupThreadLocalDriver();
 		System.out.println("Thread ID= " + Thread.currentThread().getId());
@@ -54,7 +58,7 @@ public class InitialComponents extends Reuseables {
 	}
 
 	public void cleanTestsBed() {
-		String folderPath = System.getProperty("user.dir") + "\\testResultsAndScreecshoots\\";
+		String folderPath = System.getProperty("user.dir") + File.separator + "testResultsAndScreecshoots" + File.separator;
 
 		try (Stream<Path> paths = Files.walk(Path.of(folderPath))) {
 			paths.filter(Files::isRegularFile).filter(p -> p.getFileName().toString().endsWith(".png"))
@@ -74,10 +78,10 @@ public class InitialComponents extends Reuseables {
 		
 
 		// Specify the source folder path 
-		Path sourceFolderPath = Path.of(System.getProperty("user.dir") + "\\testResultsAndScreecshoots\\");
+		Path sourceFolderPath = Path.of(System.getProperty("user.dir") + File.separator + "testResultsAndScreecshoots" + File.separator);
 
 		// Specify the target folder path 
-		Path targetFolderPath =Path.of(System.getProperty("user.dir") + "\\testResultArcheive\\");
+		Path targetFolderPath =Path.of(System.getProperty("user.dir") + File.separator + "testResultArcheive" + File.separator);
 
 		try (DirectoryStream<Path> stream = Files.newDirectoryStream(sourceFolderPath)) {
 			for (Path sourceFilePath : stream) {
@@ -95,6 +99,17 @@ public class InitialComponents extends Reuseables {
 		System.out.println("TestBed cleaned up");
 	}
 	
+	public HashMap<String, String> getBrowserNameVersion() {
+		setupThreadLocalDriver();
+		Capabilities caps = ((RemoteWebDriver) driver).getCapabilities();
+		String browserName = caps.getBrowserName();
+		String browserVersion = caps.getBrowserVersion();
+		HashMap<String, String> hashMap= new HashMap<String, String>();
+		hashMap.put("name", browserName);
+		hashMap.put("version", browserVersion);
+		quitDriver();
+		return hashMap;
+	}
 	
 	@AfterMethod(alwaysRun = true)
 	public void quitDriver() {

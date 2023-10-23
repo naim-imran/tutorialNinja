@@ -14,7 +14,6 @@ public class ExtendReporter extends  InitialComponents {
 
 		ExtentReports extentReports = new ExtentReports();
 		extentReports.attachReporter(extentSparkReporter);
-		extentReports.setSystemInfo("Operating System ", System.getProperty("os.name"));
 		return extentReports;
 	}
 }

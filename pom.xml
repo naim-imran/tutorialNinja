@@ -55,7 +55,7 @@
 				</pluginManagement>
 			</build>
 		</profile>
-		
+
 		<profile>
 			<id>possitive</id>
 			<build>
@@ -74,7 +74,7 @@
 				</pluginManagement>
 			</build>
 		</profile>
-	<profile>
+		<profile>
 			<id>negetive</id>
 			<build>
 				<pluginManagement>
@@ -96,9 +96,15 @@
 	</profiles>
 
 
-
-
 	<dependencies>
+		<!--
+		https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
+		<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<version>3.8.1</version>
+		</dependency>
+
 
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
@@ -140,7 +146,7 @@
 		<dependency>
 			<groupId>com.aventstack</groupId>
 			<artifactId>extentreports</artifactId>
-			<version>4.1.5</version>
+			<version>5.0.9</version>
 		</dependency>
 
 		<dependency>
@@ -168,9 +174,19 @@
 		<pluginManagement>
 
 			<plugins>
+
+				<plugin>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>3.1.2</version>
+					<configuration>
+						<suiteXmlFiles>
+							<suiteXmlFile>regressionTest.xml</suiteXmlFile>
+						</suiteXmlFiles>
+					</configuration>
+				</plugin>
 				<plugin>
 					<artifactId>maven-compiler-plugin</artifactId>
-					<version>3.11.0</version>
+					<version>3.8.1</version>
 				</plugin>
 
 				<plugin>
@@ -181,16 +197,6 @@
 				<plugin>
 					<artifactId>maven-resources-plugin</artifactId>
 					<version>3.3.1</version>
-				</plugin>
-
-				<plugin>
-					<artifactId>maven-surefire-plugin</artifactId>
-					<version>3.1.2</version>
-					<configuration>
-						<suiteXmlFiles>
-							<suiteXmlFile>regressionTest.xml</suiteXmlFile>
-						</suiteXmlFiles>
-					</configuration>
 				</plugin>
 
 				<plugin>
@@ -211,15 +217,6 @@
 			</plugins>
 
 		</pluginManagement>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<configuration>
-					<source>11</source>
-					<target>11</target>
-				</configuration>
-			</plugin>
-		</plugins>
+
 	</build>
 </project>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<suite thread-count="10" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="testListenersAndReporter.TestNGListeners"/>
     <listener class-name="testListenersAndReporter.TestNGitransformer"/>
   </listeners>
-  <test thread-count="5" parallel="classes" name="Tutorial Ninja functional Regression Test(failed)">
+  <test thread-count="10" parallel="classes" name="Tutorial Ninja functional Regression Test(failed)">
     <classes>
       <class name="com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality">
         <methods>
@@ -14,12 +14,6 @@
           <include name="quitDriver"/>
         </methods>
       </class> <!-- com.tutorialNinja.functionalTests.R1dot1_TS002_LoginFunctionality -->
-      <class name="com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality">
-        <methods>
-          <include name="quitDriver"/>
-          <include name="r1dot1_TS003_TC003"/>
-        </methods>
-      </class> <!-- com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality -->
       <class name="com.tutorialNinja.functionalTests.Draft">
         <methods>
           <include name="draftfail"/>
@@ -27,6 +21,12 @@
           <include name="quitDriver"/>
         </methods>
       </class> <!-- com.tutorialNinja.functionalTests.Draft -->
+      <class name="com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality">
+        <methods>
+          <include name="quitDriver"/>
+          <include name="r1dot1_TS003_TC003"/>
+        </methods>
+      </class> <!-- com.tutorialNinja.functionalTests.R1dot1_TS003_LogoutFunctionality -->
     </classes>
   </test> <!-- Tutorial Ninja functional Regression Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
