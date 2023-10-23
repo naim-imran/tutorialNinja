@@ -12,9 +12,10 @@ import com.tutorialNinja.pageObjectFactory.MyAccountPage;
 import com.tutorialNinja.pageObjectFactory.RegistrationPage;
 
 public class R1dot1_TS001_RegisterFunctionality extends InitialComponents {
-
-	@Test(priority = 1, groups = {"smoke", "possitive"}, description = "R1.1_TS001_TC001 As a user I should be able to Register an Account by providing only the Mandatory fields")
+	
+	@Test(priority = 1, groups = {SMOKE,POSSITIVE}, description = "R1.1_TS001_TC001 As a user I should be able to Register an Account by providing only the Mandatory fields")
 	public void r1dot1_TS001_TC001(){
+	
 		HashMap<String, String> testData = getFakerTestData();
 		HomePageObjects homePage = launchApplicationHomePage();
 		homePage.click_MyAccountDropLisButton();
@@ -36,7 +37,7 @@ public class R1dot1_TS001_RegisterFunctionality extends InitialComponents {
 		System.out.println(myAccountPage.getPageTitle());
 	}
 
-	@Test(priority = 3, groups = {"smoke","possitive"}, description = "R1.1_TS001_TC003 Verify Registering an Account by providing all the fields")
+	@Test(priority = 3, groups = {SMOKE,POSSITIVE}, description = "R1.1_TS001_TC003 Verify Registering an Account by providing all the fields")
 	public void r1dot1_TS001_TC003(){
 		HashMap<String, String> testData = getFakerTestData();
 		HomePageObjects homePage = launchApplicationHomePage();
@@ -95,7 +96,7 @@ public class R1dot1_TS001_RegisterFunctionality extends InitialComponents {
 				"Warning: You must agree to the Privacy Policy!");
 	}
 	
-	@Test(priority = 5, groups =  {"smoke","possitive"}, description = "R1.1_TS001_TC005 As an user I should be able to register an Account by providing only the Mandatory fields and 'Yes' option is selected for Newsletter field" )
+	@Test(priority = 5, groups =  {SMOKE,POSSITIVE}, description = "R1.1_TS001_TC005 As an user I should be able to register an Account by providing only the Mandatory fields and 'Yes' option is selected for Newsletter field" )
 	public void r1dot1_TS001_TC005(){
 		HashMap<String, String> testData = getFakerTestData();
 		HomePageObjects homePage = launchApplicationHomePage();
@@ -119,21 +120,17 @@ public class R1dot1_TS001_RegisterFunctionality extends InitialComponents {
 		System.out.println(myAccountPage.getPageTitle());
 	}
 	
-	@Test(priority = 6, groups =  {"smoke","possitive"}, description = "R1.1_TS001_TC006 As an user when I navigate to the registration page Newsletter field 'No' option should be pre-selected" )
+	@Test(priority = 6, groups =  {SMOKE,POSSITIVE}, description = "R1.1_TS001_TC006 As an user when I navigate to the registration page Newsletter field 'No' option should be pre-selected" )
 	public void r1dot1_TS001_TC006(){
-		
 		HomePageObjects homePage = launchApplicationHomePage();
 		homePage.click_MyAccountDropLisButton();
 		RegistrationPage registrationPage = homePage.click_registerButton();
-		Assert.assertEquals(registrationPage.getRegistrationPageTitle(), "Register Account");
-		
-		Assert.assertTrue(registrationPage.checkNewletterSubscribeNoButton());
-		
+		Assert.assertEquals(registrationPage.getRegistrationPageTitle(), "Register Account");		
+		Assert.assertTrue(registrationPage.checkNewletterSubscribeNoButton());		
 	}
 	
 	@Test(priority = 7, groups =  {"smoke","negetive"}, description = "R1.1_TS001_TC029 As an user when I navigate to the registration page NEWSLETTER subscribe \"Yes\" checkBox shouldn’t be pre-selected." )
 	public void r1dot1_TS001_TC029(){
-		
 		HomePageObjects homePage = launchApplicationHomePage();
 		homePage.click_MyAccountDropLisButton();
 		RegistrationPage registrationPage = homePage.click_registerButton();

@@ -8,7 +8,6 @@ import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
 import java.time.Duration;
 import java.util.HashMap;
-import java.util.stream.Stream;
 
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
@@ -58,22 +57,19 @@ public class InitialComponents extends Reuseables {
 	}
 
 	public void cleanTestsBed() {
-		String folderPath = System.getProperty("user.dir") + File.separator + "testResultsAndScreecshoots" + File.separator;
-
-		try (Stream<Path> paths = Files.walk(Path.of(folderPath))) {
-			paths.filter(Files::isRegularFile).filter(p -> p.getFileName().toString().endsWith(".png"))
-					.forEach(p -> {
-						try {
-							Files.delete(p);
-							System.out.println("Deleted: " + p);
-						} catch (IOException e) {
-							System.err.println("Failed to delete: " + p);
-							e.printStackTrace();
-						}
-					});
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		/*
+		 * String folderPath = System.getProperty("user.dir") + File.separator +
+		 * "testResultsAndScreecshoots" + File.separator;
+		 * 
+		 * 
+		 * try (Stream<Path> paths = Files.walk(Path.of(folderPath))) {
+		 * paths.filter(Files::isRegularFile).filter(p ->
+		 * p.getFileName().toString().endsWith(".png")) .forEach(p -> { try {
+		 * Files.delete(p); System.out.println("Deleted: " + p); } catch (IOException e)
+		 * { System.err.println("Failed to delete: " + p); e.printStackTrace(); } }); }
+		 * catch (IOException e) { e.printStackTrace(); }
+		 */
+		 
 
 		
 

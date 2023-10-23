@@ -13,8 +13,7 @@ import com.tutorialNinja.pageObjectFactory.MyAccountPage;
 public class R1dot1_TS002_LoginFunctionality extends InitialComponents {
 	
 	// https://naayeem.atlassian.net/browse/TN-40
-	@Test(priority = 0, groups = { "smoke",
-			"possitive" }, description = "R1.1_TS002_TC001 Verify logging into the Application using valid credentials")
+	@Test(priority = 0, groups = { SMOKE,POSSITIVE }, description = "R1.1_TS002_TC001 Verify logging into the Application using valid credentials")
 	public void r1dot1_TS002_TC001() throws IOException {
 		HomePageObjects homePage = launchApplicationHomePage();
 		homePage.click_MyAccountDropLisButton();

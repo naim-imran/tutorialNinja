@@ -13,8 +13,7 @@ import com.tutorialNinja.pageObjectFactory.MyAccountPage;
 
 public class R1dot1_TS003_LogoutFunctionality extends InitialComponents {
 
-	@Test(priority = 1, groups = { "smoke",
-			"possitive" }, description = "R1.1_TS003_TC001 Verify Logging out by selecting Logout option from 'My Account' drop menu")
+	@Test(priority = 1, groups = {SMOKE,POSSITIVE}, description = "R1.1_TS003_TC001 Verify Logging out by selecting Logout option from 'My Account' drop menu")
 	public void r1dot1_TS003_TC001() throws IOException {
 		HomePageObjects homePage = launchApplicationHomePage();
 		homePage.click_MyAccountDropLisButton();
@@ -29,8 +28,7 @@ public class R1dot1_TS003_LogoutFunctionality extends InitialComponents {
 		Assert.assertEquals(logOutPage.getPageTitle(), "Account Logout");
 	}
 
-	@Test(priority = 2, groups = {
-			"smoke","possitive"}, description = "R1.1_TS003_TC002 Verify Logging out by selecting Logout option from 'Right Column' options")
+	@Test(priority = 2, groups = {SMOKE,POSSITIVE}, description = "R1.1_TS003_TC002 Verify Logging out by selecting Logout option from 'Right Column' options")
 	public void r1dot1_TS003_TC002() {
 		HomePageObjects homePage = launchApplicationHomePage();
 		homePage.click_MyAccountDropLisButton();
@@ -44,7 +42,7 @@ public class R1dot1_TS003_LogoutFunctionality extends InitialComponents {
 		Assert.assertEquals(logOutPage.getPageTitle(), "Account Logout");
 	}
 	
-	@Test(priority = 3, groups = {"smoke","possitive"}, description = "R1.1_TS003_TC003 Verify the Application session status, after logging and closing the Browser without logging out" )
+	@Test(priority = 3, groups = {SMOKE,POSSITIVE}, description = "R1.1_TS003_TC003 Verify the Application session status, after logging and closing the Browser without logging out" )
 	public void r1dot1_TS003_TC003() {
 		HomePageObjects homePage = launchApplicationHomePage();
 		homePage.click_MyAccountDropLisButton();

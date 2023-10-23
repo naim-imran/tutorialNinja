@@ -2,7 +2,7 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-23T05:57:50 EDT" name="Suite" finished-at="2023-10-23T05:58:28 EDT" duration-ms="38224">
+  <suite started-at="2023-10-23T07:03:20 EDT" name="Suite" finished-at="2023-10-23T07:03:58 EDT" duration-ms="38439">
     <groups>
       <group name="possitive">
         <method signature="R1dot2_TS005_ProductSearchFunctionality.R1dot2_TS005_TC024(java.lang.String)[pri:2, instance:com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@79079097]" name="R1dot2_TS005_TC024" class="com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality"/>
@@ -11,9 +11,9 @@
         <method signature="R1dot2_TS005_ProductSearchFunctionality.R1dot2_TS005_TC024(java.lang.String)[pri:2, instance:com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@79079097]" name="R1dot2_TS005_TC024" class="com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2023-10-23T05:57:50 EDT" name="Tutorial Ninja functional Regression Test" finished-at="2023-10-23T05:58:28 EDT" duration-ms="38224">
+    <test started-at="2023-10-23T07:03:20 EDT" name="Tutorial Ninja functional Regression Test" finished-at="2023-10-23T07:03:58 EDT" duration-ms="38439">
       <class name="com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality">
-        <test-method signature="R1dot2_TS005_TC024(java.lang.String)[pri:2, instance:com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@79079097]" started-at="2023-10-23T05:57:51 EDT" name="R1dot2_TS005_TC024" description="R1.2_TS005_TC024 Verify user can select a product from featured product list from HomePage" data-provider="productList" finished-at="2023-10-23T05:58:01 EDT" duration-ms="10499" status="PASS">
+        <test-method signature="R1dot2_TS005_TC024(java.lang.String)[pri:2, instance:com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@79079097]" started-at="2023-10-23T07:03:20 EDT" name="R1dot2_TS005_TC024" description="R1.2_TS005_TC024 Verify user can select a product from featured product list from HomePage" data-provider="productList" finished-at="2023-10-23T07:03:31 EDT" duration-ms="10218" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -24,11 +24,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- R1dot2_TS005_TC024 -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@79079097]" started-at="2023-10-23T05:58:01 EDT" name="quitDriver" finished-at="2023-10-23T05:58:02 EDT" duration-ms="454" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@79079097]" started-at="2023-10-23T07:03:31 EDT" name="quitDriver" finished-at="2023-10-23T07:03:31 EDT" duration-ms="392" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method signature="R1dot2_TS005_TC024(java.lang.String)[pri:2, instance:com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@79079097]" started-at="2023-10-23T05:58:02 EDT" name="R1dot2_TS005_TC024" description="R1.2_TS005_TC024 Verify user can select a product from featured product list from HomePage" data-provider="productList" finished-at="2023-10-23T05:58:10 EDT" duration-ms="8513" status="PASS">
+        <test-method signature="R1dot2_TS005_TC024(java.lang.String)[pri:2, instance:com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@79079097]" started-at="2023-10-23T07:03:31 EDT" name="R1dot2_TS005_TC024" description="R1.2_TS005_TC024 Verify user can select a product from featured product list from HomePage" data-provider="productList" finished-at="2023-10-23T07:03:39 EDT" duration-ms="8448" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -39,11 +39,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- R1dot2_TS005_TC024 -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@79079097]" started-at="2023-10-23T05:58:10 EDT" name="quitDriver" finished-at="2023-10-23T05:58:11 EDT" duration-ms="434" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@79079097]" started-at="2023-10-23T07:03:39 EDT" name="quitDriver" finished-at="2023-10-23T07:03:40 EDT" duration-ms="377" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method signature="R1dot2_TS005_TC024(java.lang.String)[pri:2, instance:com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@79079097]" started-at="2023-10-23T05:58:11 EDT" name="R1dot2_TS005_TC024" description="R1.2_TS005_TC024 Verify user can select a product from featured product list from HomePage" data-provider="productList" finished-at="2023-10-23T05:58:19 EDT" duration-ms="8377" status="PASS">
+        <test-method signature="R1dot2_TS005_TC024(java.lang.String)[pri:2, instance:com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@79079097]" started-at="2023-10-23T07:03:40 EDT" name="R1dot2_TS005_TC024" description="R1.2_TS005_TC024 Verify user can select a product from featured product list from HomePage" data-provider="productList" finished-at="2023-10-23T07:03:49 EDT" duration-ms="8781" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -54,11 +54,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- R1dot2_TS005_TC024 -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@79079097]" started-at="2023-10-23T05:58:19 EDT" name="quitDriver" finished-at="2023-10-23T05:58:19 EDT" duration-ms="476" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@79079097]" started-at="2023-10-23T07:03:49 EDT" name="quitDriver" finished-at="2023-10-23T07:03:49 EDT" duration-ms="367" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method signature="R1dot2_TS005_TC024(java.lang.String)[pri:2, instance:com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@79079097]" started-at="2023-10-23T05:58:19 EDT" name="R1dot2_TS005_TC024" description="R1.2_TS005_TC024 Verify user can select a product from featured product list from HomePage" data-provider="productList" finished-at="2023-10-23T05:58:28 EDT" duration-ms="8529" status="PASS">
+        <test-method signature="R1dot2_TS005_TC024(java.lang.String)[pri:2, instance:com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@79079097]" started-at="2023-10-23T07:03:49 EDT" name="R1dot2_TS005_TC024" description="R1.2_TS005_TC024 Verify user can select a product from featured product list from HomePage" data-provider="productList" finished-at="2023-10-23T07:03:58 EDT" duration-ms="8840" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -69,7 +69,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- R1dot2_TS005_TC024 -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@79079097]" started-at="2023-10-23T05:58:28 EDT" name="quitDriver" finished-at="2023-10-23T05:58:28 EDT" duration-ms="444" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality@79079097]" started-at="2023-10-23T07:03:58 EDT" name="quitDriver" finished-at="2023-10-23T07:03:58 EDT" duration-ms="335" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->

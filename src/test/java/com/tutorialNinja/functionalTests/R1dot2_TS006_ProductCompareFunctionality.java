@@ -9,7 +9,7 @@ import com.tutorialNinja.pageObjectFactory.ProductsComparisonPage;
 import com.tutorialNinja.pageObjectFactory.SearchResultPage;
 
 public class R1dot2_TS006_ProductCompareFunctionality extends InitialComponents{
-	@Test(priority = 0, groups = "possitive", description = "R1.2_TS006_TC001 As an user I should be able to select products for comparison.")
+	@Test(priority = 0, groups = POSSITIVE, description = "R1.2_TS006_TC001 As an user I should be able to select products for comparison.")
 	public void r1dot2_TS006_TC001() {
 		HomePageObjects homePage = launchApplicationHomePage();
 		Assert.assertEquals("Qafox.com", homePage.getLogoText());

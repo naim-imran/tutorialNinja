@@ -12,7 +12,7 @@ public class R1dot1_TS004_ForgottenPasswordFunctionality extends InitialComponen
 	
 	
 	//jira link: https://naayeem.atlassian.net/browse/TN-53
-	@Test(priority = 1, groups = {"smoke", "possitive"}, description = "R1.1_TS004_TC001 as a Registered user I should be able to reset my password by using \"Forgotten Password\" link in \"Returning Customer\" Login box")
+	@Test(priority = 1, groups = {SMOKE,POSSITIVE}, description = "R1.1_TS004_TC001 as a Registered user I should be able to reset my password by using \"Forgotten Password\" link in \"Returning Customer\" Login box")
 	public void r1dot1_TS004_TC001() {
 		HomePageObjects homePage = launchApplicationHomePage();
 		homePage.click_MyAccountDropLisButton();
@@ -28,7 +28,7 @@ public class R1dot1_TS004_ForgottenPasswordFunctionality extends InitialComponen
 	
 	
 	// jira link: https://naayeem.atlassian.net/browse/TN-54
-	@Test(priority = 2, groups = {"smoke", "possitive"}, description = "R1.1_TS004_TC002 as a Registered user I should be able to reset my password by using \"Forgotten Password\" link in right column")
+	@Test(priority = 2, groups = {SMOKE,POSSITIVE}, description = "R1.1_TS004_TC002 as a Registered user I should be able to reset my password by using \"Forgotten Password\" link in right column")
 	public void r1dot1_TS004_TC002() {
 		HomePageObjects homePage = launchApplicationHomePage();
 		homePage.click_MyAccountDropLisButton();
