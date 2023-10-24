@@ -8,8 +8,11 @@ import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
 import java.time.Duration;
 import java.util.HashMap;
+<<<<<<< HEAD
 import java.util.stream.Stream;
 
+=======
+>>>>>>> 97b739892eabfc3b2aa538428ec0a6f3c7ea31f4
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
