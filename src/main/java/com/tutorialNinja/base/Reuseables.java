@@ -52,11 +52,11 @@ public class Reuseables {
 		return prop;
 	}
 
-	public String takeScreenShot(WebDriver driver, String testCaseName) {
+	public String takeScreenShot(WebDriver driver, String testCaseName, String folderName) {
 
 		TakesScreenshot screenshot = (TakesScreenshot) driver;
 		File source = screenshot.getScreenshotAs(OutputType.FILE);
-		String dest = "."+File.separator + "testResultsAndScreecshoots" + File.separator + testCaseName + getTimeStamp() + ".png";
+		String dest = "."+File.separator + "testResultsAndScreecshoots" + File.separator + folderName  + File.separator +  testCaseName + getTimeStamp() + ".png";
 		File file = new File(dest);
 		try {
 			FileUtils.copyFile(source, file);

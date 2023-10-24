@@ -17,7 +17,7 @@ import com.tutorialNinja.pageObjectFactory.ProductCatagoryPage;
 public class Draft extends InitialComponents {
 	String sheetName = "Customer";
 
-	@Test(groups = {"possitive"},description = "negetive test case draftfail")
+	@Test(groups = {NEGATIVE},description = "negetive test case draftfail")
 	public void draftfail() {
 		HomePageObjects homePage = launchApplicationHomePage();
 		homePage.click_CurrencyDropDown();
@@ -25,7 +25,7 @@ public class Draft extends InitialComponents {
 
 	}
 	
-	@Test(groups = {"negetive"}, description = "negetive test case loginPagefail")
+	@Test(groups = {NEGATIVE}, description = "negetive test case loginPagefail")
 	public void loginPagefail() {
 		WebDriver driver = setupThreadLocalDriver();
 		driver.get("https://tutorialsninja.com/demo/index.php?route=account/login");
@@ -66,8 +66,9 @@ public class Draft extends InitialComponents {
 	
 	@Test(description = "click on homepage featured product")
 	public void testHomepageFeaturedProduct() {
-		HomePageObjects homePage = launchApplicationHomePage();
-		homePage.clickHomePageFeaturedProduct("Canon EOS 5D");
+		 HashMap<String, String> a = getBrowserNameVersion();
+		 System.out.println(a.get("name"));
+		 System.out.println(a.get("version"));
 	}
 	
 	@Test(description = "draft test of product catagory page")

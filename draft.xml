@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite" parallel="classes" thread-count="5">
+<suite name="Suite" parallel="classes" thread-count="10">
 
 	<listeners>
 		<listener class-name="testListenersAndReporter.TestNGListeners"></listener>
 		<listener class-name="testListenersAndReporter.TestNGitransformer"></listener>
 	</listeners>
 
-	<test name="Tutorial Ninja functional Regression Test">
+	<test name="Tutorial Ninja functional Draft Test">
 		<classes>
 			<class name="com.tutorialNinja.functionalTests.R1dot2_TS005_ProductSearchFunctionality" >
 				<methods>

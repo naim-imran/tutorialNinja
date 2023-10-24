@@ -61,7 +61,7 @@ public class R1dot1_TS001_RegisterFunctionality extends InitialComponents {
 		System.out.println(myAccountPage.getPageTitle());
 	}
 
-	@Test(priority = 4, groups = {"smoke","negetive"}, description = "R1.1_TS001_TC004 Verify proper error messages are displayed for the mandatory fields, when you don't provide any mandatory fields in the 'Register Account' page and submit")
+	@Test(priority = 4, groups = {SMOKE,NEGATIVE}, description = "R1.1_TS001_TC004 Verify proper error messages are displayed for the mandatory fields, when you don't provide any mandatory fields in the 'Register Account' page and submit")
 	public void r1dot1_TS001_TC004() throws InterruptedException, IOException {
 		SoftAssert softAssert= new SoftAssert();
 		HomePageObjects homePage = launchApplicationHomePage();
@@ -77,7 +77,7 @@ public class R1dot1_TS001_RegisterFunctionality extends InitialComponents {
 		softAssert.assertAll();
 	}
 
-	@Test(priority = 28, groups =  {"smoke","negetive"}, description = "R1.1_TS001_TC028 Verify the application throws proper error message when user click continue button without selecting privacy and policy check box.")
+	@Test(priority = 28, groups =  {SMOKE,NEGATIVE}, description = "R1.1_TS001_TC028 Verify the application throws proper error message when user click continue button without selecting privacy and policy check box.")
 	public void r1dot1_TS001_TC028() {
 		HashMap<String, String> testData = getFakerTestData();
 		HomePageObjects homePage = launchApplicationHomePage();
@@ -120,7 +120,7 @@ public class R1dot1_TS001_RegisterFunctionality extends InitialComponents {
 		System.out.println(myAccountPage.getPageTitle());
 	}
 	
-	@Test(priority = 6, groups =  {SMOKE,POSSITIVE}, description = "R1.1_TS001_TC006 As an user when I navigate to the registration page Newsletter field 'No' option should be pre-selected" )
+	@Test(priority = 6, groups =  {SMOKE,NEGATIVE}, description = "R1.1_TS001_TC006 As an user when I navigate to the registration page Newsletter field 'No' option should be pre-selected" )
 	public void r1dot1_TS001_TC006(){
 		HomePageObjects homePage = launchApplicationHomePage();
 		homePage.click_MyAccountDropLisButton();
@@ -129,7 +129,7 @@ public class R1dot1_TS001_RegisterFunctionality extends InitialComponents {
 		Assert.assertTrue(registrationPage.checkNewletterSubscribeNoButton());		
 	}
 	
-	@Test(priority = 7, groups =  {"smoke","negetive"}, description = "R1.1_TS001_TC029 As an user when I navigate to the registration page NEWSLETTER subscribe \"Yes\" checkBox shouldn’t be pre-selected." )
+	@Test(priority = 7, groups =  {SMOKE,NEGATIVE}, description = "R1.1_TS001_TC029 As an user when I navigate to the registration page NEWSLETTER subscribe \"Yes\" checkBox shouldn’t be pre-selected." )
 	public void r1dot1_TS001_TC029(){
 		HomePageObjects homePage = launchApplicationHomePage();
 		homePage.click_MyAccountDropLisButton();

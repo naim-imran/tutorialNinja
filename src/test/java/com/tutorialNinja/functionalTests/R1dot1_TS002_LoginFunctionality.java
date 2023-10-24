@@ -28,7 +28,7 @@ public class R1dot1_TS002_LoginFunctionality extends InitialComponents {
 	}
 	
 	 // https://naayeem.atlassian.net/browse/TN-41
-	@Test(priority = 1, groups = {"smoke","negetive"}, description = "R1.1_TS002_TC002 Verify logging into the Application using invalid credentials (i.e. Invalid email address and Invalid Password)")
+	@Test(priority = 1, groups = {SMOKE,NEGATIVE}, description = "R1.1_TS002_TC002 Verify logging into the Application using invalid credentials (i.e. Invalid email address and Invalid Password)")
 	public void r1dot1_TS002_TC002() {
 		HomePageObjects homePage = launchApplicationHomePage();
 		homePage.click_MyAccountDropLisButton();
@@ -43,7 +43,7 @@ public class R1dot1_TS002_LoginFunctionality extends InitialComponents {
 	}
 	
 	// https://naayeem.atlassian.net/browse/TN-52
-	@Test(priority = 2, groups = { "smoke", "negetive" }, description = "R1.1_TS002_TC003 Verify logging into the Application using invalid email address and valid Password") 
+	@Test(priority = 2, groups = {SMOKE,NEGATIVE}, description = "R1.1_TS002_TC003 Verify logging into the Application using invalid email address and valid Password") 
 	public void r1dot1_TS002_TC003() {
 		HomePageObjects homePage = launchApplicationHomePage();
 		homePage.click_MyAccountDropLisButton();

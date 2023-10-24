@@ -1,0 +1,1825 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Open Cart Functional Test</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Tutorial Ninja Functional Regression Test 2023_10_24_04_33_15</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Oct 24, 2023 04:33:15 AM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<a class="dropdown-item" status="skip" href="#"><span>Skip</span><span class="status warning"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">R1.2_TS005_TC001 As an user I should be able to search a product which is present in database.</p>
+            <p class="text-sm">
+              <span>4:33:16 AM</span> / <span>00:00:24:240</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">R1.2_TS005_TC001 As an user I should be able to search a product which is present in database.</h5>
+<span class='badge badge-success'>10.24.2023 4:33:16 AM</span>
+<span class='badge badge-danger'>10.24.2023 4:33:40 AM</span>
+<span class='badge badge-default'>00:00:24:240</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:33:40 AM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">R1.1_TS001_TC001 As a user I should be able to Register an Account by providing only the Mandatory fields</p>
+            <p class="text-sm">
+              <span>4:33:16 AM</span> / <span>00:00:24:782</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">R1.1_TS001_TC001 As a user I should be able to Register an Account by providing only the Mandatory fields</h5>
+<span class='badge badge-success'>10.24.2023 4:33:16 AM</span>
+<span class='badge badge-danger'>10.24.2023 4:33:40 AM</span>
+<span class='badge badge-default'>00:00:24:782</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:33:40 AM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">R1.3_TS012_TC001 As a user I shouldn't be able to  navigate to Checkout page when there is no product in the Shopping Cart</p>
+            <p class="text-sm">
+              <span>4:33:16 AM</span> / <span>00:00:21:716</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">R1.3_TS012_TC001 As a user I shouldn't be able to navigate to Checkout page when there is no product in the Shopping Cart</h5>
+<span class='badge badge-success'>10.24.2023 4:33:16 AM</span>
+<span class='badge badge-danger'>10.24.2023 4:33:37 AM</span>
+<span class='badge badge-default'>00:00:21:716</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:33:37 AM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="8"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">R1.2_TS006_TC001 As an user I should be able to select products for comparison.</p>
+            <p class="text-sm">
+              <span>4:33:16 AM</span> / <span>00:00:23:984</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">R1.2_TS006_TC001 As an user I should be able to select products for comparison.</h5>
+<span class='badge badge-success'>10.24.2023 4:33:16 AM</span>
+<span class='badge badge-danger'>10.24.2023 4:33:40 AM</span>
+<span class='badge badge-default'>00:00:23:984</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>4:33:40 AM</td>
+        <td>
+          There is exception in execution and skipped for another try org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="https://tutorialsninja.com/demo/index.php?route=product/compare">...</a> is not clickable at point (333, 8). Other element would receive the click: <div class="container">...</div>
+  (Session info: headless chrome=117.0.5938.149)
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ff78bff7e284a62a1fa7d5ca59eac71, clickElement {id=7E4BBCD76F7C5F5174F2B1DE60A6A561_element_62}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\naimn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59562}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59562/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (9ff78bff7e284a62a1fa7d5ca59eac71)] -> xpath: //a[text()='product comparison']]
+Session ID: 9ff78bff7e284a62a1fa7d5ca59eac71
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">negetive test case draftfail</p>
+            <p class="text-sm">
+              <span>4:33:16 AM</span> / <span>00:00:31:207</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">negetive test case draftfail</h5>
+<span class='badge badge-success'>10.24.2023 4:33:16 AM</span>
+<span class='badge badge-danger'>10.24.2023 4:33:47 AM</span>
+<span class='badge badge-default'>00:00:31:207</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>4:33:47 AM</td>
+        <td>
+          There is exception in execution and skipped for another try org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: headless chrome=117.0.5938.149)
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [67e3f9fc2b2ca6ac6ce57c28f88e99b9, clickElement {id=82C13B2F0CF605E59E52EA517E7F5685_element_47}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\naimn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59521}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59521/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (67e3f9fc2b2ca6ac6ce57c28f88e99b9)] -> xpath: //span[@class='hidden-xs hidden-sm hidden-md' and text()='Currency']]
+Session ID: 67e3f9fc2b2ca6ac6ce57c28f88e99b9
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">R1.1_TS003_TC001 Verify Logging out by selecting Logout option from 'My Account' drop menu</p>
+            <p class="text-sm">
+              <span>4:33:16 AM</span> / <span>00:00:24:235</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">R1.1_TS003_TC001 Verify Logging out by selecting Logout option from 'My Account' drop menu</h5>
+<span class='badge badge-success'>10.24.2023 4:33:16 AM</span>
+<span class='badge badge-danger'>10.24.2023 4:33:40 AM</span>
+<span class='badge badge-default'>00:00:24:235</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:33:40 AM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">R1.1_TS004_TC001 as a Registered user I should be able to reset my password by using "Forgotten Password" link in "Returning Customer" Login box</p>
+            <p class="text-sm">
+              <span>4:33:16 AM</span> / <span>00:00:23:355</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">R1.1_TS004_TC001 as a Registered user I should be able to reset my password by using "Forgotten Password" link in "Returning Customer" Login box</h5>
+<span class='badge badge-success'>10.24.2023 4:33:16 AM</span>
+<span class='badge badge-danger'>10.24.2023 4:33:39 AM</span>
+<span class='badge badge-default'>00:00:23:355</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:33:39 AM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">R1.1_TS002_TC001 Verify logging into the Application using valid credentials</p>
+            <p class="text-sm">
+              <span>4:33:16 AM</span> / <span>00:00:23:470</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">R1.1_TS002_TC001 Verify logging into the Application using valid credentials</h5>
+<span class='badge badge-success'>10.24.2023 4:33:16 AM</span>
+<span class='badge badge-danger'>10.24.2023 4:33:39 AM</span>
+<span class='badge badge-default'>00:00:23:470</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:33:39 AM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">R1.1_TS004_TC002 as a Registered user I should be able to reset my password by using "Forgotten Password" link in right column</p>
+            <p class="text-sm">
+              <span>4:33:39 AM</span> / <span>00:00:07:370</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">R1.1_TS004_TC002 as a Registered user I should be able to reset my password by using "Forgotten Password" link in right column</h5>
+<span class='badge badge-success'>10.24.2023 4:33:39 AM</span>
+<span class='badge badge-danger'>10.24.2023 4:33:47 AM</span>
+<span class='badge badge-default'>00:00:07:370</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:33:47 AM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="10"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">R1.1_TS002_TC002 Verify logging into the Application using invalid credentials (i.e. Invalid email address and Invalid Password)</p>
+            <p class="text-sm">
+              <span>4:33:39 AM</span> / <span>00:00:06:981</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">R1.1_TS002_TC002 Verify logging into the Application using invalid credentials (i.e. Invalid email address and Invalid Password)</h5>
+<span class='badge badge-success'>10.24.2023 4:33:39 AM</span>
+<span class='badge badge-danger'>10.24.2023 4:33:46 AM</span>
+<span class='badge badge-default'>00:00:06:981</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>4:33:46 AM</td>
+        <td>
+          There is exception in execution and skipped for another try java.lang.AssertionError: expected [true] but found [false]
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="11"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">R1.2_TS006_TC001 As an user I should be able to select products for comparison.</p>
+            <p class="text-sm">
+              <span>4:33:40 AM</span> / <span>00:00:08:405</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">R1.2_TS006_TC001 As an user I should be able to select products for comparison.</h5>
+<span class='badge badge-success'>10.24.2023 4:33:40 AM</span>
+<span class='badge badge-danger'>10.24.2023 4:33:48 AM</span>
+<span class='badge badge-default'>00:00:08:405</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:33:48 AM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="12"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">R1.1_TS003_TC002 Verify Logging out by selecting Logout option from 'Right Column' options</p>
+            <p class="text-sm">
+              <span>4:33:40 AM</span> / <span>00:00:08:410</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">R1.1_TS003_TC002 Verify Logging out by selecting Logout option from 'Right Column' options</h5>
+<span class='badge badge-success'>10.24.2023 4:33:40 AM</span>
+<span class='badge badge-danger'>10.24.2023 4:33:49 AM</span>
+<span class='badge badge-default'>00:00:08:410</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:33:49 AM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="13"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">R1.2_TS005_TC024 Verify user can select a product from featured product list from HomePage</p>
+            <p class="text-sm">
+              <span>4:33:40 AM</span> / <span>00:00:07:472</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">R1.2_TS005_TC024 Verify user can select a product from featured product list from HomePage</h5>
+<span class='badge badge-success'>10.24.2023 4:33:40 AM</span>
+<span class='badge badge-danger'>10.24.2023 4:33:48 AM</span>
+<span class='badge badge-default'>00:00:07:472</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:33:48 AM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="14"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">R1.1_TS001_TC003 Verify Registering an Account by providing all the fields</p>
+            <p class="text-sm">
+              <span>4:33:41 AM</span> / <span>00:00:09:409</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">R1.1_TS001_TC003 Verify Registering an Account by providing all the fields</h5>
+<span class='badge badge-success'>10.24.2023 4:33:41 AM</span>
+<span class='badge badge-danger'>10.24.2023 4:33:50 AM</span>
+<span class='badge badge-default'>00:00:09:409</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:33:50 AM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="15"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">R1.1_TS002_TC002 Verify logging into the Application using invalid credentials (i.e. Invalid email address and Invalid Password)</p>
+            <p class="text-sm">
+              <span>4:33:46 AM</span> / <span>00:00:06:712</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">R1.1_TS002_TC002 Verify logging into the Application using invalid credentials (i.e. Invalid email address and Invalid Password)</h5>
+<span class='badge badge-success'>10.24.2023 4:33:46 AM</span>
+<span class='badge badge-danger'>10.24.2023 4:33:53 AM</span>
+<span class='badge badge-default'>00:00:06:712</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>4:33:53 AM</td>
+        <td>
+          There is exception in execution and skipped for another try java.lang.AssertionError: expected [true] but found [false]
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="16"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">negetive test case draftfail</p>
+            <p class="text-sm">
+              <span>4:33:47 AM</span> / <span>00:00:15:423</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">negetive test case draftfail</h5>
+<span class='badge badge-success'>10.24.2023 4:33:47 AM</span>
+<span class='badge badge-danger'>10.24.2023 4:34:02 AM</span>
+<span class='badge badge-default'>00:00:15:423</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>4:34:02 AM</td>
+        <td>
+          There is exception in execution and skipped for another try org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: headless chrome=117.0.5938.149)
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [902e58291d4d5d972b79c60383d929cb, clickElement {id=9F8616C1E083014075CBB604F3673DFB_element_45}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\naimn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59731}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59731/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (902e58291d4d5d972b79c60383d929cb)] -> xpath: //span[@class='hidden-xs hidden-sm hidden-md' and text()='Currency']]
+Session ID: 902e58291d4d5d972b79c60383d929cb
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="17"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">R1.2_TS005_TC024 Verify user can select a product from featured product list from HomePage</p>
+            <p class="text-sm">
+              <span>4:33:48 AM</span> / <span>00:00:06:858</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">R1.2_TS005_TC024 Verify user can select a product from featured product list from HomePage</h5>
+<span class='badge badge-success'>10.24.2023 4:33:48 AM</span>
+<span class='badge badge-danger'>10.24.2023 4:33:55 AM</span>
+<span class='badge badge-default'>00:00:06:858</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:33:55 AM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="18"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">R1.1_TS003_TC003 Verify the Application session status, after logging and closing the Browser without logging out</p>
+            <p class="text-sm">
+              <span>4:33:49 AM</span> / <span>00:00:22:240</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">R1.1_TS003_TC003 Verify the Application session status, after logging and closing the Browser without logging out</h5>
+<span class='badge badge-success'>10.24.2023 4:33:49 AM</span>
+<span class='badge badge-danger'>10.24.2023 4:34:11 AM</span>
+<span class='badge badge-default'>00:00:22:240</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>4:34:11 AM</td>
+        <td>
+          There is exception in execution and skipped for another try org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//ul[@class='dropdown-menu dropdown-menu-right']//a[text()='My Account']"}
+  (Session info: headless chrome=117.0.5938.149)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5657e6a574c62977a4259004a3b5e440, findElement {using=xpath, value=//ul[@class='dropdown-menu dropdown-menu-right']//a[text()='My Account']}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\naimn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59832}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59832/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5657e6a574c62977a4259004a3b5e440
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="19"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">R1.1_TS001_TC004 Verify proper error messages are displayed for the mandatory fields, when you don't provide any mandatory fields in the 'Register Account' page and submit</p>
+            <p class="text-sm">
+              <span>4:33:50 AM</span> / <span>00:00:07:053</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">R1.1_TS001_TC004 Verify proper error messages are displayed for the mandatory fields, when you don't provide any mandatory fields in the 'Register Account' page and submit</h5>
+<span class='badge badge-success'>10.24.2023 4:33:50 AM</span>
+<span class='badge badge-danger'>10.24.2023 4:33:57 AM</span>
+<span class='badge badge-default'>00:00:07:053</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:33:57 AM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="20"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">R1.1_TS002_TC002 Verify logging into the Application using invalid credentials (i.e. Invalid email address and Invalid Password)</p>
+            <p class="text-sm">
+              <span>4:33:53 AM</span> / <span>00:00:06:635</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">R1.1_TS002_TC002 Verify logging into the Application using invalid credentials (i.e. Invalid email address and Invalid Password)</h5>
+<span class='badge badge-success'>10.24.2023 4:33:53 AM</span>
+<span class='badge badge-danger'>10.24.2023 4:34:00 AM</span>
+<span class='badge badge-default'>00:00:06:635</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=20</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\naimn\DEV\IDE\eclipse\tutorialNinjaFunctionalTest\.\testResultsAndScreecshoots\Tutorial Ninja Functional Regression Test 2023_10_24_04_33_15\r1dot1_TS002_TC0022023_10_24_04_34_00.png' src="C:\Users\naimn\DEV\IDE\eclipse\tutorialNinjaFunctionalTest\.\testResultsAndScreecshoots\Tutorial Ninja Functional Regression Test 2023_10_24_04_33_15\r1dot1_TS002_TC0022023_10_24_04_34_00.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>4:34:00 AM</td>
+        <td>
+          Test failed. java.lang.AssertionError: expected [true] but found [false]
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="21"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">R1.2_TS005_TC024 Verify user can select a product from featured product list from HomePage</p>
+            <p class="text-sm">
+              <span>4:33:55 AM</span> / <span>00:00:06:751</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">R1.2_TS005_TC024 Verify user can select a product from featured product list from HomePage</h5>
+<span class='badge badge-success'>10.24.2023 4:33:55 AM</span>
+<span class='badge badge-danger'>10.24.2023 4:34:02 AM</span>
+<span class='badge badge-default'>00:00:06:751</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=21</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:34:02 AM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="22"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">R1.1_TS001_TC005 As an user I should be able to register an Account by providing only the Mandatory fields and 'Yes' option is selected for Newsletter field</p>
+            <p class="text-sm">
+              <span>4:33:57 AM</span> / <span>00:00:08:567</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">R1.1_TS001_TC005 As an user I should be able to register an Account by providing only the Mandatory fields and 'Yes' option is selected for Newsletter field</h5>
+<span class='badge badge-success'>10.24.2023 4:33:57 AM</span>
+<span class='badge badge-danger'>10.24.2023 4:34:06 AM</span>
+<span class='badge badge-default'>00:00:08:567</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=22</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:34:06 AM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="23"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">R1.1_TS002_TC003 Verify logging into the Application using invalid email address and valid Password</p>
+            <p class="text-sm">
+              <span>4:34:00 AM</span> / <span>00:00:06:409</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">R1.1_TS002_TC003 Verify logging into the Application using invalid email address and valid Password</h5>
+<span class='badge badge-success'>10.24.2023 4:34:00 AM</span>
+<span class='badge badge-danger'>10.24.2023 4:34:06 AM</span>
+<span class='badge badge-default'>00:00:06:409</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=23</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>4:34:06 AM</td>
+        <td>
+          There is exception in execution and skipped for another try java.lang.AssertionError: expected [true] but found [false]
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="24"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">R1.2_TS005_TC024 Verify user can select a product from featured product list from HomePage</p>
+            <p class="text-sm">
+              <span>4:34:02 AM</span> / <span>00:00:06:909</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">R1.2_TS005_TC024 Verify user can select a product from featured product list from HomePage</h5>
+<span class='badge badge-success'>10.24.2023 4:34:02 AM</span>
+<span class='badge badge-danger'>10.24.2023 4:34:09 AM</span>
+<span class='badge badge-default'>00:00:06:909</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=24</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:34:09 AM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="25"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">negetive test case draftfail</p>
+            <p class="text-sm">
+              <span>4:34:03 AM</span> / <span>00:00:15:189</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">negetive test case draftfail</h5>
+<span class='badge badge-success'>10.24.2023 4:34:03 AM</span>
+<span class='badge badge-danger'>10.24.2023 4:34:18 AM</span>
+<span class='badge badge-default'>00:00:15:189</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=25</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\naimn\DEV\IDE\eclipse\tutorialNinjaFunctionalTest\.\testResultsAndScreecshoots\Tutorial Ninja Functional Regression Test 2023_10_24_04_33_15\draftfail2023_10_24_04_34_18.png' src="C:\Users\naimn\DEV\IDE\eclipse\tutorialNinjaFunctionalTest\.\testResultsAndScreecshoots\Tutorial Ninja Functional Regression Test 2023_10_24_04_33_15\draftfail2023_10_24_04_34_18.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>4:34:18 AM</td>
+        <td>
+          Test failed. org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: headless chrome=117.0.5938.149)
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dff32b8958163e3d45570590f1da76f2, clickElement {id=8F9F2C12EC1A4963B786B19E576BF6DA_element_45}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\naimn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59893}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59893/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (dff32b8958163e3d45570590f1da76f2)] -> xpath: //span[@class='hidden-xs hidden-sm hidden-md' and text()='Currency']]
+Session ID: dff32b8958163e3d45570590f1da76f2
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="26"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">R1.1_TS001_TC006 As an user when I navigate to the registration page Newsletter field 'No' option should be pre-selected</p>
+            <p class="text-sm">
+              <span>4:34:06 AM</span> / <span>00:00:06:690</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">R1.1_TS001_TC006 As an user when I navigate to the registration page Newsletter field 'No' option should be pre-selected</h5>
+<span class='badge badge-success'>10.24.2023 4:34:06 AM</span>
+<span class='badge badge-danger'>10.24.2023 4:34:13 AM</span>
+<span class='badge badge-default'>00:00:06:690</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=26</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:34:13 AM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="27"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">R1.1_TS002_TC003 Verify logging into the Application using invalid email address and valid Password</p>
+            <p class="text-sm">
+              <span>4:34:07 AM</span> / <span>00:00:08:606</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">R1.1_TS002_TC003 Verify logging into the Application using invalid email address and valid Password</h5>
+<span class='badge badge-success'>10.24.2023 4:34:07 AM</span>
+<span class='badge badge-danger'>10.24.2023 4:34:15 AM</span>
+<span class='badge badge-default'>00:00:08:606</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=27</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>4:34:15 AM</td>
+        <td>
+          There is exception in execution and skipped for another try java.lang.AssertionError: expected [true] but found [false]
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="28"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">R1.1_TS003_TC003 Verify the Application session status, after logging and closing the Browser without logging out</p>
+            <p class="text-sm">
+              <span>4:34:11 AM</span> / <span>00:00:25:519</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">R1.1_TS003_TC003 Verify the Application session status, after logging and closing the Browser without logging out</h5>
+<span class='badge badge-success'>10.24.2023 4:34:11 AM</span>
+<span class='badge badge-danger'>10.24.2023 4:34:37 AM</span>
+<span class='badge badge-default'>00:00:25:519</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=28</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>4:34:37 AM</td>
+        <td>
+          There is exception in execution and skipped for another try org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//ul[@class='dropdown-menu dropdown-menu-right']//a[text()='My Account']"}
+  (Session info: headless chrome=117.0.5938.149)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [106f6b5307b5a46d629e7053e290e965, findElement {using=xpath, value=//ul[@class='dropdown-menu dropdown-menu-right']//a[text()='My Account']}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\naimn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60060}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60060/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 106f6b5307b5a46d629e7053e290e965
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="29"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">R1.1_TS001_TC029 As an user when I navigate to the registration page NEWSLETTER subscribe "Yes" checkBox shouldn’t be pre-selected.</p>
+            <p class="text-sm">
+              <span>4:34:13 AM</span> / <span>00:00:08:115</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">R1.1_TS001_TC029 As an user when I navigate to the registration page NEWSLETTER subscribe "Yes" checkBox shouldn’t be pre-selected.</h5>
+<span class='badge badge-success'>10.24.2023 4:34:13 AM</span>
+<span class='badge badge-danger'>10.24.2023 4:34:22 AM</span>
+<span class='badge badge-default'>00:00:08:115</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=29</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:34:22 AM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="30"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">R1.1_TS002_TC003 Verify logging into the Application using invalid email address and valid Password</p>
+            <p class="text-sm">
+              <span>4:34:17 AM</span> / <span>00:00:09:143</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">R1.1_TS002_TC003 Verify logging into the Application using invalid email address and valid Password</h5>
+<span class='badge badge-success'>10.24.2023 4:34:17 AM</span>
+<span class='badge badge-danger'>10.24.2023 4:34:26 AM</span>
+<span class='badge badge-default'>00:00:09:143</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=30</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\naimn\DEV\IDE\eclipse\tutorialNinjaFunctionalTest\.\testResultsAndScreecshoots\Tutorial Ninja Functional Regression Test 2023_10_24_04_33_15\r1dot1_TS002_TC0032023_10_24_04_34_26.png' src="C:\Users\naimn\DEV\IDE\eclipse\tutorialNinjaFunctionalTest\.\testResultsAndScreecshoots\Tutorial Ninja Functional Regression Test 2023_10_24_04_33_15\r1dot1_TS002_TC0032023_10_24_04_34_26.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>4:34:26 AM</td>
+        <td>
+          Test failed. java.lang.AssertionError: expected [true] but found [false]
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="31"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">negetive test case loginPagefail</p>
+            <p class="text-sm">
+              <span>4:34:18 AM</span> / <span>00:00:04:817</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">negetive test case loginPagefail</h5>
+<span class='badge badge-success'>10.24.2023 4:34:18 AM</span>
+<span class='badge badge-danger'>10.24.2023 4:34:23 AM</span>
+<span class='badge badge-default'>00:00:04:817</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=31</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>4:34:23 AM</td>
+        <td>
+          There is exception in execution and skipped for another try java.lang.AssertionError: expected [Customer] but found [Account Login]
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="32"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">R1.1_TS001_TC028 Verify the application throws proper error message when user click continue button without selecting privacy and policy check box.</p>
+            <p class="text-sm">
+              <span>4:34:22 AM</span> / <span>00:00:11:399</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">R1.1_TS001_TC028 Verify the application throws proper error message when user click continue button without selecting privacy and policy check box.</h5>
+<span class='badge badge-success'>10.24.2023 4:34:22 AM</span>
+<span class='badge badge-danger'>10.24.2023 4:34:33 AM</span>
+<span class='badge badge-default'>00:00:11:399</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=32</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:34:33 AM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="33"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">negetive test case loginPagefail</p>
+            <p class="text-sm">
+              <span>4:34:23 AM</span> / <span>00:00:05:700</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">negetive test case loginPagefail</h5>
+<span class='badge badge-success'>10.24.2023 4:34:23 AM</span>
+<span class='badge badge-danger'>10.24.2023 4:34:29 AM</span>
+<span class='badge badge-default'>00:00:05:700</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=33</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>4:34:29 AM</td>
+        <td>
+          There is exception in execution and skipped for another try java.lang.AssertionError: expected [Customer] but found [Account Login]
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="34"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">negetive test case loginPagefail</p>
+            <p class="text-sm">
+              <span>4:34:29 AM</span> / <span>00:00:04:489</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">negetive test case loginPagefail</h5>
+<span class='badge badge-success'>10.24.2023 4:34:29 AM</span>
+<span class='badge badge-danger'>10.24.2023 4:34:34 AM</span>
+<span class='badge badge-default'>00:00:04:489</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=34</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\naimn\DEV\IDE\eclipse\tutorialNinjaFunctionalTest\.\testResultsAndScreecshoots\Tutorial Ninja Functional Regression Test 2023_10_24_04_33_15\loginPagefail2023_10_24_04_34_34.png' src="C:\Users\naimn\DEV\IDE\eclipse\tutorialNinjaFunctionalTest\.\testResultsAndScreecshoots\Tutorial Ninja Functional Regression Test 2023_10_24_04_33_15\loginPagefail2023_10_24_04_34_34.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>4:34:34 AM</td>
+        <td>
+          Test failed. java.lang.AssertionError: expected [Customer] but found [Account Login]
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="35"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">validate readExcelDraft</p>
+            <p class="text-sm">
+              <span>4:34:34 AM</span> / <span>00:00:01:245</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">validate readExcelDraft</h5>
+<span class='badge badge-success'>10.24.2023 4:34:34 AM</span>
+<span class='badge badge-danger'>10.24.2023 4:34:35 AM</span>
+<span class='badge badge-default'>00:00:01:245</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=35</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:34:35 AM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="36"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">draft test of product catagory page</p>
+            <p class="text-sm">
+              <span>4:34:35 AM</span> / <span>00:00:05:757</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">draft test of product catagory page</h5>
+<span class='badge badge-success'>10.24.2023 4:34:35 AM</span>
+<span class='badge badge-danger'>10.24.2023 4:34:41 AM</span>
+<span class='badge badge-default'>00:00:05:757</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=36</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:34:41 AM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="37"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">R1.1_TS003_TC003 Verify the Application session status, after logging and closing the Browser without logging out</p>
+            <p class="text-sm">
+              <span>4:34:37 AM</span> / <span>00:00:23:573</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">R1.1_TS003_TC003 Verify the Application session status, after logging and closing the Browser without logging out</h5>
+<span class='badge badge-success'>10.24.2023 4:34:37 AM</span>
+<span class='badge badge-danger'>10.24.2023 4:35:00 AM</span>
+<span class='badge badge-default'>00:00:23:573</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=37</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\naimn\DEV\IDE\eclipse\tutorialNinjaFunctionalTest\.\testResultsAndScreecshoots\Tutorial Ninja Functional Regression Test 2023_10_24_04_33_15\r1dot1_TS003_TC0032023_10_24_04_35_00.png' src="C:\Users\naimn\DEV\IDE\eclipse\tutorialNinjaFunctionalTest\.\testResultsAndScreecshoots\Tutorial Ninja Functional Regression Test 2023_10_24_04_33_15\r1dot1_TS003_TC0032023_10_24_04_35_00.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>4:35:00 AM</td>
+        <td>
+          Test failed. org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//ul[@class='dropdown-menu dropdown-menu-right']//a[text()='My Account']"}
+  (Session info: headless chrome=117.0.5938.149)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b3b6044b651855be42636c1ceb820480, findElement {using=xpath, value=//ul[@class='dropdown-menu dropdown-menu-right']//a[text()='My Account']}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\naimn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60211}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60211/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b3b6044b651855be42636c1ceb820480
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="38"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">click on homepage featured product</p>
+            <p class="text-sm">
+              <span>4:34:41 AM</span> / <span>00:00:01:812</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">click on homepage featured product</h5>
+<span class='badge badge-success'>10.24.2023 4:34:41 AM</span>
+<span class='badge badge-danger'>10.24.2023 4:34:43 AM</span>
+<span class='badge badge-default'>00:00:01:812</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=38</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:34:43 AM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Oct 24, 2023 04:33:15 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Oct 24, 2023 04:35:02 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>22</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>5</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='57%'>
+<b>22</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='13%'><b>5</b> tests failed,
+<b>11</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='57%'><b>22</b> events passed</small></div>
+<div>
+<small data-tooltip='13%'><b>5</b> events failed,
+<b data-tooltip='%'>11</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"R1.2_TS005_TC001 As an user I should be able to search a product which is present in database.":24.24,"R1.1_TS001_TC001 As a user I should be able to Register an Account by providing only the Mandatory fields":24.782,"R1.3_TS012_TC001 As a user I shouldn't be able to navigate to Checkout page when there is no product in the Shopping Cart":21.716,"R1.2_TS006_TC001 As an user I should be able to select products for comparison.":23.984,"negetive test case draftfail":31.207,"R1.1_TS003_TC001 Verify Logging out by selecting Logout option from 'My Account' drop menu":24.235,"R1.1_TS004_TC001 as a Registered user I should be able to reset my password by using "Forgotten Password" link in "Returning Customer" Login box":23.355,"R1.1_TS002_TC001 Verify logging into the Application using valid credentials":23.47,"R1.1_TS004_TC002 as a Registered user I should be able to reset my password by using "Forgotten Password" link in right column":7.37,"R1.1_TS002_TC002 Verify logging into the Application using invalid credentials (i.e. Invalid email address and Invalid Password)":6.981,"R1.2_TS006_TC001 As an user I should be able to select products for comparison.":8.405,"R1.1_TS003_TC002 Verify Logging out by selecting Logout option from 'Right Column' options":8.41,"R1.2_TS005_TC024 Verify user can select a product from featured product list from HomePage":7.472,"R1.1_TS001_TC003 Verify Registering an Account by providing all the fields":9.409,"R1.1_TS002_TC002 Verify logging into the Application using invalid credentials (i.e. Invalid email address and Invalid Password)":6.712,"negetive test case draftfail":15.423,"R1.2_TS005_TC024 Verify user can select a product from featured product list from HomePage":6.858,"R1.1_TS003_TC003 Verify the Application session status, after logging and closing the Browser without logging out":22.24,"R1.1_TS001_TC004 Verify proper error messages are displayed for the mandatory fields, when you don't provide any mandatory fields in the 'Register Account' page and submit":7.053,"R1.1_TS002_TC002 Verify logging into the Application using invalid credentials (i.e. Invalid email address and Invalid Password)":6.635,"R1.2_TS005_TC024 Verify user can select a product from featured product list from HomePage":6.751,"R1.1_TS001_TC005 As an user I should be able to register an Account by providing only the Mandatory fields and 'Yes' option is selected for Newsletter field":8.567,"R1.1_TS002_TC003 Verify logging into the Application using invalid email address and valid Password":6.409,"R1.2_TS005_TC024 Verify user can select a product from featured product list from HomePage":6.909,"negetive test case draftfail":15.189,"R1.1_TS001_TC006 As an user when I navigate to the registration page Newsletter field 'No' option should be pre-selected":6.69,"R1.1_TS002_TC003 Verify logging into the Application using invalid email address and valid Password":8.606,"R1.1_TS003_TC003 Verify the Application session status, after logging and closing the Browser without logging out":25.519,"R1.1_TS001_TC029 As an user when I navigate to the registration page NEWSLETTER subscribe "Yes" checkBox shouldn’t be pre-selected.":8.115,"R1.1_TS002_TC003 Verify logging into the Application using invalid email address and valid Password":9.143,"negetive test case loginPagefail":4.817,"R1.1_TS001_TC028 Verify the application throws proper error message when user click continue button without selecting privacy and policy check box.":11.399,"negetive test case loginPagefail":5.7,"negetive test case loginPagefail":4.489,"validate readExcelDraft":1.245,"draft test of product catagory page":5.757,"R1.1_TS003_TC003 Verify the Application session status, after logging and closing the Browser without logging out":23.573,"click on homepage featured product":1.812
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>Windows 11</td>
+<td>10.0</td>
+</tr>
+<tr>
+<td>chrome</td>
+<td>117.0.5938.149</td>
+</tr>
+<tr>
+<td>java-version</td>
+<td>17.0.7</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 22,
+failParent: 5,
+warningParent: 0,
+skipParent: 11,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 22,
+failEvents: 5,
+warningEvents: 0,
+skipEvents: 11,
+infoEvents: 0
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

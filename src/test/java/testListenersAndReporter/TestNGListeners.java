@@ -1,5 +1,6 @@
 package testListenersAndReporter;
 
+import java.io.File;
 import java.util.HashMap;
 
 import org.openqa.selenium.WebDriver;
@@ -15,11 +16,16 @@ public class TestNGListeners extends ExtendReporter implements ITestListener {
 
 	private ThreadLocal<ExtentTest> ThreadLocalReport = new ThreadLocal<ExtentTest>();
 	private ExtentReports extentReport;
-
+	private String folderName;
+	
 	@Override
 	public void onStart(ITestContext context) {
-		extentReport = getExtentReporter(context.getName());
-		cleanTestsBed();
+		folderName = context.getName() + " " + getTimeStamp();
+		File folder = new File("."+File.separator + "testResultsAndScreecshoots" + File.separator + folderName);
+		folder.mkdirs();
+		extentReport = getExtentReporter(context.getName(),folderName );
+		//cleanTestsBed();
+		
 	}
 
 	@Override
@@ -49,12 +55,9 @@ public class TestNGListeners extends ExtendReporter implements ITestListener {
 	public void onTestFailure(ITestResult result) {
 		ThreadLocalReport.get().log(Status.FAIL, "Test failed. " + result.getThrowable());
 
-
-
 		try {
 			driver = (WebDriver) result.getTestClass().getRealClass().getField("driver").get(result.getInstance());
-			String screenshot = takeScreenShot(driver, result.getName());
-			System.out.println(screenshot);
+			String screenshot = takeScreenShot(driver, result.getName(), folderName);
 			ThreadLocalReport.get().addScreenCaptureFromPath(screenshot);
 		} catch (IllegalArgumentException | IllegalAccessException | NoSuchFieldException | SecurityException e) {
 			e.printStackTrace();
