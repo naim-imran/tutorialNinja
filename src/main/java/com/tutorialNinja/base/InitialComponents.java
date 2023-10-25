@@ -8,11 +8,8 @@ import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
 import java.time.Duration;
 import java.util.HashMap;
-<<<<<<< HEAD
 import java.util.stream.Stream;
 
-=======
->>>>>>> 97b739892eabfc3b2aa538428ec0a6f3c7ea31f4
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -26,10 +23,14 @@ import org.testng.annotations.AfterMethod;
 
 import com.tutorialNinja.pageObjectFactory.HomePageObjects;
 
+
+
+
 public class InitialComponents extends Reuseables {
 
 	public WebDriver driver;// driver has to be public because we have to get it through reflection API in
 							// listener class
+
 
 	private ThreadLocal<WebDriver> threadLocaldriver = new ThreadLocal<WebDriver>();
 
@@ -123,8 +124,7 @@ public class InitialComponents extends Reuseables {
 		}
 
 		// Specify the source folder path
-		Path sourceFolderPath = Path
-				.of(System.getProperty("user.dir") + File.separator + "testResultsAndScreecshoots" + File.separator);
+		Path sourceFolderPath = Path.of(System.getProperty("user.dir") + File.separator + "testResultsAndScreecshoots" + File.separator);
 
 		// Specify the target folder path
 		Path targetFolderPath = Path
